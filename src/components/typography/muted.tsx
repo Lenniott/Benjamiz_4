@@ -1,7 +1,11 @@
-export function MutedText({text: text}: {text: string}) {
+interface Props {
+  children: React.ReactNode;
+}
+
+export function MutedText({ children }: Props) {
     return (
-        <p className="text-sm text-muted-foreground">
-        {text}
+        <p className="text-sm font-body font-light text-muted-foreground">
+        {children}
       </p>
     )
   }

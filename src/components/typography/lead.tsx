@@ -1,7 +1,11 @@
-export function LeadText({text: text}: {text: string}) {
+interface Props {
+  children: React.ReactNode;
+}
+
+export function LeadText({ children }: Props) {
     return (
-    <p className="text-xl text-muted-foreground">
-        {text}
+    <p className="text-xl font-body text-muted-foreground">
+        {children}
     </p>
     )
   }

@@ -16,7 +16,22 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'heading': ['Fira Sans', 'sans-serif'],
+        'body': ['Fira Sans', 'sans-serif'],
+      },
       colors: {
+        'white': '#FDFEFF',
+        'grey-lightest': '#f0f5f7',
+        'grey-light': '#cfd9e0',
+        'grey': '#879aa4',
+        'grey-dark': '#566673',
+        'grey-darkest': '#374854',
+        'black': '#02121D',
+        'error-light': '#FF335C',
+        'error-dark': '#9D1B28',
+        'accent-light': '#40C982',
+        'accent-dark': '#1D6340',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -50,6 +65,10 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        quote:{
+          DEFAULT: "hsl(var(--quote))",
+          foreground: "hsl(var(--quote-foreground))",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",

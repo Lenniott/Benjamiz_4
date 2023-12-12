@@ -8,6 +8,8 @@ import { SmallText } from "./smallText";
 import { LeadText } from "./lead";
 import { MutedText } from "./muted";
 import { ListText } from "./list";
+import { Quote } from "./quote";
+import { Link } from "./link";
 
 
 export {
@@ -20,5 +22,7 @@ export {
     SmallText,
     LeadText,
     MutedText,
-    ListText
+    ListText,
+    Quote,
+    Link,
 }

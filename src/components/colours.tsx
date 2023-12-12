@@ -1,5 +1,6 @@
 
       import React from 'react';
+      import { H2 } from './typography';
 
       type ColorSquareProps = {
         name: string;
@@ -20,64 +21,37 @@
         return (
           <div className='flex flex-col items-center p-2'>
             <h3 className='w-[100px] h-12'>{name}</h3>
-            <div style={squareStyle}></div>
+            <div className="border-2 border-foreground" style={squareStyle}></div>
           </div>
         );
       };
       
       export const ColorPalette: React.FC = () => {
         const colors = {
-        root: [
-          { name: "--background", color: "0 0% 100%" },
-          { name: "--foreground", color: "222.2 84% 4.9%" },
-          { name: "--card", color: "0 0% 100%" },
-          { name: "--card-foreground", color: "222.2 84% 4.9%" },
-          { name: "--popover", color: "0 0% 100%" },
-          { name: "--popover-foreground", color: "222.2 84% 4.9%" },
-          { name: "--primary", color: "222.2 47.4% 11.2%" },
-          { name: "--primary-foreground", color: "210 40% 98%" },
-          { name: "--secondary", color: "210 40% 96.1%" },
-          { name: "--secondary-foreground", color: "222.2 47.4% 11.2%" },
-          { name: "--muted", color: "210 40% 96.1%" },
-          { name: "--muted-foreground", color: "215.4 16.3% 46.9%" },
-          { name: "--accent", color: "210 40% 96.1%" },
-          { name: "--accent-foreground", color: "222.2 47.4% 11.2%" },
-          { name: "--destructive", color: "0 84.2% 60.2%" },
-          { name: "--destructive-foreground", color: "210 40% 98%" },
-          { name: "--border", color: "214.3 31.8% 91.4%" },
-          { name: "--input", color: "214.3 31.8% 91.4%" },
-          { name: "--ring", color: "222.2 84% 4.9%" },
-          { name: "--radius", color: "0.5rem" },
-        ],
-        dark: [
-          { name: "--background", color: "222.2 84% 4.9%" },
-          { name: "--foreground", color: "210 40% 98%" },
-          { name: "--card", color: "222.2 84% 4.9%" },
-          { name: "--card-foreground", color: "210 40% 98%" },
-          { name: "--popover", color: "222.2 84% 4.9%" },
-          { name: "--popover-foreground", color: "210 40% 98%" },
-          { name: "--primary", color: "210 40% 98%" },
-          { name: "--primary-foreground", color: "222.2 47.4% 11.2%" },
-          { name: "--secondary", color: "217.2 32.6% 17.5%" },
-          { name: "--secondary-foreground", color: "210 40% 98%" },
-          { name: "--muted", color: "217.2 32.6% 17.5%" },
-          { name: "--muted-foreground", color: "215 20.2% 65.1%" },
-          { name: "--accent", color: "217.2 326% 17.5%" },
-          { name: "--accent-foreground", color: "210 40% 98%" },
-          { name: "--destructive", color: "0 62.8% 30.6%" },
-          { name: "--destructive-foreground", color: "210 40% 98%" },
-          { name: "--border", color: "217.2 32.6% 17.5%" },
-          { name: "--input", color: "217.2 32.6% 17.5%" },
-          { name: "--ring", color: "212.7 26.8% 83.9%" },
-        ],
-      };
+          root: [
+            { name: "--white", color: "210 100% 100%" },
+            { name: "--grey-lightest", color: "197 30% 95%" },
+            { name: "--grey-light", color: "205 22% 85%" },
+            { name: "--grey", color: "201 14% 59%" },
+            { name: "--grey-dark", color: "207 14% 39%" },
+            { name: "--grey-darkest", color: "205 21% 27%" },
+            { name: "--black", color: "204 87% 6%" },
+            { name: "--error-light", color: "348 100% 60%" },
+            { name: "--error-dark", color: "354 71% 36%" },
+            { name: "--accent-light", color: "149 56% 52%" },
+            { name: "--accent-dark", color: "150 55% 25%" },
+          ],
+          // ... any other colour groups you have
+        };
+      
+  
       
       return (
-        <div className="color-palette bg-slate-500 text-black">
-            <div className="color-grid grid grid-rows-2">
+        <div className="color-palette py-8  bg-background text-foreground">
+            <div className="color-grid grid h-fit">
                 <div>
-                    <h2>Root Mode</h2>
-                    <div className="color-group flex flex-wrap">
+                    <H2>Colours</H2>
+                    <div className="color-group pt-2 flex flex-wrap">
                     
                     {colors.root.map((colorObj, index) => (
                         <ColorSquare
@@ -85,20 +59,6 @@
                         name={colorObj.name}
                         color={colorObj.color}
                         mode="root"
-                        />
-                    ))}
-                    </div>
-                </div>
-                <div>
-                    <h2>Dark Mode</h2>
-                    <div className="color-group flex flex-wrap">
-                    
-                    {colors.dark.map((colorObj, index) => (
-                        <ColorSquare
-                        key={index}
-                        name={colorObj.name}
-                        color={colorObj.color}
-                        mode="dark"
                         />
                     ))}
                     </div>

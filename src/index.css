@@ -3,85 +3,86 @@
 @tailwind utilities;
  
 
-
---black: hsla(204, 87%, 6%, 1);
---white: hsla(210, 100%, 100%, 1);
---primary-dark: hsla(163, 56%, 52%, 1);
---primary-light: hsla(162, 57%, 24%, 1); 
-
-
---primary-light: hsla(351, 63%, 40%, 1);
---primary-dark: hsla(359, 82%, 72%, 1);
-
-
---darkest-gray: hsla(230, 12%, 40%, 1);
---dark-gray: hsla(232, 10%, 56%, 1);
---gray: hsla(227, 11%, 68%, 1);
---light-gray: hsla(228, 10%, 80%, 1);
---lightest-white: hsla(228, 12%, 92%, 1);
-
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --white: 210, 100%, 100%; /* Compatible with: grey-dark, grey-darkest, black, error-dark, accent-dark */
+    --grey-lightest: 197, 30%, 95%; /* Compatible with: grey-dark, grey-darkest, black, accent-dark */
+    --grey-light: 205, 22%, 85%; /* Compatible with: grey-darkest, black, accent-dark */
+    --grey: 201, 14%, 59%; /* Compatible with: black */
+    --grey-dark: 207, 14%, 39%; /* Compatible with: white, grey-lightest, error-light, accent-light */
+    --grey-darkest: 205, 21%, 27%; /* Compatible with: white, grey-lightest, grey-light, error-light, accent-light */
+    --black: 204, 87%, 6%; /* Compatible with: white, grey-lightest, grey-light, grey, error-light, accent-light */
+    --error-light: 348, 100%, 60%; /* Compatible with: black */
+    --error-dark: 354, 71%, 36%; /* Compatible with: white, grey-lightest, grey-light */
+    --accent-light: 149, 56%, 52%; /* Compatible with: black */
+    --accent-dark: 150, 55%, 25%; /* Compatible with: white, grey-lightest, grey-light */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
- 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
- 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
- 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
- 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
- 
+    --quote: var(--black);
+    --quote-foreground: var(--grey-darkest);
+
+    --background: var(--white);
+    --foreground: var(--black);
+
+    --card: var(--white);
+    --card-foreground: var(--black);
+
+    --popover: var(--white);
+    --popover-foreground: var(--black);
+
+    --primary: var(--black);
+    --primary-foreground: var(--white);
+
+    --secondary: var(--grey-lightest);
+    --secondary-foreground: var(--black);
+
+    --muted: var(--grey-lightest);
+    --muted-foreground: var(--grey-dark);
+
+    --accent: var(--accent-dark);
+    --accent-foreground: var(--white);
+
+    --destructive: var(--error-dark);
+    --destructive-foreground: var(--white);
+
+    --border: var(--grey-light);
+    --input: var(--grey-light);
+    --ring: var(--black);
+
     --radius: 0.5rem;
   }
  
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
- 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
- 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
- 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
- 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
- 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
- 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
- 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --background: var(--black);
+    --foreground: var(--white);
+
+    --quote: var(--whote);
+    --quote-foreground: var(--grey-lightest);
+
+    --card: var(--black);
+    --card-foreground: var(--white);
+
+    --popover: var(--black);
+    --popover-foreground: var(--white);
+
+    --primary: var(--white);
+    --primary-foreground: var(--black);
+
+    --secondary: var(--grey-darkest);
+    --secondary-foreground: var(--white);
+
+    --muted: var(--grey-darkest);
+    --muted-foreground: var(--grey);
+
+    --accent: var(--accent-light);
+    --accent-foreground: var(--black);
+
+    --destructive: var(--error-light);
+    --destructive-foreground: var(--black);
+
+    --border: var(--grey-darkest);
+    --input: var(--grey-darkest);
+    --ring: var(--grey-light);
   }
 }
  
@@ -92,4 +93,10 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+html {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }

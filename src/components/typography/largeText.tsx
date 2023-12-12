@@ -1,7 +1,11 @@
-export function LargeText({text: text}: {text: string}) {
+interface Props {
+  children: React.ReactNode;
+}
+
+export function LargeText({ children }: Props) {
     return (
-        <div className="text-lg font-semibold">
-        {text}
+        <div className="text-lg font-body font-medium">
+        {children}
       </div>
     )
   }
