@@ -5,7 +5,7 @@ interface Props {
 
 export function Link({ link,children }: Props) {
   return (
-    <a href={link} className="text-accent underline underline-offset-4 hover:underline-offset-1">
+    <a href={link} className="text-accent underline underline-offset-1 hover:underline-offset-4">
       {children}
     </a>
   );
