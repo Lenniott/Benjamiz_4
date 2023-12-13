@@ -1,6 +1,18 @@
 import { Button } from "./ui/button";
-import { H3} from "./typography";
-import { ChevronRight } from "lucide-react"
+import {
+    Sheet,
+    SheetPortal,
+    SheetOverlay,
+    SheetTrigger,
+    SheetClose,
+    SheetContent,
+    SheetHeader,
+    SheetFooter,
+    SheetTitle,
+    SheetDescription,
+  } from "./ui/sheet";
+import { H3, Paragraph} from "./typography";
+import { ChevronRight,Menu } from "lucide-react"
 
 export function Components(){
 
@@ -25,7 +37,29 @@ export function Components(){
             <Button variant={"ghost"}>Ghost</Button>
             <Button variant={"link"}>Link</Button>
             </div>
-            Card
+            <H3>Sheet</H3>
+            <div className="flex flex-col justify-center place-items-start gap-4 mb-8 py-4">
+            <Sheet>
+                <SheetTrigger className="flex gap-4 justify-center place-items-center">
+                    <Button variant={"secondary"}>
+                        Click me!
+                    </Button>
+
+                </SheetTrigger>
+                <SheetContent>
+                    <SheetHeader>
+                        <SheetTitle>Benjamiz</SheetTitle>
+                        <SheetDescription>About me</SheetDescription>
+                    </SheetHeader>
+                    <div className="flex-grow"> {<Paragraph>I am a UX designer based in Somerset, focused on building user-centered solutions. I have experience creating wireframes, prototypes and proof of concepts using Figma, and maintaining a component library, using auto-layouts to enable consistent and responsive layouts. I am skilled in collaborating with product managers, stakeholders, developers, and customers to understand and better meet their needs. I also create interactive front-end prototypes to validate design concepts and ensure the best user experience. I am dedicated to designing intuitive solutions that meet the needs of my clients, and I am excited to bring my skills to new challenges.</Paragraph>}</div>
+                    <SheetFooter>
+                        And that's all I have to say about that.
+                    </SheetFooter>
+                </SheetContent>
+            </Sheet>
+            </div>
+
+
             Dialog
             Sheet
             ToolTip
