@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -16,6 +17,7 @@ module.exports = {
       },
     },
     extend: {
+
       fontFamily: {
         'heading': ['Fira Sans', 'sans-serif'],
         'body': ['Fira Sans', 'sans-serif'],
@@ -63,6 +65,7 @@ module.exports = {
         },
         card: {
           DEFAULT: "hsl(var(--card))",
+          border: "hsl(var(--card-border))",
           foreground: "hsl(var(--card-foreground))",
         },
         quote:{

@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "@/components/mode-toggle.tsx", "@/components/theme-provider.tsx"],
+  "include": ["src", "src/components/mode-toggle.tsx", "src/components/theme-provider.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

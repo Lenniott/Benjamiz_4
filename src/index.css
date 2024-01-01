@@ -6,12 +6,12 @@
 @layer base {
   :root {
     --white: 210, 100%, 100%; /* Compatible with: grey-dark, grey-darkest, black, error-dark, accent-dark */
-    --grey-lightest: 197, 30%, 95%; /* Compatible with: grey-dark, grey-darkest, black, accent-dark */
-    --grey-light: 205, 22%, 85%; /* Compatible with: grey-darkest, black, accent-dark */
-    --grey: 201, 14%, 59%; /* Compatible with: black */
-    --grey-dark: 207, 14%, 39%; /* Compatible with: white, grey-lightest, error-light, accent-light */
-    --grey-darkest: 205, 21%, 27%; /* Compatible with: white, grey-lightest, grey-light, error-light, accent-light */
-    --black: 204, 87%, 6%; /* Compatible with: white, grey-lightest, grey-light, grey, error-light, accent-light */
+    --grey-lightest: 210,20%,96.1%; /* Compatible with: grey-dark, grey-darkest, black, accent-dark */
+    --grey-light: 210,19.5%,83.9%; /* Compatible with: grey-darkest, black, accent-dark */
+    --grey: 211.5,19.6%,60%; /* Compatible with: black */
+    --grey-dark: 210,19.5%,16.1%; /* Compatible with: white, grey-lightest, error-light, accent-light */
+    --grey-darkest: 206.7,22%,8%; /* Compatible with: white, grey-lightest, grey-light, error-light, accent-light */
+    --black: 210,20%,3.9%; /* Compatible with: white, grey-lightest, grey-light, grey, error-light, accent-light */
     --error-light: 348, 100%, 60%; /* Compatible with: black */
     --error-dark: 354, 71%, 36%; /* Compatible with: white, grey-lightest, grey-light */
     --accent-light: 149, 56%, 52%; /* Compatible with: black */
@@ -24,7 +24,8 @@
     --background: var(--white);
     --foreground: var(--black);
 
-    --card: var(--white);
+    --card: var(--grey-lightest);
+    --card-border: var(--grey-light);
     --card-foreground: var(--black);
 
     --popover: var(--white);
@@ -59,7 +60,8 @@
     --quote: var(--whote);
     --quote-foreground: var(--grey-lightest);
 
-    --card: var(--black);
+    --card: var(--grey-darkest);
+    --card-border: var(--grey-dark);
     --card-foreground: var(--white);
 
     --popover: var(--black);
@@ -100,3 +102,7 @@ html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
+
+
+
+

@@ -1,10 +1,7 @@
 import { Button } from "./ui/button";
 import {
     Sheet,
-    SheetPortal,
-    SheetOverlay,
     SheetTrigger,
-    SheetClose,
     SheetContent,
     SheetHeader,
     SheetFooter,
@@ -12,14 +9,14 @@ import {
     SheetDescription,
   } from "./ui/sheet";
 import { H3, Paragraph} from "./typography";
-import { ChevronRight,Menu } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 
 export function Components(){
 
     return (
         <>
             <H3>Button Sizes</H3>
-            <div className="flex gap-4 py-4 mb-8">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-4 mb-8">
             <Button size={"lg"}>Large</Button>
             <Button >Default</Button>
             <Button size={"sm"}>Small</Button>
@@ -30,7 +27,7 @@ export function Components(){
 
             </div>
             <H3>Button Types</H3>
-            <div className="flex gap-4 py-4 mb-8">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-4 mb-8">
             <Button >Default</Button>    
             <Button variant={"secondary"}>Secondary</Button>
             <Button variant={"destructive"}>Destructive</Button>
@@ -38,7 +35,7 @@ export function Components(){
             <Button variant={"link"}>Link</Button>
             </div>
             <H3>Sheet</H3>
-            <div className="flex flex-col justify-center place-items-start gap-4 mb-8 py-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center place-items-start mb-8 py-4">
             <Sheet>
                 <SheetTrigger className="flex gap-4 justify-center place-items-center">
                     <Button variant={"secondary"}>
