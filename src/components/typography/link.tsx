@@ -1,12 +1,14 @@
+import { Link as RouterLink } from 'react-router-dom';
+
 interface Props {
   children: React.ReactNode;
-  link: string;
+  to: string; // Renamed prop to 'to' to align with React Router's convention
 }
 
-export function Link({ link,children }: Props) {
+export function Link({ to, children }: Props) {
   return (
-    <a href={link} className="text-accent underline underline-offset-1 hover:underline-offset-4">
+    <RouterLink to={to} className="text-accent text-sm lg:text-base underline underline-offset-1 hover:underline-offset-4">
       {children}
-    </a>
+    </RouterLink>
   );
 }

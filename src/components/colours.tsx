@@ -1,65 +1,64 @@
 
       import React from 'react';
-      import { H2 } from './typography';
+      import { useState, useEffect } from 'react';
+      import { H2 } from '../components/typography/';
 
       type ColorSquareProps = {
         name: string;
         color: string;
-        mode: 'root' | 'dark';
       };
+      
       const ColorSquare: React.FC<ColorSquareProps> = ({ name, color }) => {
         const formattedColor = `hsl(${color})`;
-      
-      
         const squareStyle: React.CSSProperties = {
-          width: '100px',
-          height: '100px',
           backgroundColor: formattedColor,
-
         };
       
         return (
-          <div className='flex flex-col items-center p-2'>
-            <h3 className='w-[100px] h-12'>{name}</h3>
-            <div className="border-2 border-foreground" style={squareStyle}></div>
+          <div className='flex flex-col gap-4 place-items-center h-20'>
+            <h3 className='w-full h-12'>{name}</h3>
+            <div className="border-2 border-foreground w-full h-full rounded-md" style={squareStyle}></div>
           </div>
         );
       };
-      
-      export const ColorPalette: React.FC = () => {
-        const colors = {
-          root: [
-            { name: "--white", color: "210 100% 100%" },
-            { name: "--grey-lightest", color: "197 30% 95%" },
-            { name: "--grey-light", color: "205 22% 85%" },
-            { name: "--grey", color: "201 14% 59%" },
-            { name: "--grey-dark", color: "207 14% 39%" },
-            { name: "--grey-darkest", color: "205 21% 27%" },
-            { name: "--black", color: "204 87% 6%" },
-            { name: "--error-light", color: "348 100% 60%" },
-            { name: "--error-dark", color: "354 71% 36%" },
-            { name: "--accent-light", color: "149 56% 52%" },
-            { name: "--accent-dark", color: "150 55% 25%" },
-          ],
-          // ... any other colour groups you have
-        };
-      
+
+export const ColorPalette: React.FC = () => {
+  const [colors, setColors] = useState<Array<{ name: string, color: string }>>([]);
+
+  useEffect(() => {
+    const fetchColors = () => {
+      const rootStyles = getComputedStyle(document.documentElement);
+      return [
+            { name: "white", color: rootStyles.getPropertyValue('--white').trim()  },
+            { name: "grey-lightest", color: rootStyles.getPropertyValue('--grey-lightest').trim()  },
+            { name: "grey-light", color: rootStyles.getPropertyValue('--grey-light').trim() },
+            { name: "grey", color: rootStyles.getPropertyValue('--grey').trim() },
+            { name: "grey-dark", color: rootStyles.getPropertyValue('--grey-dark').trim() },
+            { name: "grey-darkest", color:rootStyles.getPropertyValue('--grey-darkest').trim() },
+            { name: "black", color: rootStyles.getPropertyValue('--black').trim() },
+            { name: "error-light", color: rootStyles.getPropertyValue('--error-light').trim()  },
+            { name: "error-dark", color:rootStyles.getPropertyValue('--error-dark').trim()  },
+            { name: "accent-light", color: rootStyles.getPropertyValue('--accent-light').trim()  },
+            { name: "accent-dark", color: rootStyles.getPropertyValue('--accent-dark').trim()  },
+        ];
+      };
+  
+      setColors(fetchColors());
+    }, []);
   
       
       return (
-        <div className="color-palette py-8  bg-background text-foreground">
+        <div className="flex flex-col py-8 ">
             <div className="color-grid grid h-fit">
                 <div>
                     <H2>Colours</H2>
-                    <div className="color-group pt-2 flex flex-wrap">
-                    
-                    {colors.root.map((colorObj, index) => (
-                        <ColorSquare
-                        key={index}
-                        name={colorObj.name}
-                        color={colorObj.color}
-                        mode="root"
-                        />
+                    <div className="color-group pt-2 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    {colors.map((colorObj, index) => (
+                    <ColorSquare
+                    key={index}
+                    name={colorObj.name}
+                    color={colorObj.color}
+                    />
                     ))}
                     </div>
                 </div>

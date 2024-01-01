@@ -1,15 +1,29 @@
 interface QuoteProps {
   quote: string;
-  author: string;
+  author?: string;
+  align?: "left" | "right" | "center";
+  textColor?: string;
 }
 
-export function Quote({ quote, author }: QuoteProps) {
+export function Quote({ quote, author, align, textColor }: QuoteProps) {
+  
+  function authorAlign(){
+    if(align === "left"){
+      return "text-right"
+    }else if(align === "right"){
+      return "text-right"
+    }else if(align === "center"){
+      return "text-center"
+    }
+  }
+
   return (
-    <div className="flex flex-col items-center justify-center px-4 py-8">
-      <blockquote className="text-xl font-semibold italic text-center text-quote-foreground">
+    <div className="grid">
+      <blockquote className={`text-lg sm:text-xl  font-light italic text-${align? align : "left"} ${textColor? textColor : "ext-quote-foreground"}`}>
         “{quote}”
       </blockquote>
-      <cite className="mt-4 text-sm font-medium text-right text-quote-author">- {author}</cite>
+      {author && <cite className={`${textColor? textColor : "text-quote-foreground"} mt-4 text-sm sm:text-base font-medium ${authorAlign()} items-end`}>- {author}</cite>}
+      
     </div>
   );
 }
