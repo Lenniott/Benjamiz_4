@@ -1,6 +1,6 @@
-import {ColorPalette} from "../components/colours.tsx"
-import {Typography} from "../components/typographyDoc.tsx"
-import {Components} from "../components/components.tsx"
+import {ColorPalette} from "../components/molicules/colours.tsx"
+import {Typography} from "../components/molicules/typographyDoc.tsx"
+import {Components} from "../components/molicules/components.tsx"
 
 
 export function DesignSystem() {

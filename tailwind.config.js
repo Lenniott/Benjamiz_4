@@ -19,8 +19,8 @@ module.exports = {
     extend: {
 
       fontFamily: {
-        'heading': ['Fira Sans', 'sans-serif'],
-        'body': ['Fira Sans', 'sans-serif'],
+        'serif': ['Hepta Slab','serif'],
+        'sans-serif': ['Fira Sans', 'sans-serif'],
       },
       colors: {
         'white': '#FDFEFF',

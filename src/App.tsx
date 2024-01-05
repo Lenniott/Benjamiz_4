@@ -2,8 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "./components/theme-provider"
 import { ScrollToTop } from "./components/scrollToTheTop";
 import { DesignSystem } from "./pages/designSystem";
-import { NavBar } from "./components/navBar";
+import { NavBar } from "./components/molicules/navBar";
 import {HomePage}  from "./pages/homePage";
+import { ExperiencePage } from "./pages/experience";
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
     <div className="flex flex-col mt-16">
       <Routes>
           <Route path="/" element={<HomePage/>} />
-          <Route path="/experience" element={"Experience"} />
+          <Route path="/experience" element={<ExperiencePage/>} />
           <Route path="/about" element={"About"} />
           <Route path="/works" element={"works"} />
           <Route path="/designSystem" element={<DesignSystem/>} />

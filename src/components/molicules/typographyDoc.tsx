@@ -1,4 +1,4 @@
-import { H1, H2, H3, H4, Paragraph, LargeText, SmallText, LeadText, MutedText, ListText, Quote, Link } from "./typography";
+import { H1, H2, H3, H4, Paragraph, LargeText, SmallText, LeadText, MutedText, ListText, Quote, Link } from "../typography";
 export function Typography() {
 
 

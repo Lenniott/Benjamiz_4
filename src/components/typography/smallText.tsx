@@ -4,7 +4,7 @@ interface Props {
 
 export function SmallText({ children }: Props) {
     return (
-        <small className="text-sm lg:text-base font-body font-normal leading-none">
+        <small className="text-xs lg:text-sm   font-san-serif  font-body font-normal leading-none">
         {children}
       </small>
     )

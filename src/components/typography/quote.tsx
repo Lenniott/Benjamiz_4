@@ -18,9 +18,9 @@ export function Quote({ quote, author, align, textColor }: QuoteProps) {
   }
 
   return (
-    <div className="grid">
-      <blockquote className={`text-lg sm:text-xl  font-light italic text-${align? align : "left"} ${textColor? textColor : "ext-quote-foreground"}`}>
-        “{quote}”
+    <div className="grid py-1 sm:py-2 max-w-xl mx-auto">
+      <blockquote className={`text-lg sm:text-xl  font-light   font-serif  italic text-${align? align : "left"} ${textColor? textColor : "ext-quote-foreground"}`}>
+        {quote}
       </blockquote>
       {author && <cite className={`${textColor? textColor : "text-quote-foreground"} mt-4 text-sm sm:text-base font-medium ${authorAlign()} items-end`}>- {author}</cite>}
       
