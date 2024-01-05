@@ -1,7 +1,7 @@
     //./src/components/features/MediumRenderer.tsx
 
     import React from 'react';
-    import { H1, H2, H3, H4, LeadText, Link, ListText, Paragraph,Quote } from '../typography';
+    import { H2, H3, H4, Link, ListText, Paragraph,Quote } from '../typography';
     import { ListItem } from '../typography/listItem';
 
     interface ContentProps {
@@ -41,12 +41,12 @@
             const quoteText = Array.isArray(item.content) ? item.content.join(' ') : item.content;
             return <Quote quote={quoteText}></Quote>;
             case 'ul':
-                return <ListText>{item.content.map((listItemContent: any, listItemIndex: number) => 
+                return <ListText isOrdered={false}>{item.content.map((listItemContent: any, listItemIndex: number) => 
                   <ListItem key={listItemIndex} isOrdered={false}>{renderElement(listItemContent)}</ListItem>
                 )}</ListText>;
               
               case 'ol':
-                return <ListText ordered>{item.content.map((listItemContent: any, listItemIndex: number) => 
+                return <ListText isOrdered={true}>{item.content.map((listItemContent: any, listItemIndex: number) => 
                   <ListItem key={listItemIndex} isOrdered={true} index={listItemIndex}>{renderElement(listItemContent)}</ListItem>
                 )}</ListText>;
         case 'li':

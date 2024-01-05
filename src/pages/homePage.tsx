@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar';
 import { motion } from 'framer-motion';
-import { H1, H2 } from '../components/typography';
+import { H1 } from '../components/typography';
 export function HomePage() {
 
     return (
