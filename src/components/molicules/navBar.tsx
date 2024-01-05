@@ -3,13 +3,13 @@ import {  navigationMenuTriggerStyle,
     NavigationMenuList,
     NavigationMenuItem,
     NavigationMenuLink,
-} from "./ui/navigation-menu";
-import { Sheet, SheetTrigger, SheetContent } from "./ui/sheet";
-import { Button } from "./ui/button";
+} from "../ui/navigation-menu";
+import { Sheet, SheetTrigger, SheetContent } from "../ui/sheet";
+import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
-import { ModeToggle } from "../components/mode-toggle"
+import { ModeToggle } from "./mode-toggle";
 import {Menu} from "lucide-react"
-import {Logo} from "../assets/images/logo"
+import {Logo} from "../../assets/images/logo"
 
 export function NavBar() {
     const MobileMenu = ()=>{

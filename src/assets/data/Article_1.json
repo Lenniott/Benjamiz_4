@@ -1,0 +1,342 @@
+{
+    "id": "https://medium.com/p/a6ea86792803",
+    "title": "Your design is only as good as your organisation’s ability to problem solve",
+    "link": "https://uxdesign.cc/your-design-is-only-as-good-as-your-organisations-ability-to-problem-solve-a6ea86792803?source=rss-aa8c53c0114d------2",
+    "author": "Benjamiz",
+    "published": 1686826238000,
+    "created": 1686826238000,
+    "category": [
+       "product-design",
+       "ux",
+       "editor-picks",
+       "design-strategy",
+       "product-management"
+    ],
+    "content": {
+       "type": "div",
+       "content": [
+          {
+             "type": "h4",
+             "content": [
+                "Stifling innovation and wasting talent: the hidden consequences of organisational practices on design potential."
+             ]
+          },
+          {
+             "type": "figure",
+             "content": [
+                {
+                   "type": "img",
+                   "attributes": {
+                      "src": "https://cdn-images-1.medium.com/max/512/1*sZMLstXvHytFnSFF9vWgbw@2x.jpeg"
+                   }
+                },
+                {
+                   "type": "figcaption",
+                   "content": [
+                      "image generated using Dall•e 2 on nightcafe.studio"
+                   ]
+                }
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "Design in product development is both a science and an art. It has to be scientific because business is a numbers game, but it must also be artistic because usability revolves around the human experience. Even though most people appreciate the benefits of artistic expression, it isn’t usually high on a business’s list of priorities. Designers ensure that the solutions we provide cater to the human beings that use the tools we build. However, businesses rarely recognise their true value because their benefit isn’t immediately felt."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "The feedback from the success of a sales team, for example, is immediately obvious — but that’s not so for design."
+             ]
+          },
+          {
+             "type": "h3",
+             "content": [
+                "So what is good design?"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "For me, good design is beneficial not just for the user, but also for the business. It’s easy to learn, helps achieve a goal beyond the tool itself, and evokes positive emotions within its interactions. Unfortunately, because good design creates a seamless experience, it often goes unnoticed."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "Have you ever wondered why your partner is more likely to criticise you for not doing the dishes than to thank you when there are no dirty dishes?"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "As humans, we are wired to conserve energy – cognitive energy included. The effort we put into thinking and problem-solving is a drain on this resource, so it’s in our nature to gravitate towards solutions that are effortless and straightforward."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "This intrinsic human tendency is a crucial consideration for designers. To design effectively, they need to deeply understand the desires and intended outcomes of those they are designing for, alongside the business goals."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "They must answer the question,"
+             ]
+          },
+          {
+             "type": "blockquote",
+             "content": [
+                "“How can we create a solution that not only assists users in achieving their tasks but does so in a way that keeps them engaged and returning to our product?”"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "There is no crystal ball to provide these answers. Instead, it takes a process of continuous experimentation and iteration to refine the design and ensure it aligns with both user needs and business objectives. This is the essence of energy-efficient design – minimising cognitive load while maximising user satisfaction and business value."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "But design does not exist in a vacuum. It takes an entire product team to develop a good solution that brings value to customers and users."
+             ]
+          },
+          {
+             "type": "h3",
+             "content": [
+                "So, what does a good product team look like?"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "For me, product teams need to cultivate a culture that encourages experimentation, iteration, and challenging assumptions. Regularly talking to users to validate decisions, proactively addressing risks, and focusing on problem-solving and outcomes rather than ticking off a long list of predetermined requirements. Good product development hinges on knowing business goals, understanding users’ and customers’ needs, tackling their problems, rapidly assessing the impact of our solutions, and possessing the resilience to accept failures and the necessity to iterate towards value."
+             ]
+          },
+          {
+             "type": "h4",
+             "content": [
+                "Why is it important to work towards?"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "If we accept ",
+                {
+                   "type": "a",
+                   "content": [
+                      "Marty Cagan’s two inconvenient truths"
+                   ],
+                   "attributes": {
+                      "href": "https://www.svpg.com/the-inconvenient-truth-about-product/"
+                   }
+                },
+                " – that more than half of products/features are never used, and achieving business value requires multiple iterations – recognising that no product development methodology – be it waterfall or agile – guarantees that all time spent by a product team directly translates into business value is vital. Yet, a learning-oriented approach focused on rapid experimentation can turn seemingly ‘wasted’ time into valuable insights. Even if every endeavour doesn’t yield immediate business value, it offers learnings that refine our understanding of users and their needs. By adopting this playful, experimental, and iterative approach to product development, we embrace the fact that we don’t have all the answers from the start. Continuously striving for a deeper understanding of our users allows us to efficiently direct our efforts towards what truly works, thereby consistently aiming for business value."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "If we merely build what a customer asks for or stick rigidly to a list of requirements, we’re not only tapping into half of our engineers’ potential but also underutilising the creative and problem-solving abilities of our designers."
+             ]
+          },
+          {
+             "type": "h3",
+             "content": [
+                "Bringing it back to design"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "In order for designers to truly make a meaningful and comprehensive contribution, their involvement has to permeate beyond the realm of product development and cut across the entire strategic landscape of the organisation. Designers should not be pigeonholed into just the early stages of idea formation or refinements during agile sprints. Instead, their expertise and insights should be interwoven into all aspects of strategic planning and execution."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "The significant value of design becomes evident when we examine the findings of the ",
+                {
+                   "type": "a",
+                   "content": [
+                      "Design Management Institute’s 2015 Design Value Index"
+                   ],
+                   "attributes": {
+                      "href": "https://www.dmi.org/page/DesignValue/The-Value-of-Design-.html"
+                   }
+                },
+                ". Companies considered “design-centric”, meaning they integrate design practices throughout their operations, showed a staggering 211% return over the S&P 500. This underlines that good design practices can contribute directly to an organisation’s financial success."
+             ]
+          },
+          {
+             "type": "h3",
+             "content": [
+                "What drives an organisational shift?"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "Leadership carries a vital role in this context. They need to champion the far-reaching value of user-centric design and experimentation. However, championing this isn’t just about vocalising its value. It’s about ensuring the strategic decisions made by leadership consistently mirror this vision. It’s this coherence between words and actions that will transmit a strong message throughout the organisation, thereby instigating a real shift in the culture towards valuing design’s pivotal role."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "There seems to be a tendency for organisations to prioritise what will earn them money in the short term over what will assist the user in the long term. Just as in life, one must often forgo immediate pleasures for a better future, organisations should do the same."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "Investing in design and agile development will not pay off overnight as perfecting the product and ways of working will take time and iteration. For me, the question is this:"
+             ]
+          },
+          {
+             "type": "blockquote",
+             "content": [
+                "“Is your organisation prepared to admit they don’t know what will work and are they prepared to invest resources finding out what they don’t know?”"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "Because if not, I’d argue none of your designs will ever be as good as they could be."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "Just like users want to reduce cognitive load and shy away from wanting to learn new processes that are hard to understand and navigate, businesses do the same. This shift in thinking and value from revenue-driven decisions to customer and user value decision-making is a big learning curve for established organisations whose processes, ways of working, and mindset have solidified."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "So, as a designer, just like we slowly release design changes to users to not overwhelm them with change, we must also be patient enough to do the same within our organisation. This requires a level of strategic thinking from those within the company that see the value of user-centric product development, which obviously includes designers. If designers are unhappy with their organisation’s design maturity, they cannot pigeonhole themselves into the role of designer, but must have an organisational strategic vision of how they will change the perception of design within the organisation."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "Design in product development is about so much more than aesthetics. It is an intricate dance between science and art, informed by business goals and yet human-centric. It’s about understanding and addressing user needs in a way that creates meaningful experiences and real value for both the user and the business. Achieving this requires not just good design practices, but also a good product culture that values experimentation, iteration, and understanding. An organisation’s mindset is instrumental in fostering this culture. A shift towards prioritising user needs and seeing them as the real drivers of value, not just immediate revenue, is crucial. Good design without a good product culture is simply incomplete. By fostering a product culture that truly understands this, organisations can not only design better products but also create lasting value for their users and themselves."
+             ]
+          },
+          {
+             "type": "h4",
+             "content": [
+                "Further Reading and Resources:"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "Here are some resources that should provide some additional insights into the themes I’ve discussed in this article. I’ve found them very interesting and helpful for my own understanding product development and design thinking."
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "1.\tLinkedIn: ",
+                {
+                   "type": "a",
+                   "content": [
+                      "Tony Moura"
+                   ],
+                   "attributes": {
+                      "href": "https://www.linkedin.com/in/tmoura?challengeId=AQHvHEQX47ewnQAAAYjTR9qjyjiRFNych0lptt90JsfWSq9YCiN6iRjArRufFmpeLxYCynLrzSj0FKJ8QlR0HPwQpetV3bDe0w&submissionId=16291413-e309-6a17-36d8-ea52fe7c5766&challengeSource=AgG24x81CTw6LQAAAYjTSCVjzscEWp5m2jmYDuOa3NhvzRj_QLgtYWOI93TfNuw&challegeType=AgGWNapFeeaw4wAAAYjTSCVrbsUtVnTyWvxZytU1isl-vFYkjp8AXh8&memberId=AgF6CD-VF2ucmwAAAYjTSCVuCPLf01VbgwhHdRaYf2hYQ9E&recognizeDevice=AgHMXuWmDRcDswAAAYjTSCVx07j9lFwqEDyjHU9fzJpRmHeeSTxn"
+                   }
+                }
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "2.\tBooks:"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "•\t“Lean UX: Designing Great Products with Agile Teams” by Jeff Gothelf and Josh Seiden"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "•\t“INSPIRED: How to Create Tech Products Customers Love” by Marty Cagan"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "•\t“Continuous Discovery Habits: Discover Products that Create Customer Value and Business Value” by Teresa Torres"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "3.\tPDF:"
+             ]
+          },
+          {
+             "type": "p",
+             "content": [
+                "•\t“Product Discovery Recipes” by Jeff Patton. ",
+                {
+                   "type": "a",
+                   "content": [
+                      "Download here"
+                   ],
+                   "attributes": {
+                      "href": "https://www.linkedin.com/in/tmoura?challengeId=AQHvHEQX47ewnQAAAYjTR9qjyjiRFNych0lptt90JsfWSq9YCiN6iRjArRufFmpeLxYCynLrzSj0FKJ8QlR0HPwQpetV3bDe0w&submissionId=16291413-e309-6a17-36d8-ea52fe7c5766&challengeSource=AgG24x81CTw6LQAAAYjTSCVjzscEWp5m2jmYDuOa3NhvzRj_QLgtYWOI93TfNuw&challegeType=AgGWNapFeeaw4wAAAYjTSCVrbsUtVnTyWvxZytU1isl-vFYkjp8AXh8&memberId=AgF6CD-VF2ucmwAAAYjTSCVuCPLf01VbgwhHdRaYf2hYQ9E&recognizeDevice=AgHMXuWmDRcDswAAAYjTSCVx07j9lFwqEDyjHU9fzJpRmHeeSTxn"
+                   }
+                }
+             ]
+          },
+          {
+             "type": "img",
+             "attributes": {
+                "src": "https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=a6ea86792803",
+                "width": "1",
+                "height": "1"
+             }
+          },
+          {
+             "type": "hr"
+          },
+          {
+             "type": "p",
+             "content": [
+                {
+                   "type": "a",
+                   "content": [
+                      "Your design is only as good as your organisation’s ability to problem solve"
+                   ],
+                   "attributes": {
+                      "href": "https://uxdesign.cc/your-design-is-only-as-good-as-your-organisations-ability-to-problem-solve-a6ea86792803"
+                   }
+                },
+                " was originally published in ",
+                {
+                   "type": "a",
+                   "content": [
+                      "UX Collective"
+                   ],
+                   "attributes": {
+                      "href": "https://uxdesign.cc"
+                   }
+                },
+                " on Medium, where people are continuing the conversation by highlighting and responding to this story."
+             ]
+          }
+       ]
+    },
+    "enclosures": [],
+    "content_encoded": "<h4>Stifling innovation and wasting talent: the hidden consequences of organisational practices on design potential.</h4><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/512/1*sZMLstXvHytFnSFF9vWgbw@2x.jpeg\" /><figcaption>image generated using Dall•e 2 on nightcafe.studio</figcaption></figure><p>Design in product development is both a science and an art. It has to be scientific because business is a numbers game, but it must also be artistic because usability revolves around the human experience. Even though most people appreciate the benefits of artistic expression, it isn’t usually high on a business’s list of priorities. Designers ensure that the solutions we provide cater to the human beings that use the tools we build. However, businesses rarely recognise their true value because their benefit isn’t immediately felt.</p><p>The feedback from the success of a sales team, for example, is immediately obvious — but that’s not so for design.</p><h3>So what is good design?</h3><p>For me, good design is beneficial not just for the user, but also for the business. It’s easy to learn, helps achieve a goal beyond the tool itself, and evokes positive emotions within its interactions. Unfortunately, because good design creates a seamless experience, it often goes unnoticed.</p><p>Have you ever wondered why your partner is more likely to criticise you for not doing the dishes than to thank you when there are no dirty dishes?</p><p>As humans, we are wired to conserve energy – cognitive energy included. The effort we put into thinking and problem-solving is a drain on this resource, so it’s in our nature to gravitate towards solutions that are effortless and straightforward.</p><p>This intrinsic human tendency is a crucial consideration for designers. To design effectively, they need to deeply understand the desires and intended outcomes of those they are designing for, alongside the business goals.</p><p>They must answer the question,</p><blockquote>“How can we create a solution that not only assists users in achieving their tasks but does so in a way that keeps them engaged and returning to our product?”</blockquote><p>There is no crystal ball to provide these answers. Instead, it takes a process of continuous experimentation and iteration to refine the design and ensure it aligns with both user needs and business objectives. This is the essence of energy-efficient design – minimising cognitive load while maximising user satisfaction and business value.</p><p>But design does not exist in a vacuum. It takes an entire product team to develop a good solution that brings value to customers and users.</p><h3>So, what does a good product team look like?</h3><p>For me, product teams need to cultivate a culture that encourages experimentation, iteration, and challenging assumptions. Regularly talking to users to validate decisions, proactively addressing risks, and focusing on problem-solving and outcomes rather than ticking off a long list of predetermined requirements. Good product development hinges on knowing business goals, understanding users’ and customers’ needs, tackling their problems, rapidly assessing the impact of our solutions, and possessing the resilience to accept failures and the necessity to iterate towards value.</p><h4>Why is it important to work towards?</h4><p>If we accept <a href=\"https://www.svpg.com/the-inconvenient-truth-about-product/\">Marty Cagan’s two inconvenient truths</a> – that more than half of products/features are never used, and achieving business value requires multiple iterations – recognising that no product development methodology – be it waterfall or agile – guarantees that all time spent by a product team directly translates into business value is vital. Yet, a learning-oriented approach focused on rapid experimentation can turn seemingly ‘wasted’ time into valuable insights. Even if every endeavour doesn’t yield immediate business value, it offers learnings that refine our understanding of users and their needs. By adopting this playful, experimental, and iterative approach to product development, we embrace the fact that we don’t have all the answers from the start. Continuously striving for a deeper understanding of our users allows us to efficiently direct our efforts towards what truly works, thereby consistently aiming for business value.</p><p>If we merely build what a customer asks for or stick rigidly to a list of requirements, we’re not only tapping into half of our engineers’ potential but also underutilising the creative and problem-solving abilities of our designers.</p><h3>Bringing it back to design</h3><p>In order for designers to truly make a meaningful and comprehensive contribution, their involvement has to permeate beyond the realm of product development and cut across the entire strategic landscape of the organisation. Designers should not be pigeonholed into just the early stages of idea formation or refinements during agile sprints. Instead, their expertise and insights should be interwoven into all aspects of strategic planning and execution.</p><p>The significant value of design becomes evident when we examine the findings of the <a href=\"https://www.dmi.org/page/DesignValue/The-Value-of-Design-.html\">Design Management Institute’s 2015 Design Value Index</a>. Companies considered “design-centric”, meaning they integrate design practices throughout their operations, showed a staggering 211% return over the S&P 500. This underlines that good design practices can contribute directly to an organisation’s financial success.</p><h3>What drives an organisational shift?</h3><p>Leadership carries a vital role in this context. They need to champion the far-reaching value of user-centric design and experimentation. However, championing this isn’t just about vocalising its value. It’s about ensuring the strategic decisions made by leadership consistently mirror this vision. It’s this coherence between words and actions that will transmit a strong message throughout the organisation, thereby instigating a real shift in the culture towards valuing design’s pivotal role.</p><p>There seems to be a tendency for organisations to prioritise what will earn them money in the short term over what will assist the user in the long term. Just as in life, one must often forgo immediate pleasures for a better future, organisations should do the same.</p><p>Investing in design and agile development will not pay off overnight as perfecting the product and ways of working will take time and iteration. For me, the question is this:</p><blockquote>“Is your organisation prepared to admit they don’t know what will work and are they prepared to invest resources finding out what they don’t know?”</blockquote><p>Because if not, I’d argue none of your designs will ever be as good as they could be.</p><p>Just like users want to reduce cognitive load and shy away from wanting to learn new processes that are hard to understand and navigate, businesses do the same. This shift in thinking and value from revenue-driven decisions to customer and user value decision-making is a big learning curve for established organisations whose processes, ways of working, and mindset have solidified.</p><p>So, as a designer, just like we slowly release design changes to users to not overwhelm them with change, we must also be patient enough to do the same within our organisation. This requires a level of strategic thinking from those within the company that see the value of user-centric product development, which obviously includes designers. If designers are unhappy with their organisation’s design maturity, they cannot pigeonhole themselves into the role of designer, but must have an organisational strategic vision of how they will change the perception of design within the organisation.</p><p>Design in product development is about so much more than aesthetics. It is an intricate dance between science and art, informed by business goals and yet human-centric. It’s about understanding and addressing user needs in a way that creates meaningful experiences and real value for both the user and the business. Achieving this requires not just good design practices, but also a good product culture that values experimentation, iteration, and understanding. An organisation’s mindset is instrumental in fostering this culture. A shift towards prioritising user needs and seeing them as the real drivers of value, not just immediate revenue, is crucial. Good design without a good product culture is simply incomplete. By fostering a product culture that truly understands this, organisations can not only design better products but also create lasting value for their users and themselves.</p><h4>Further Reading and Resources:</h4><p>Here are some resources that should provide some additional insights into the themes I’ve discussed in this article. I’ve found them very interesting and helpful for my own understanding product development and design thinking.</p><p>1.\tLinkedIn: <a href=\"https://www.linkedin.com/in/tmoura?challengeId=AQHvHEQX47ewnQAAAYjTR9qjyjiRFNych0lptt90JsfWSq9YCiN6iRjArRufFmpeLxYCynLrzSj0FKJ8QlR0HPwQpetV3bDe0w&submissionId=16291413-e309-6a17-36d8-ea52fe7c5766&challengeSource=AgG24x81CTw6LQAAAYjTSCVjzscEWp5m2jmYDuOa3NhvzRj_QLgtYWOI93TfNuw&challegeType=AgGWNapFeeaw4wAAAYjTSCVrbsUtVnTyWvxZytU1isl-vFYkjp8AXh8&memberId=AgF6CD-VF2ucmwAAAYjTSCVuCPLf01VbgwhHdRaYf2hYQ9E&recognizeDevice=AgHMXuWmDRcDswAAAYjTSCVx07j9lFwqEDyjHU9fzJpRmHeeSTxn\">Tony Moura</a></p><p>2.\tBooks:</p><p>•\t“Lean UX: Designing Great Products with Agile Teams” by Jeff Gothelf and Josh Seiden</p><p>•\t“INSPIRED: How to Create Tech Products Customers Love” by Marty Cagan</p><p>•\t“Continuous Discovery Habits: Discover Products that Create Customer Value and Business Value” by Teresa Torres</p><p>3.\tPDF:</p><p>•\t“Product Discovery Recipes” by Jeff Patton. <a href=\"https://www.linkedin.com/in/tmoura?challengeId=AQHvHEQX47ewnQAAAYjTR9qjyjiRFNych0lptt90JsfWSq9YCiN6iRjArRufFmpeLxYCynLrzSj0FKJ8QlR0HPwQpetV3bDe0w&submissionId=16291413-e309-6a17-36d8-ea52fe7c5766&challengeSource=AgG24x81CTw6LQAAAYjTSCVjzscEWp5m2jmYDuOa3NhvzRj_QLgtYWOI93TfNuw&challegeType=AgGWNapFeeaw4wAAAYjTSCVrbsUtVnTyWvxZytU1isl-vFYkjp8AXh8&memberId=AgF6CD-VF2ucmwAAAYjTSCVuCPLf01VbgwhHdRaYf2hYQ9E&recognizeDevice=AgHMXuWmDRcDswAAAYjTSCVx07j9lFwqEDyjHU9fzJpRmHeeSTxn\">Download here</a></p><img src=\"https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=a6ea86792803\" width=\"1\" height=\"1\" alt=\"\"><hr><p><a href=\"https://uxdesign.cc/your-design-is-only-as-good-as-your-organisations-ability-to-problem-solve-a6ea86792803\">Your design is only as good as your organisation’s ability to problem solve</a> was originally published in <a href=\"https://uxdesign.cc\">UX Collective</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>",
+    "media": {}
+ }

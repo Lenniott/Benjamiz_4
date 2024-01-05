@@ -4,7 +4,7 @@ interface Props {
 
 export function H4({ children }: Props) {
     return (
-        <h4 className="scroll-m-20 text-sm font-sans-serif font-light tracking-tight lg:text-base">
+        <h4 className="scroll-m-20 text-lg font-heading font-normal tracking-tight lg:text-xl">
             {children}
         </h4>
     )

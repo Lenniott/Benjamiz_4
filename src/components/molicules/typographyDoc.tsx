@@ -1,4 +1,4 @@
-import { H1, H2, H3, H4, Paragraph, LargeText, SmallText, LeadText, MutedText, ListText, Quote, Link } from "./typography";
+import { H1, H2, H3, H4, Paragraph, LargeText, SmallText, LeadText, MutedText, ListText, Quote, Link } from "../typography";
 export function Typography() {
 
 
@@ -22,7 +22,7 @@ export function Typography() {
         <Paragraph><span>
           Click here to <Link to="https://medium.com/@benjamin.mizrany">read my medium article.</Link></span></Paragraph>
         <H4>H4: Influencers</H4>
-        <ListText items={["ListText:","Marty Cagan", "Teresa Torres", "James Coplien"]} />
+        <ListText isOrdered={false} items={["ListText:","Marty Cagan", "Teresa Torres", "James Coplien"]} />
       </div>
   )
 }

@@ -1,7 +1,7 @@
 
       import React from 'react';
       import { useState, useEffect } from 'react';
-      import { H2 } from '../components/typography/';
+      import { H2 } from '../../components/typography/';
 
       type ColorSquareProps = {
         name: string;

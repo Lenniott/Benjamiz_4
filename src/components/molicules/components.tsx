@@ -1,4 +1,4 @@
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import {
     Sheet,
     SheetTrigger,
@@ -7,8 +7,8 @@ import {
     SheetFooter,
     SheetTitle,
     SheetDescription,
-  } from "./ui/sheet";
-import { H3, Paragraph} from "./typography";
+  } from "../ui/sheet";
+import { H3, Paragraph} from "../typography";
 import { ChevronRight } from "lucide-react"
 
 export function Components(){

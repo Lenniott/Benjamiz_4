@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar';
 import { motion } from 'framer-motion';
-import { H1, H2 } from '../components/typography';
+import { H1 } from '../components/typography';
 export function HomePage() {
 
     return (
@@ -19,7 +19,7 @@ export function HomePage() {
 
                 <div className='flex flex-col gap-2 sm:gap-4 justify-center'>
                     <H1>Think visually,<br/>validate regularly,<br/>pivot when necessary</H1>
-                    <H2>Product Designer, Benjamin Mizrany</H2>
+                    <p className="scroll-m-20 font-heading text-lg font-light text-muted-foreground tracking-tight first:mt-0 sm:text-xl" >Product Designer, Benjamin Mizrany</p>
                 </div>
             </motion.div>
         </div>

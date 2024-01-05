@@ -1,13 +1,32 @@
+//./src/components/typography/list.tsx
+
+import React from "react";
+
 interface ListTextProps {
-  items: string[];
+  children: React.ReactNode;
+  isOrdered?: boolean;
 }
 
-export function ListText({ items }: ListTextProps) {
+const OrderedList: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <ul className="my-6 ml-6 font-body font-light list-disc [&>li]:mt-2 text-sm lg:text-base">
-      {items.map((item, index) => (
-        <li key={index}>{item}</li>
-      ))}
+    <ol className="list-decimal my-6 ml-6 text-sm lg:text-base font-light">
+      {children}
+    </ol>
+  );
+};
+
+const UnorderList: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  return (
+    <ul className="my-6 ml-6 text-sm lg:text-base font-light">
+      {children}
     </ul>
+  );
+};
+
+export function ListText({ children, isOrdered}: ListTextProps) {
+  return (
+    <>
+      {isOrdered ? <OrderedList>{children}</OrderedList> : <UnorderList>{children}</UnorderList>}
+    </>
   );
 }
