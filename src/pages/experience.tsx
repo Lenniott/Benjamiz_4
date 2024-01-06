@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import MediumRenderer from '../components/features/MediumRenderer';
 import TestMediumJSON from '../../src/assets/data/Article_1.json'//'../../src/assets/data/test.json'
-import { H1 } from '../components/typography';
+
 import { PageHeader } from '../components/molicules/BackPage';
 export function ExperiencePage() {
 
