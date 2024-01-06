@@ -103,6 +103,10 @@ html {
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 
+.sticky-header {
+  @apply fixed top-0 z-50 py-2 px-4 max-w-3xl mx-auto w-screen flex items-center;
+  background: linear-gradient(to bottom, black, transparent);
+}
 
 
 

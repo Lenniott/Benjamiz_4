@@ -20,7 +20,7 @@ export function PageHeader ({ title,backButton }:PageComponentProps){
 
 
   return (
-    <div className="flex flex-col items-start justify-top h-16 -translate-y-[20px] ">
+    <div className="flex flex-col items-start justify-top h-16 -translate-y-[20px] mb-4 gap-2">
       <H1 addSlash={true}>{title}</H1>
 
       {backButton &&

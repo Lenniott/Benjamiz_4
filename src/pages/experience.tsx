@@ -7,7 +7,7 @@ import { PageHeader } from '../components/molicules/BackPage';
 export function ExperiencePage() {
 
     return (
-        <div className='grid grid-cols-1 gap-4'>
+        <div className='grid grid-cols-1 gap-4 mt-4'>
             <PageHeader {...{title: 'Article'}} backButton={true}/>
             <motion.div className='flex flex-col sm:flex-row gap-4 sm:gap-8 border border-card-border rounded-md p-4 sm:p-8 bg-card'
                                 initial={{ x: -200, opacity: 0 }}

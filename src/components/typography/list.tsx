@@ -9,7 +9,7 @@ interface ListTextProps {
 
 const OrderedList: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <ol className="list-decimal my-6 ml-6 text-sm lg:text-base font-light">
+    <ol className="list-decimal my-6 ml-6 text-sm sm:text-base font-light">
       {children}
     </ol>
   );
@@ -17,7 +17,7 @@ const OrderedList: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
 const UnorderList: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <ul className="my-6 ml-6 text-sm lg:text-base font-light">
+    <ul className="my-6 ml-6 text-sm sm:text-base font-light">
       {children}
     </ul>
   );

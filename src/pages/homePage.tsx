@@ -31,15 +31,20 @@ export function HomePage() {
                 </div>
             </Container >
             <div className='flex flex-col sm:flex-row items-center gap-4'> 
-                <Container className="h-[100%] items-center" containerPosition={2}>
-                        <div className='flex flex-col justify-center pl-2 gap-4 mr-4'>
+
+                
+                <Container variant='unstyled' className="h-[100%] items-center" containerPosition={1} >
+                    <Card className='px-8 py-4 h-[100%] grid grid-cols-1 sm:grid-cols-2 '>
+                    <div className='flex flex-col justify-start sm:justify-center h-full pt-4 sm:pt-0 pl-0 sm:pl-2 gap-2 sm:gap-4 mb-6 sm:mb-0 mr-0 sm:mr-4'>
                             <LeadText>I believe the path we take matters as much as where we are going.</LeadText>
                             <MutedText>So I call for alignment between the team and regular contact with users.</MutedText>
-                        </div> 
-                </Container>
-                <Container variant='unstyled' className="h-[100%] items-center" containerPosition={1} >
-                    <Card className='px-8 py-4 h-[100%] grid items-baseline'>
-                    <CardHeader className='flex flex-row items-center justify-start m-0 p-0  '><H3 addSlash={true}>Article</H3></CardHeader>
+                    </div> 
+
+                    <div>
+                    <CardHeader className='flex flex-row items-center justify-start m-0 p-0  '>
+                        <H3 addSlash={true}>Article</H3>
+                    </CardHeader>
+                    
                     <CardContent className="flex gap-4 p-0 items-center">
                         
                         <img className="rounded-sm h-24  w-24" src="https://cdn-images-1.medium.com/max/512/1*sZMLstXvHytFnSFF9vWgbw@2x.jpeg" alt="man stand alone on steps as crowd walk up a hill"/>
@@ -54,6 +59,8 @@ export function HomePage() {
                             
                         </Button>
                     </CardFooter>
+                    </div>
+
 
                     </Card>
 
