@@ -9,7 +9,7 @@ interface ContainerProps {
 }
 
 export function Container({ children, containerPosition, containerClassName, direction = 'x' }: ContainerProps) {
-  const defaultClassName = 'flex flex-col sm:flex-row gap-4 sm:gap-8 border border-card-border rounded-md p-4 sm:p-8 bg-card';
+  const defaultClassName = 'flex flex-col sm:flex-row gap-4 sm:gap-8 border border-card-border rounded-md p-2 sm:p-4 bg-card';
   const className = containerClassName || defaultClassName;
 
   // Determine the animation direction based on the container position

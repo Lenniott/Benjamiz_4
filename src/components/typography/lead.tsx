@@ -4,7 +4,7 @@ interface Props {
 
 export function LeadText({ children }: Props) {
     return (
-    <p className="text-xl lg:text-2xl font-san-serif text-muted-foreground">
+    <p className="text-gl sm:text-xl font-san-serif text-foreground">
         {children}
     </p>
     )
