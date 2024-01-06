@@ -3,7 +3,7 @@ import { H1, LeadText, MutedText } from '../components/typography';
 import { Container } from '../components/container';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/button';
-
+import heroImage from '../assets/images/hero.webp';
 export function HomePage() {
     const navigate = useNavigate();
 
@@ -14,7 +14,7 @@ export function HomePage() {
             <Container containerPosition={0}>
             <div className='flex'>
                     <Avatar className="relative flex w-24 h-24 sm:h-40 sm:w-40 shrink-0 overflow-hidden rounded-full" >
-                        <AvatarImage className='aspect-square h-full w-full grayscale' src="src/assets/images/hero.webp" alt="Avatar"/>
+                        <AvatarImage className='aspect-square h-full w-full grayscale' src={heroImage} alt="Avatar"/>
                         <AvatarFallback className="flex text-2xl h-full w-full items-center justify-center rounded-full bg-accent text-accent-foreground">BM</AvatarFallback>
                     </Avatar>
                 </div>
