@@ -1,8 +1,14 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar';
-import { H1, LeadText, MutedText } from '../components/typography';
+import { H1, H3, H4, LeadText, MutedText } from '../components/typography';
 import { Container } from '../components/container';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/button';
+import {ArrowRight} from 'lucide-react'
+import {   Card,
+    CardContent,
+    CardFooter,
+    CardHeader,
+    CardTitle, } from '../components/ui/card';
 import heroImage from '../assets/images/hero.webp';
 export function HomePage() {
     const navigate = useNavigate();
@@ -24,22 +30,38 @@ export function HomePage() {
                     <p className="scroll-m-20 font-heading text-md font-light text-muted-foreground tracking-tight first:mt-0 sm:text-lg" >Product Designer, Benjamin Mizrany</p>
                 </div>
             </Container >
-            <Container containerPosition={1}>
-                <div className='flex items-center gap-4'>
-                    <div className='flex flex-col justify-center w-72 pl-2 gap-4 mr-auto'>
-                        <LeadText>I believe the path we take matters as much as where we are going.</LeadText>
-                        <MutedText>So I call for alignment between the team and regular contact with users.</MutedText>
-                    </div> 
+            <div className='flex flex-col sm:flex-row items-center gap-4'> 
+                <Container className="h-[100%] items-center" containerPosition={2}>
+                        <div className='flex flex-col justify-center pl-2 gap-4 mr-4'>
+                            <LeadText>I believe the path we take matters as much as where we are going.</LeadText>
+                            <MutedText>So I call for alignment between the team and regular contact with users.</MutedText>
+                        </div> 
+                </Container>
+                <Container variant='unstyled' className="h-[100%] items-center" containerPosition={1} >
+                    <Card className='px-8 py-4 h-[100%] grid items-baseline'>
+                    <CardHeader className='flex flex-row items-center justify-start m-0 p-0  '><H3 addSlash={true}>Article</H3></CardHeader>
+                    <CardContent className="flex gap-4 p-0 items-center">
+                        
+                        <img className="rounded-sm h-24  w-24" src="https://cdn-images-1.medium.com/max/512/1*sZMLstXvHytFnSFF9vWgbw@2x.jpeg" alt="man stand alone on steps as crowd walk up a hill"/>
+                        <CardTitle ><H4>Your design is only as good as your organisation’s ability to problem solve</H4></CardTitle>
+                    </CardContent>
+                    
+                    <CardFooter className='flex justify-end m-0 p-0 flex-grow'>
 
-                    <Button variant='link' onClick={() => navigate('/experience')} className='group flex flex-col gap-1 items-center w-[35%] shadow-none h-auto p-2'>
-                        <img className=" shrink-0 overflow-hidden rounded-md group-hover:shadow-md group-hover:scale-[1.02]  transition-all" src="https://cdn-images-1.medium.com/max/512/1*sZMLstXvHytFnSFF9vWgbw@2x.jpeg" alt="man stand alone on steps as crowd walk up a hill"/>
-                        read more...
-                    </Button>
+                        <Button variant='link' onClick={() => navigate('/experience')} className='group flex flex-grow gap-1 items-center w-[40%] shadow-none h-auto translate-x-4 justify-end'>
+                        Read more
+                            <ArrowRight className='text-foreground w-4 h-4 group-hover:translate-x-[10px] translate-y-[2px] transition-transform sm:w-6 sm:h-6'/>
+                            
+                        </Button>
+                    </CardFooter>
 
+                    </Card>
+
+                </Container>
 
                 </div>
 
-            </Container>
+
         </div>
     );
 };
