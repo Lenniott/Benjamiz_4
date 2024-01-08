@@ -34,32 +34,33 @@ export const ActionCard = ({leadText, mutedText, linkTitle, img, alt, typeOfLink
     const navigate = useNavigate();
     // Determine order based on actionPosition
     const isEven = actionPosition % 2 === 0;
-    const podAClass = `flex flex-col justify-start sm:justify-center h-full pt-4 sm:pt-0 pl-0 sm:pl-2 gap-2 sm:gap-4 mb-6 sm:mb-0 mr-0 sm:mr-4 ${isEven ? 'order-last' : 'order-first'}`;
-    const podBClass = isEven ? 'mr-0 sm:mr-16 -order-last' : 'ml-0 sm:ml-16 -order-first';
+    const podAClass = `flex flex-col justify-start sm:justify-center h-full py-4 sm:pt-0 gap-2 sm:gap-4  sm:mb-0  ${isEven ? 'order-last sm:pl-8 sm:border-l ' : ' sm:pr-8 sm:border-r  order-first '} sm:border-card-border`;
+    const podBClass = `h-fit ${isEven ? ' -order-last sm:pr-8 ' : ' sm:pl-8 -order-first'}`;
   
     return (
       <div>
         <Container variant='unstyled' className="h-[100%] items-center" containerPosition={actionPosition}>
-          <Card className='px-8 py-4 h-[100%] grid grid-cols-1 sm:grid-cols-2 gap-8'>
+          <Card className='px-8 py-4 pr-12 h-[100%] grid grid-cols-1 sm:grid-cols-2 '>
             <div id="bento-pod-A" className={podAClass}>
                 <LeadText>{leadText}</LeadText>
                 <MutedText>{mutedText}</MutedText>
             </div>
             <div id="bento-pod-B" className={podBClass}>
-                <div className='flex flex-row items-center justify-start m-0 p-0  '>
+                <div className='flex flex-row items-center justify-start m-0 p-0 pt-4 h-[24px] sm:h-auto'>
                     <H3 addSlash={true}>{typeOfLink}</H3>
                 </div>
-                <CardContent className="flex gap-4 p-0 items-center py-4">
+                <CardContent className="flex gap-4 p-0 items-top py-4">
                     <img className="rounded-sm h-24  w-24" src={img} alt={alt}/>
-                    <CardTitle ><H4>{linkTitle}</H4></CardTitle>
-                </CardContent>
-                <CardFooter className='flex justify-end m-0 p-0 flex-grow'>
-                    <Button variant='link' onClick={() => navigate(to)} className='pl-0 group flex flex-grow gap-1 items-center w-[40%] shadow-none h-auto justify-start'>
+                    <CardTitle className='grid '>
+                        <H4>{linkTitle}</H4>
+
+                        <Button variant='link' onClick={() => navigate(to)} className='pl-0 group flex  gap-1 items-center  shadow-none h-auto justify-start '>
                         Read more
                         <ArrowRight className='text-foreground w-4 h-4 group-hover:translate-x-[10px] translate-y-[2px] transition-transform sm:w-6 sm:h-6'/>
                             
                     </Button>
-                </CardFooter>
+                    </CardTitle>
+                </CardContent>
             </div>
           </Card>
         </Container>

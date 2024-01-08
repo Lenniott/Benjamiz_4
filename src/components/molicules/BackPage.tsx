@@ -3,13 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import {ArrowLeft} from 'lucide-react'
 import { H1 } from '../typography';
 import { Button } from '../ui/button';
+import { Link } from 'react-router-dom';
 
 interface PageComponentProps {
   title: string;
   backButton?:boolean;
+  to?:string;
 }
 
-export function PageHeader ({ title,backButton }:PageComponentProps){
+export function PageHeader ({ title,backButton,to }:PageComponentProps){
   const navigate = useNavigate();
 
   const goBack = () => {
@@ -20,8 +22,15 @@ export function PageHeader ({ title,backButton }:PageComponentProps){
 
 
   return (
-    <div className="flex flex-col items-start justify-top h-16 -translate-y-[20px] mb-4 gap-2">
-      <H1 addSlash={true}>{title}</H1>
+    <div className={`flex flex-col items-start justify-top ${backButton?" h-16 ] my-4":"h-2  mb-4"} -translate-y-[20px] gap-2`}>
+      {to ? (
+        <Link to={to}>
+          <H1 addSlash={true}>{title}</H1>
+        </Link>
+      ) : (
+        <H1 addSlash={true}>{title}</H1>
+      )}
+      
 
       {backButton &&
       <Button

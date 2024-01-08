@@ -5,7 +5,7 @@ import { DesignSystem } from "./pages/designSystem";
 import { NavBar } from "./components/molicules/navBar";
 import {HomePage}  from "./pages/homePage";
 import { ExperiencePage } from "./pages/experience";
-
+import { YourDesignArticle } from "./pages/articles";
 function App() {
 
 
@@ -25,6 +25,7 @@ function App() {
           <Route path="/about" element={"About"} />
           <Route path="/works" element={"works"} />
           <Route path="/designSystem" element={<DesignSystem/>} />
+          <Route path="/works/article/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve" element={<YourDesignArticle />} />
       </Routes>
     </div>
 
