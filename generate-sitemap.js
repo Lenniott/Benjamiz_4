@@ -7,7 +7,6 @@ var paths = [
     '/about',
     '/experience',
     '/works',
-    '/works/articles',
     '/works/article/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve',
     // Add more paths here
 ];

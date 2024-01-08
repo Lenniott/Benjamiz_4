@@ -8,7 +8,6 @@ import { Button } from '../ui/button';
 import {ArrowRight} from 'lucide-react'
 import {   Card,
     CardContent,
-    CardFooter,
     CardTitle,
  } from '../ui/card';
 
