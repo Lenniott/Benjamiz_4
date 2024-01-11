@@ -1,13 +1,9 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar';
 import { Container, ContainerGrid, ContainerGridColumn } from '../components/container';
 import heroImage from '../assets/images/hero.webp';
-import { H3, H4, LeadText, MutedText } from '../components/typography';
-import { Button } from '../components/ui/button';
-import { useNavigate } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { LeadText, MutedText } from '../components/typography';
 import { Container_NavToPage } from '../components/molicules/Container_NavToPage';
 export function HomePage() {
-    const navigate = useNavigate();
 
 
     return (
