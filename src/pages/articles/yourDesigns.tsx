@@ -9,7 +9,7 @@ export function YourDesignArticle() {
     return (
         <div className='grid grid-cols-1 gap-4'>
             <PageHeader {...{title: 'Article'}} backButton={false}/>
-            <Container containerPosition={0}>
+            <Container>
                     <MediumRenderer articleJson={article}/>
             </Container>
         </div>

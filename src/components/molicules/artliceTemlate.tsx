@@ -8,7 +8,7 @@ export function ExperiencePage() {
     return (
         <div className='grid grid-cols-1 gap-4 mt-4'>
             <PageHeader {...{title: 'Article'}} backButton={true}/>
-            <Container containerPosition={0}>
+            <Container >
                     <MediumRenderer articleJson={article}/>
             </Container>
         </div>

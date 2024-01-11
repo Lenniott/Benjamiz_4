@@ -17,7 +17,9 @@ module.exports = {
       },
     },
     extend: {
-
+      screens: {
+        xs: "720px",
+      },
       fontFamily: {
         'serif': ['Hepta Slab','serif'],
         'sans-serif': ['Fira Sans', 'sans-serif'],
