@@ -23,21 +23,21 @@ export function HomePage() {
                 </div>
             </Container >
 
-            <Container variant='linear'>
+            <Container variant='linear' delay={0.2}>
                 <div className='flex flex-col justify-start gap-2'>
-                    <LeadText className=''>I believe how we problem-solve is the key to solving the problems. </LeadText>
-                    <MutedText className='self-stretch'>So I design clean and intuitive software interactions.</MutedText>
+                    <LeadText className=''>I believe how we problem-solve is the key to solving the problems.</LeadText>
+                    <MutedText className='self-stretch'>So I call for alignment between the team and regular contact with users.</MutedText>
                 </div>           
             </Container>
             <div className='flex gap-4'>
-            <Container variant='solid'>
+            <Container variant='solid' className='z-10' delay={0.4}>
                 <ContainerGrid>
                     <ContainerGridColumn>
                     <Container_NavToPage link="/works/article/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve" header="Your design is only as good as your organisation’s ability to problem solve" image='https://cdn-images-1.medium.com/max/512/1*sZMLstXvHytFnSFF9vWgbw@2x.jpeg' alt='man stand alone on steps as crowd walk up a hill' />
                     </ContainerGridColumn>
                 </ContainerGrid>
             </Container>    
-            <Container variant='linear'>
+            <Container variant='linear' delay={0.6}>
                 <ContainerGrid>
                     <ContainerGridColumn>
                     <Container_NavToPage link="/works/article/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve" header="Your design is only as good as your organisation’s ability to problem solve" image='https://cdn-images-1.medium.com/max/512/1*sZMLstXvHytFnSFF9vWgbw@2x.jpeg' alt='man stand alone on steps as crowd walk up a hill' />

@@ -7,12 +7,13 @@ interface ContainerProps {
   animateFromEnd?: boolean;
   variant?: 'linear' | 'solid' | 'clear';
   horizontal?: boolean
+  delay?: number
 }
 
 export function Container({ 
   children, 
   className = '', // Provide a default value
-  animateFromEnd = true, 
+  delay = 0, animateFromEnd = false, 
   variant = 'solid',
   horizontal = true
 }: ContainerProps) {
@@ -29,14 +30,14 @@ export function Container({
 
   const newClassName = `${variants[variant]} ${variants.global} ${className}`.trim();
 
-  const direction = animateFromEnd ? -200 : 200;
+  const direction = animateFromEnd ? 300 : -300;
 
   return (
     <motion.div 
       className={newClassName}
       initial={{ x: direction, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{delay: delay, duration: 0.5 }}
     >
       {children}
     </motion.div>
