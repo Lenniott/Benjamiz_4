@@ -1,7 +1,6 @@
 
       import React from 'react';
       import { useState, useEffect } from 'react';
-      import { H2 } from '../../components/typography/';
 
       type ColorSquareProps = {
         name: string;
@@ -48,10 +47,9 @@ export const ColorPalette: React.FC = () => {
   
       
       return (
-        <div className="flex flex-col py-8 ">
+        <div className="flex flex-col pb-8 ">
             <div className="color-grid grid h-fit">
                 <div>
-                    <H2>Colours</H2>
                     <div className="color-group pt-2 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {colors.map((colorObj, index) => (
                     <ColorSquare

@@ -19,7 +19,7 @@ export function Container({
 }: ContainerProps) {
 
 
-  const isHorizontal: string = horizontal ? 'flex-col xs:flex-row' : 'flex-row';
+  const isHorizontal: string = horizontal ? 'flex-col sm:flex-row' : 'flex-col';
   // Define variants inside the function to access `col`
   const variants = {
     global: `flex ${isHorizontal} p-8 gap-8 items-right justify-start `, // Use template literal for dynamic col value

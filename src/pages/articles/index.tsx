@@ -1,3 +1,3 @@
 import {YourDesignArticle} from './yourDesigns';
-
-export {YourDesignArticle}
+import {BicycleExercise} from './bicycleExercise';
+export {YourDesignArticle,BicycleExercise}

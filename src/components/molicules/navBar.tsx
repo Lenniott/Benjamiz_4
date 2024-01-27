@@ -70,7 +70,7 @@ export function NavBar() {
     return (
         <>
         <div className="fixed top-0 z-50 py-2 px-4 max-w-3xl mx-auto w-screen flex items-center" >
-        <div className="flex ml-3 flex-grow">
+        <div className="flex flex-grow">
             <Logo/>
         </div>
 

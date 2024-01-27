@@ -4,13 +4,14 @@ interface Props {
   addSlash?: boolean;
   alignMobile?: string;
   alignDesktop?: string;
+  className?: string;
 }
 
-export function H1({ children,color,addSlash, alignDesktop,alignMobile }: Props) {
+export function H1({ className='',children,color,addSlash, alignDesktop,alignMobile }: Props) {
   return (
-    <div className="flex scroll-m-20 leading-10 tracking-wide text-2xl font-serif font-medium sm:text-3xl my-2">
+    <div className={`${className} flex text-4xl font-serif font-medium sm:text-5xl mb-4`}>
         {addSlash? <span>{"/"}</span> : ''}
-    <h1 className={`scroll-m-20 leading-10 tracking-wide text-2xl text-${alignMobile? alignMobile : 'left'} sm:text-${alignDesktop? alignDesktop : 'left'} font-serif text-${color? color : 'accent'} font-medium sm:text-3xl`}>
+    <h1 className={` text-${alignMobile? alignMobile : 'left'} sm:text-${alignDesktop? alignDesktop : 'left'} text-${color? color : 'accent'}`}>
       {children}
     </h1>
     </div>

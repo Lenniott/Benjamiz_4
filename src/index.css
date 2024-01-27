@@ -110,3 +110,35 @@ html {
 
 
 
+
+.h1 {
+  @apply flex text-4xl sm:text-5xl self-stretch font-medium;
+}
+
+.h2 {
+  @apply flex text-3xl sm:text-4xl self-stretch font-medium;
+}
+
+.h3 {
+  @apply flex text-2xl sm:text-3xl self-stretch font-medium;
+}
+
+.h4 {
+  @apply flex text-xl sm:text-2xl self-stretch font-medium;
+}
+
+.h5 {
+  @apply flex text-lg sm:text-xl self-stretch font-medium;
+}
+
+.h6 {
+  @apply flex text-base sm:text-lg self-stretch font-medium;
+}
+
+.p {
+  @apply flex text-sm sm:text-base font-light self-stretch;
+}
+
+.smallText {
+  @apply flex text-xs sm:text-sm font-light self-stretch align-middle;
+}
