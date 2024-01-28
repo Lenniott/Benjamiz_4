@@ -93,29 +93,40 @@
              ]
           },
           {
-             "type": "figure",
+             "type": "div",
+             "attributes": {
+               "class": "flex items-center gap-4 mt-4"
+            },
              "content": [
-                {
-                   "type": "img",
-                   "attributes": {
-                      "alt": "A creative team in a brainstorming session around a table covered with papers, sticky notes, and design materials. A man stands presenting a bicycle image on a whiteboard to his attentive colleagues.",
-                      "src": "https://cdn-images-1.medium.com/max/1024/1*y7RLAQlEKOBO9Q5MeEd-kA.jpeg"
-                   }
-                }
-             ]
-          },
-          {
-             "type": "h4",
-             "content": [
-                "Purpose of the Exercise:"
-             ]
-          },
-          {
-             "type": "p",
-             "content": [
-                "This activity is designed to highlight the importance of alignment and detailed understanding within a team working on a product. It emphasises the need for clear, specific communication and understanding of a common goal by showing that while everyone may agree on a broad concept, their interpretations of the details can vary significantly."
-             ]
-          },
+               {
+                  "type": "div",
+                  "attributes": {
+                     "class": "flex flex-col gap-4"
+                     },
+                  "content": [
+                     {
+                        "type": "h4",
+                        "content": [
+                           "Purpose of the Exercise:"
+                        ]
+                     },
+                     {
+                        "type": "p",
+                        "content": [
+                           "This activity is designed to highlight the importance of alignment and detailed understanding within a team working on a product. It emphasises the need for clear, specific communication and understanding of a common goal by showing that while everyone may agree on a broad concept, their interpretations of the details can vary significantly."
+                        ]
+                     }
+                  ]
+               },
+               {
+                  "type": "img",
+                  "attributes": {
+                     "alt": "A creative team in a brainstorming session around a table covered with papers, sticky notes, and design materials. A man stands presenting a bicycle image on a whiteboard to his attentive colleagues.",
+                     "src": "https://cdn-images-1.medium.com/max/1024/1*y7RLAQlEKOBO9Q5MeEd-kA.jpeg"
+                  }
+               }
+            ]
+         },
           {
              "type": "p",
              "content": [
@@ -156,10 +167,15 @@
              ]
           },
           {
-             "type": "p",
+            "type": "ul",
              "content": [
-                "Approximately 15–20 minutes."
-             ]
+                {
+                   "type": "li",
+                   "content": [
+                     "Approximately 15–20 minutes."
+                   ]
+                }
+               ]
           },
           {
              "type": "h4",
@@ -293,30 +309,53 @@
              "type": "p",
              "content": [
                 {
-                   "type": "em",
+                   "type": "figcaption",
                    "content": [
                       "Note: Ensure that the team does not become aware of the real purpose of the exercise until the debrief, to maintain the authenticity of their responses."
                    ]
                 }
              ]
           },
+
           {
-             "type": "h4",
-             "content": [
-                "Example Script:"
-             ]
-          },
-          {
-             "type": "p",
-             "content": [
-                "“",
-                {
-                   "type": "em",
-                   "content": [
-                      "Hello everyone, let’s gather for a quick team exercise. Today, we’re going to do a simple but revealing activity. I want each of you to imagine a Bicycle. Think about its appearance, its function, how and when it’s used, its user, and any distinctive features. Now, write a description of this bike. Be as detailed as possible — imagine you’re describing it so someone could pick it out from a large bike rack. You have 5 minutes for this."
-                   ]
-                }
-             ]
+            "type": "div",
+            "attributes": {
+               "class": "flex items-center gap-4 mt-4"
+            },
+            "content": [
+               {
+                  "type": "div",
+                  "attributes": {
+                     "class": "flex flex-col items-center gap-2"
+                  },
+                  "content": [
+                     {
+                        "type": "h4",
+                        "content": [
+                           "Example Script:"
+                        ]
+                     },
+                     {
+                     "type": "p",
+                     "content": [
+                           {
+                              "type": "em",
+                              "content": [
+                                 "\"Hello everyone, let’s gather for a quick team exercise. Today, we’re going to do a simple but revealing activity. I want each of you to imagine a Bicycle. Think about its appearance, its function, how and when it’s used, its user, and any distinctive features. Now, write a description of this bike. Be as detailed as possible — imagine you’re describing it so someone could pick it out from a large bike rack. You have 5 minutes for this.\""
+                              ]
+                           }
+                        ]
+                     }
+                  ]
+               },
+               {
+                  "type": "img",
+                  "attributes": {
+                     "alt": "A focused design team engrossed in sketching, with thought bubbles above them containing various bicycle designs. The group is intently working on tablets and papers, collaborating on a project.",
+                     "src": "https://cdn-images-1.medium.com/max/1024/1*-Qqd2xUoiNALViWZsvxzHQ.jpeg"
+                  }
+               }
+            ]
           },
           {
              "type": "p",
@@ -325,39 +364,29 @@
              ]
           },
           {
-             "type": "figure",
+            "type": "p",
+            "content": [{
+            "type": "em",
+            "content": [
+               "\"Let’s hear your descriptions.\""
+            ]
+         }]
+         },
+         {
+            "type": "p",
+            "content": [
+               "[Proceed with sharing]"
+            ]
+         },
+          {
+             "type": "p",
              "content": [
                 {
-                   "type": "img",
-                   "attributes": {
-                      "alt": "A focused design team engrossed in sketching, with thought bubbles above them containing various bicycle designs. The group is intently working on tablets and papers, collaborating on a project.",
-                      "src": "https://cdn-images-1.medium.com/max/1024/1*-Qqd2xUoiNALViWZsvxzHQ.jpeg"
-                   }
+                   "type": "em",
+                   "content": [
+                     "\"Thank you for your participation. The aim of this exercise was to demonstrate that even with a common understanding of a concept — like a bicycle — each of us has a unique interpretation. In our work, when we talk about our product or project goals, it’s crucial to be as specific as possible to ensure we are all aligned and working towards the same detailed vision. This is why constant checking for understanding and alignment is essential in our team.\""
+                   ]
                 }
-             ]
-          },
-          {
-             "type": "p",
-             "content": [
-                {
-                   "type": "em",
-                   "content": [
-                      "Let’s hear your descriptions. "
-                   ]
-                },
-                "[Proceed with sharing]"
-             ]
-          },
-          {
-             "type": "p",
-             "content": [
-                {
-                   "type": "em",
-                   "content": [
-                      "Thank you for your participation. The aim of this exercise was to demonstrate that even with a common understanding of a concept — like a bicycle — each of us has a unique interpretation. In our work, when we talk about our product or project goals, it’s crucial to be as specific as possible to ensure we are all aligned and working towards the same detailed vision. This is why constant checking for understanding and alignment is essential in our team."
-                   ]
-                },
-                "”"
              ]
           },
           {

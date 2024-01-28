@@ -12,7 +12,7 @@ export function DoubleContainers({childrenOne, childrenTwo}:ContainerProps) {
     const firstVariant = size.width && size.width < 640 ? 'linear' : 'solid';
 
     return (
-        <div className='flex flex-col sm:flex-row gap-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
         <Container variant={firstVariant} className='z-10' delay={0.4}>
             <ContainerGrid>
                 <ContainerGridColumn>

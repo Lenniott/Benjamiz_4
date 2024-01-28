@@ -1,8 +1,7 @@
     //./src/components/features/MediumRenderer.tsx
 
     import React from 'react';
-    import { H2, H3, H4, Link, ListText, Paragraph,Quote } from '../typography';
-    import { ListItem } from '../typography/listItem';
+    import { Link as RouterLink } from 'react-router-dom';
 
     interface ContentProps {
         articleJson: any;
@@ -28,49 +27,71 @@
     const renderContentByType = (item: any) => {
         switch (item.type) {
         case 'h3':
-            return <H3>{renderElement(item.content)}</H3>;
+            return <h2 className='h3 my-2 '>{renderElement(item.content)}</h2>;
         case 'h4':
-            return <H4>{renderElement(item.content)}</H4>;
+            return <h3 className='h4 mt-2 mb-1'>{renderElement(item.content)}</h3>;
         case 'p':
-            return <Paragraph>{renderElement(item.content)}</Paragraph>;
+            return <p className='text-base sm:text-lg py-2 font-light'>{renderElement(item.content)}</p>;
         case 'strong':
-            return <strong><Paragraph>{renderElement(item.content)}</Paragraph></strong>;
+            return <strong><p>{renderElement(item.content)}</p></strong>;
         case 'em':
-            return <em><Paragraph>{renderElement(item.content)}</Paragraph></em>;
+            return <em className='font-light indent-8'><p>{renderElement(item.content)}</p></em>;
         case 'blockquote':
             const quoteText = Array.isArray(item.content) ? item.content.join(' ') : item.content;
-            return <Quote quote={quoteText}></Quote>;
-            case 'ul':
-                return <ListText isOrdered={false}>{item.content.map((listItemContent: any, listItemIndex: number) => 
-                  <ListItem key={listItemIndex} isOrdered={false}>{renderElement(listItemContent)}</ListItem>
-                )}</ListText>;
-              
-              case 'ol':
-                return <ListText isOrdered={true}>{item.content.map((listItemContent: any, listItemIndex: number) => 
-                  <ListItem key={listItemIndex} isOrdered={true} index={listItemIndex}>{renderElement(listItemContent)}</ListItem>
-                )}</ListText>;
+            return <i className='flex flex-grow justify-center m-8 text-center text-lg sm:text-xl italic font-serif font-light '>{quoteText}</i>;
+        case 'ul':
+            return <ul className=' ml-8 list-disc gap-4 mb-4 flex flex-col text-base sm:text-lg font-light '>{item.content.map((listItemContent: any, listItemIndex: number) => 
+                <li key={listItemIndex}>
+                {renderElement(listItemContent)}
+                </li>
+            )}</ul>;
+            
+        case 'ol':
+            return <ol className='ml-8 list-decimal  gap-4 mb-4 flex flex-col text-base sm:text-lg font-light'>{item.content.map((listItemContent: any, listItemIndex: number) => 
+                <li key={listItemIndex}>
+                {renderElement(listItemContent)}
+                </li>
+            )}</ol>;
         case 'li':
             return item.content;
         case 'a':
-            return <Link to={item.attributes.href} >{renderElement(item.content)}</Link>;
+            return <RouterLink to={item.attributes.href} className="link">
+                    {renderElement(item.content)}
+                    </RouterLink>;
         case 'figure':
             return <figure>{renderElement(item.content)}</figure>;
+        case 'div':
+            return <div className={item.attributes.class}>{renderElement(item.content)}</div>;
         case 'hr':
                 return <hr className='border-card-border'/>
         case 'img':
-            return <div className="flex items-center justify-center my-1 sm-2 "><img src={item.attributes.src} alt={item.attributes.alt || ''} /></div>;
+            return <div className="flex flex-shrink-0 items-center justify-center my-2 sm-2 "><img className=" w-72 h-auto rounded-sm m-2" src={item.attributes.src} alt={item.attributes.alt || ''} /></div>;
         case 'figcaption':
-        return <figcaption className='text-xs font-normal text-foreground py-1 flex items-center justify-center'>{renderElement(item.content)}</figcaption>;
+        return <figcaption className='text-sm text-foreground py-1 flex items-center justify-center'>{renderElement(item.content)}</figcaption>;
         // Add more cases as needed
         default:
             return <div>{JSON.stringify(item)}</div>;
         }
     };
 
+     // Get all keys
+    const keys = Object.keys(content);
+
+    // Last key
+    const lastKey = keys[keys.length - 1];
+
+    // Last value
+    const lastValue = content[lastKey];
+
+
+
     return (
         <article>
         <div className='grid grid-cols-1 grow gap-2'>
-        <H2>{articleJson.title}</H2>
+        <h1 className='h1 font-medium my-2'>{articleJson.title}</h1>
+        <p className='small flex gap-1 items-center'>
+        <RouterLink className="link" to={articleJson.url}>This article</RouterLink> was originally published in <RouterLink className='link' to={lastValue.content[2].attributes.href}>{renderElement(lastValue.content[2].content[0]).replace(/"/g, '')}</RouterLink>
+        </p>
         {content.map((item: any, index: number) => (
             <div>
             <React.Fragment key={index}>

@@ -30,7 +30,7 @@ export function NavBar() {
 
     const DesktopMenu = ()=>{
         return(
-        <NavigationMenu aria-label="navigation menu" className="hidden sm:block">
+        <NavigationMenu aria-label="navigation menu" className="hidden sm:block ">
         <NavigationMenuList className="gap-2">
             <NavigationMenuItem>
                 <Link to="/">
@@ -69,7 +69,7 @@ export function NavBar() {
 //fixed top-0 z-50 py-2 px-4 max-w-3xl mx-auto w-screen flex items-center bg-gradient-to-b from-background to-transparent
     return (
         <>
-        <div className="fixed top-0 z-50 py-2 px-4 max-w-3xl mx-auto w-screen flex items-center" >
+        <div className="fixed top-0 z-50 py-2 px-8 max-w-3xl mx-auto w-screen flex items-center backdrop-blur-sm bg-white/50 dark:bg-black/50 " >
         <div className="flex flex-grow">
             <Logo/>
         </div>

@@ -112,27 +112,27 @@ html {
 
 
 .h1 {
-  @apply flex text-4xl sm:text-5xl self-stretch font-medium;
+  @apply flex text-4xl sm:text-5xl self-stretch;
 }
 
 .h2 {
-  @apply flex text-3xl sm:text-4xl self-stretch font-medium;
+  @apply flex text-3xl sm:text-4xl self-stretch;
 }
 
 .h3 {
-  @apply flex text-2xl sm:text-3xl self-stretch font-medium;
+  @apply flex text-2xl sm:text-3xl self-stretch;
 }
 
 .h4 {
-  @apply flex text-xl sm:text-2xl self-stretch font-medium;
+  @apply flex text-xl sm:text-2xl self-stretch;
 }
 
 .h5 {
-  @apply flex text-lg sm:text-xl self-stretch font-medium;
+  @apply flex text-lg sm:text-xl self-stretch;
 }
 
 .h6 {
-  @apply flex text-base sm:text-lg self-stretch font-medium;
+  @apply flex text-base sm:text-lg self-stretch;
 }
 
 .p {
@@ -141,4 +141,8 @@ html {
 
 .smallText {
   @apply flex text-xs sm:text-sm font-light self-stretch align-middle;
+}
+
+.link{
+  @apply text-accent  font-sans  text-sm lg:text-base underline underline-offset-1 hover:underline-offset-4;
 }

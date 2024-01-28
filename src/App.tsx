@@ -7,6 +7,7 @@ import {HomePage}  from "./pages/homePage";
 import { ExperiencePage } from "./pages/experience";
 import { YourDesignArticle, BicycleExercise } from "./pages/articles";
 import { CaseStudyOne } from "./pages/caseStudies/caseStudyOne";
+import { WorksPage } from "./pages/WorksPage";
 function App() {
 
 
@@ -24,7 +25,7 @@ function App() {
           <Route path="/" element={<HomePage/>} />
           <Route path="/experience" element={<ExperiencePage/>} />
           <Route path="/about" element={"About"} />
-          <Route path="/works" element={"works"} />
+          <Route path="/works" element={<WorksPage/>} />
           <Route path="/designSystem" element={<DesignSystem/>} />
           <Route path="/works/article/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve" element={<YourDesignArticle />} />
           <Route path="/works/article/bicycle-exercise" element={<BicycleExercise />} />

@@ -59,7 +59,7 @@ export function ContainerGridColumn({
   children,
   }:ContainerProps){
     return (
-      <div className="flex flex-col items-start gap-4 flex-1">
+      <div className="grid grid-cols-1 gap-4">
         {children}
       </div>
     )
