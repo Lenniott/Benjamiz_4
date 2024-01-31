@@ -20,15 +20,15 @@ function App() {
     <div className="min-h-screen p-4 max-w-3xl mx-auto" >
     <ScrollToTop/>
 
-    <div className="flex flex-col mt-16">
+    <div className="flex flex-col mt-4sm:mt-16">
       <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/experience" element={<ExperiencePage/>} />
           <Route path="/about" element={"About"} />
           <Route path="/works" element={<WorksPage/>} />
           <Route path="/designSystem" element={<DesignSystem/>} />
-          <Route path="/works/article/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve" element={<YourDesignArticle />} />
-          <Route path="/works/article/bicycle-exercise" element={<BicycleExercise />} />
+          <Route path="/works/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve" element={<YourDesignArticle />} />
+          <Route path="/works/bicycle-exercise" element={<BicycleExercise />} />
           <Route path="/cs1" element={<CaseStudyOne/>} />
       </Routes>
     </div>

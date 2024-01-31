@@ -5,13 +5,13 @@
 
 @layer base {
   :root {
-    --white: 210, 100%, 100%; /* Compatible with: grey-dark, grey-darkest, black, error-dark, accent-dark */
+    --white: 210, 100%, 100%; /* 	#ffffff Compatible with: grey-dark, grey-darkest, black, error-dark, accent-dark */
     --grey-lightest: 210,20%,96.1%; /* Compatible with: grey-dark, grey-darkest, black, accent-dark */
     --grey-light: 210,19.5%,83.9%; /* Compatible with: grey-darkest, black, accent-dark */
     --grey: 211.5,19.6%,60%; /* Compatible with: black */
     --grey-dark: 210,19.5%,16.1%; /* Compatible with: white, grey-lightest, error-light, accent-light */
     --grey-darkest: 206.7,22%,8%; /* Compatible with: white, grey-lightest, grey-light, error-light, accent-light */
-    --black: 210,20%,3.9%; /* Compatible with: white, grey-lightest, grey-light, grey, error-light, accent-light */
+    --black: 210,20%,3.9%;  /* 	#080a0c Compatible with: white, grey-lightest, grey-light, grey, error-light, accent-light */
     --error-light: 348, 100%, 60%; /* Compatible with: black */
     --error-dark: 354, 71%, 36%; /* Compatible with: white, grey-lightest, grey-light */
     --accent-light: 149, 56%, 52%; /* Compatible with: black */
@@ -98,7 +98,6 @@
 }
 html {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
@@ -144,5 +143,9 @@ html {
 }
 
 .link{
-  @apply text-accent  font-sans  text-sm lg:text-base underline underline-offset-1 hover:underline-offset-4;
+  @apply text-foreground font-medium font-sans  text-sm lg:text-base hover:text-accent;
+}
+
+.navigate{
+  @apply text-foreground text-sm font-medium;
 }

@@ -7,7 +7,8 @@ var paths = [
     '/about',
     '/experience',
     '/works',
-    '/works/article/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve',
+    '/works/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve',
+    '/works/bicycle-exercise',
     // Add more paths here
 ];
 var root = create({ version: '1.0', encoding: 'UTF-8' })
