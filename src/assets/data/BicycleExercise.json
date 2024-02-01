@@ -16,7 +16,7 @@
        "type": "div",
        "content": [
           {
-             "type": "h4",
+             "type": "subtitle",
              "content": [
                 "The power of detailed communication and shared vision in team dynamics"
              ]
@@ -95,7 +95,7 @@
           {
              "type": "div",
              "attributes": {
-               "class": "flex items-center gap-4 mt-4"
+               "class": "flex flex-col sm:flex-row items-center gap-4 mt-4"
             },
              "content": [
                {
@@ -131,7 +131,7 @@
              "type": "p",
              "content": [
                 {
-                   "type": "strong",
+                   "type": "h4",
                    "content": [
                       "Materials Needed:"
                    ]
@@ -159,7 +159,7 @@
              "type": "p",
              "content": [
                 {
-                   "type": "strong",
+                   "type": "h4",
                    "content": [
                       "Duration:"
                    ]
@@ -320,7 +320,7 @@
           {
             "type": "div",
             "attributes": {
-               "class": "flex items-center gap-4 mt-4"
+               "class": "flex flex-col sm:flex-row items-center gap-4 mt-4"
             },
             "content": [
                {
@@ -492,8 +492,8 @@
              ]
           },
           {
-             "type": "p",
-             "content": [
+               "type": "ul",
+               "content":[
                 {
                    "type": "a",
                    "content": [
@@ -502,12 +502,7 @@
                    "attributes": {
                       "href": "https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/february/best-practice-an-introduction-to-domain-driven-design"
                    }
-                }
-             ]
-          },
-          {
-             "type": "p",
-             "content": [
+                },
                 {
                    "type": "a",
                    "content": [

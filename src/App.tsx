@@ -20,7 +20,7 @@ function App() {
     <div className="min-h-screen p-4 max-w-3xl mx-auto" >
     <ScrollToTop/>
 
-    <div className="flex flex-col mt-4sm:mt-16">
+    <div className="flex flex-col mt-4 sm:mt-12 mb-12">
       <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/experience" element={<ExperiencePage/>} />

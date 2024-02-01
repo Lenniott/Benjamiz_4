@@ -2,6 +2,7 @@
 
     import React from 'react';
     import { Link as RouterLink } from 'react-router-dom';
+import { Container } from '../container';
 
     interface ContentProps {
         articleJson: any;
@@ -26,10 +27,12 @@
 
     const renderContentByType = (item: any) => {
         switch (item.type) {
+        case 'subtitle':
+            return <h2 className='h5 text-muted-foreground'>{renderElement(item.content)}</h2>;
         case 'h3':
-            return <h2 className='h3 my-2 '>{renderElement(item.content)}</h2>;
+            return <h2 className='h4 mt-2 mb-1 '>{renderElement(item.content)}</h2>;
         case 'h4':
-            return <h3 className='h4 mt-2 mb-1'>{renderElement(item.content)}</h3>;
+            return <h3 className='h5 text-muted-foreground'>{renderElement(item.content)}</h3>;
         case 'p':
             return <p className='text-base sm:text-lg py-2 font-light'>{renderElement(item.content)}</p>;
         case 'strong':
@@ -65,7 +68,7 @@
         case 'hr':
                 return <hr className='border-card-border'/>
         case 'img':
-            return <div className="flex flex-shrink-0 items-center justify-center my-2 sm-2 "><img className=" w-72 h-auto rounded-sm m-2" src={item.attributes.src} alt={item.attributes.alt || ''} /></div>;
+            return <div className="flex flex-shrink-0 items-center justify-center my-2 sm-2 "><img className=" sm:w-72 h-auto rounded-sm m-2" src={item.attributes.src} alt={item.attributes.alt || ''} /></div>;
         case 'figcaption':
         return <figcaption className='text-sm text-foreground py-1 flex items-center justify-center'>{renderElement(item.content)}</figcaption>;
         // Add more cases as needed
@@ -86,20 +89,26 @@
 
 
     return (
-        <article>
-        <div className='grid grid-cols-1 grow gap-2'>
-        <h1 className='h1 font-medium my-2'>{articleJson.title}</h1>
-        <p className='small flex gap-1 items-center'>
-        <RouterLink className="link" to={articleJson.url}>This article</RouterLink> was originally published in <RouterLink className='link' to={lastValue.content[2].attributes.href}>{renderElement(lastValue.content[2].content[0]).replace(/"/g, '')}</RouterLink>
-        </p>
-        {content.map((item: any, index: number) => (
-            <div>
-            <React.Fragment key={index}>
-            {renderContentByType(item)}
-            </React.Fragment>
-            </div>
-        ))}
-        </div> 
+        <article className='grid grid-cols-1 grow gap-4'>
+            <Container variant='solid'>
+                <p className='small'>
+                    Originally published in <RouterLink className='link' to={lastValue.content[2].attributes.href}>{renderElement(lastValue.content[2].content[0]).replace(/"/g, '')}</RouterLink>
+                </p>
+            </Container>
+            <Container variant='solid'>
+            <div className='grid grid-cols-1 grow gap-2'>
+
+            <h1 className='h1 font-medium mb-2'>{articleJson.title}</h1>
+
+            {content.map((item: any, index: number) => (
+                <div>
+                <React.Fragment key={index}>
+                {renderContentByType(item)}
+                </React.Fragment>
+                </div>
+            ))}
+            </div> 
+        </Container>
         </article>
 
     );

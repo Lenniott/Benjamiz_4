@@ -102,7 +102,7 @@ export function NavBar() {
 //fixed top-0 z-50 py-2 px-4 max-w-3xl mx-auto w-screen flex items-center bg-gradient-to-b from-background to-transparent
     return (
         <>
-        <div className="fixed bottom-0 sm:top-0 z-50 py-2 px-8 max-w-3xl mx-auto w-screen flex items-center backdrop-blur-sm bg-white/50 dark:bg-[#080a0c]/50  " >
+        <div className="fixed -bottom-0.5 h-16 sm:top-0 z-50 py-2 px-8 max-w-3xl mx-auto w-screen flex items-center backdrop-blur-sm bg-white/50 dark:bg-[#080a0c]/50  " >
         <div className="flex flex-grow">
             <Logo/>
         </div>

@@ -143,9 +143,6 @@ html {
 }
 
 .link{
-  @apply text-foreground font-medium font-sans  text-sm lg:text-base hover:text-accent;
+  @apply text-accent hover:text-foreground underline underline-offset-2 hover:underline-offset-8 transition-all ease-in-out;
 }
 
-.navigate{
-  @apply text-foreground text-sm font-medium;
-}

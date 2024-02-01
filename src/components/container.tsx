@@ -22,9 +22,9 @@ export function Container({
   const isHorizontal: string = horizontal ? 'flex-col sm:flex-row' : 'flex-col';
   // Define variants inside the function to access `col`
   const variants = {
-    global: `flex ${isHorizontal} p-8 gap-8 items-right justify-start `, // Use template literal for dynamic col value
-    solid: "rounded-lg bg-card p-8",
-    linear: "rounded-lg bg-gradient-to-r from-card from-40% to-transparent to-80% p-8",
+    global: `flex ${isHorizontal} p-4 sm:p-8 gap-8 items-right justify-start `, // Use template literal for dynamic col value
+    solid: "rounded-lg bg-card p-4 sm:p-8",
+    linear: "rounded-lg bg-gradient-to-r from-card from-40% to-transparent to-80% p-4 sm:p-8",
     clear: "",
   };
 

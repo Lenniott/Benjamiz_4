@@ -16,7 +16,7 @@
        "type": "div",
        "content": [
           {
-             "type": "h4",
+             "type": "subtitle",
              "content": [
                 "Stifling innovation and wasting talent: the hidden consequences of organisational practices on design potential."
              ]
@@ -227,7 +227,7 @@
              ]
           },
           {
-             "type": "h4",
+             "type": "h3",
              "content": [
                 "Further Reading and Resources:"
              ]
@@ -238,102 +238,103 @@
                 "Here are some resources that should provide some additional insights into the themes I’ve discussed in this article. I’ve found them very interesting and helpful for my own understanding product development and design thinking."
              ]
           },
+            {
+               "type": "h4",
+               "content": [
+                  "LinkedIn:"
+               ]
+            },
+            {
+               "type": "ul",
+               "content": [
+                  {
+                     "type": "a",
+                     "content": [
+                        "Tony Moura"
+                     ],
+                     "attributes": {
+                        "href": "https://www.linkedin.com/in/tmoura?challengeId=AQHvHEQX47ewnQAAAYjTR9qjyjiRFNych0lptt90JsfWSq9YCiN6iRjArRufFmpeLxYCynLrzSj0FKJ8QlR0HPwQpetV3bDe0w&submissionId=16291413-e309-6a17-36d8-ea52fe7c5766&challengeSource=AgG24x81CTw6LQAAAYjTSCVjzscEWp5m2jmYDuOa3NhvzRj_QLgtYWOI93TfNuw&challegeType=AgGWNapFeeaw4wAAAYjTSCVrbsUtVnTyWvxZytU1isl-vFYkjp8AXh8&memberId=AgF6CD-VF2ucmwAAAYjTSCVuCPLf01VbgwhHdRaYf2hYQ9E&recognizeDevice=AgHMXuWmDRcDswAAAYjTSCVx07j9lFwqEDyjHU9fzJpRmHeeSTxn"
+                     }
+                  }
+               ]
+            },       
           {
-             "type": "p",
-             "content": [
-                "1.\tLinkedIn: ",
-                {
-                   "type": "a",
-                   "content": [
-                      "Tony Moura"
-                   ],
-                   "attributes": {
-                      "href": "https://www.linkedin.com/in/tmoura?challengeId=AQHvHEQX47ewnQAAAYjTR9qjyjiRFNych0lptt90JsfWSq9YCiN6iRjArRufFmpeLxYCynLrzSj0FKJ8QlR0HPwQpetV3bDe0w&submissionId=16291413-e309-6a17-36d8-ea52fe7c5766&challengeSource=AgG24x81CTw6LQAAAYjTSCVjzscEWp5m2jmYDuOa3NhvzRj_QLgtYWOI93TfNuw&challegeType=AgGWNapFeeaw4wAAAYjTSCVrbsUtVnTyWvxZytU1isl-vFYkjp8AXh8&memberId=AgF6CD-VF2ucmwAAAYjTSCVuCPLf01VbgwhHdRaYf2hYQ9E&recognizeDevice=AgHMXuWmDRcDswAAAYjTSCVx07j9lFwqEDyjHU9fzJpRmHeeSTxn"
-                   }
-                }
-             ]
+            "type": "h4",
+            "content": [
+               "Books:"
+            ]
           },
           {
-             "type": "p",
-             "content": [
-                "2.\tBooks:"
-             ]
+            "type": "ul",
+            "content": [
+               {
+                  "type": "li",
+                  "content": [
+                     "Lean UX: Designing Great Products with Agile Teams - Jeff Gothelf and Josh Seiden"
+                  ]
+               },
+               {
+                  "type": "li",
+                  "content": [
+                     "INSPIRED: How to Create Tech Products Customers Love - Marty Cagan"
+                  ]
+               },
+               {
+                  "type": "li",
+                  "content": [
+                     "Continuous Discovery Habits: Discover Products that Create Customer Value and Business Value - Teresa Torres"
+                  ]
+               }
+            ]
           },
           {
-             "type": "p",
-             "content": [
-                "•\t“Lean UX: Designing Great Products with Agile Teams” by Jeff Gothelf and Josh Seiden"
-             ]
-          },
-          {
-             "type": "p",
-             "content": [
-                "•\t“INSPIRED: How to Create Tech Products Customers Love” by Marty Cagan"
-             ]
-          },
-          {
-             "type": "p",
-             "content": [
-                "•\t“Continuous Discovery Habits: Discover Products that Create Customer Value and Business Value” by Teresa Torres"
-             ]
-          },
-          {
-             "type": "p",
-             "content": [
-                "3.\tPDF:"
-             ]
-          },
-          {
-             "type": "p",
-             "content": [
-                "•\t“Product Discovery Recipes” by Jeff Patton. ",
-                {
-                   "type": "a",
-                   "content": [
-                      "Download here"
-                   ],
-                   "attributes": {
-                      "href": "https://www.linkedin.com/in/tmoura?challengeId=AQHvHEQX47ewnQAAAYjTR9qjyjiRFNych0lptt90JsfWSq9YCiN6iRjArRufFmpeLxYCynLrzSj0FKJ8QlR0HPwQpetV3bDe0w&submissionId=16291413-e309-6a17-36d8-ea52fe7c5766&challengeSource=AgG24x81CTw6LQAAAYjTSCVjzscEWp5m2jmYDuOa3NhvzRj_QLgtYWOI93TfNuw&challegeType=AgGWNapFeeaw4wAAAYjTSCVrbsUtVnTyWvxZytU1isl-vFYkjp8AXh8&memberId=AgF6CD-VF2ucmwAAAYjTSCVuCPLf01VbgwhHdRaYf2hYQ9E&recognizeDevice=AgHMXuWmDRcDswAAAYjTSCVx07j9lFwqEDyjHU9fzJpRmHeeSTxn"
-                   }
-                }
-             ]
-          },
-          {
-             "type": "img",
-             "attributes": {
-                "src": "https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=a6ea86792803",
-                "width": "1",
-                "height": "1"
-             }
-          },
-          {
-             "type": "hr"
-          },
-          {
-             "type": "p",
-             "content": [
-                {
-                   "type": "a",
-                   "content": [
-                      "Your design is only as good as your organisation’s ability to problem solve"
-                   ],
-                   "attributes": {
-                      "href": "https://uxdesign.cc/your-design-is-only-as-good-as-your-organisations-ability-to-problem-solve-a6ea86792803"
-                   }
-                },
-                " was originally published in ",
-                {
-                   "type": "a",
-                   "content": [
-                      "UX Collective"
-                   ],
-                   "attributes": {
-                      "href": "https://uxdesign.cc"
-                   }
-                },
-                " on Medium, where people are continuing the conversation by highlighting and responding to this story."
-             ]
-          }
+            "type": "h4",
+            "content": [
+               "PDF:"
+            ]
+         },
+         {
+            "type": "ul",
+            "content": [
+               {
+                  "type": "a",
+                  "content": [
+                     "Product Discovery Recipes” by Jeff Patton"
+                  ],
+                  "attributes": {
+                     "href": "https://jpattonassociates.com/product-discovery-recipes/"
+                  }
+               }
+            ]
+         },
+         {
+            "type": "hr"
+         },
+         {
+            "type": "p",
+            "content": [
+               {
+                  "type": "a",
+                  "content": [
+                     "Your design is only as good as your organisation’s ability to problem solve"
+                  ],
+                  "attributes": {
+                     "href": "https://uxdesign.cc/your-design-is-only-as-good-as-your-organisations-ability-to-problem-solve-a6ea86792803"
+                  }
+               },
+               " was originally published in ",
+               {
+                  "type": "a",
+                  "content": [
+                     "UX Collective"
+                  ],
+                  "attributes": {
+                     "href": "https://uxdesign.cc"
+                  }
+               },
+               " on Medium, where people are continuing the conversation by highlighting and responding to this story."
+            ]
+         }
        ]
     },
     "enclosures": [],
