@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useNavigate } from 'react-router-dom';
-import {ArrowLeft} from 'lucide-react'
+import { FaArrowLeft } from "react-icons/fa6";
 import { Button } from '../ui/button';
 
 
@@ -20,7 +20,7 @@ const GoBackHeader : React.FC<{}> = () =>{
         variant="secondary"
         className='group flex items-center gap-2 -translate-x-[20px] -translate-y-[10px] '
       >
-        <ArrowLeft className='text-foreground w-4 h-4 group-hover:translate-x-[-10px] group-hover:text-background  transition-transform sm:w-6 sm:h-6'/>
+        <FaArrowLeft className='text-foreground w-4 h-4 group-hover:translate-x-[-10px] group-hover:text-background  transition-transform sm:w-6 sm:h-6'/>
         Go back
       </Button>
     </div>

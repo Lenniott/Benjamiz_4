@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as SheetPrimitive from "@radix-ui/react-dialog"
 import { cva, type VariantProps } from "class-variance-authority"
-import { X } from "lucide-react"
+import { FaXmark } from "react-icons/fa6";
 
 import { cn } from "../../lib/utils"
 
@@ -68,7 +68,7 @@ const SheetContent = React.forwardRef<
   >
       {children}
       <SheetPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-foreground transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-grey-darkest focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-grey-light dark:ring-offset-grey-darkest dark:focus:ring-grey-lightest dark:data-[state=open]:bg-grey-dark">
-        <X className="h-8 w-8" />
+        <FaXmark className="h-8 w-8" />
         <span className="sr-only">Close</span>
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>

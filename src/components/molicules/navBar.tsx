@@ -8,7 +8,7 @@ import { Sheet, SheetTrigger, SheetContent, SheetClose } from "../ui/sheet";
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
 import { ModeToggle } from "./mode-toggle";
-import {Menu} from "lucide-react"
+import { FaBars } from "react-icons/fa6";
 import {Logo} from "../../assets/images/logo"
 
 
@@ -18,7 +18,7 @@ export function NavBar() {
         <Sheet aria-label="navigation menu">
         <SheetTrigger className="flex sm:hidden">
             <Button variant={"secondary"} size={"icon"} className={"w-10 h-10 p-0"}>
-                <Menu/>
+                <FaBars/>
             </Button>
 
         </SheetTrigger>

@@ -2,7 +2,8 @@
 
     import React from 'react';
     import { Link as RouterLink } from 'react-router-dom';
-import { Container } from '../container';
+    import { Container } from '../container';
+
 
     interface ContentProps {
         articleJson: any;
@@ -94,6 +95,7 @@ import { Container } from '../container';
                 <p className='small'>
                     Originally published in <RouterLink className='link' to={lastValue.content[2].attributes.href}>{renderElement(lastValue.content[2].content[0]).replace(/"/g, '')}</RouterLink>
                 </p>
+
             </Container>
             <Container variant='solid'>
             <div className='grid grid-cols-1 grow gap-2'>

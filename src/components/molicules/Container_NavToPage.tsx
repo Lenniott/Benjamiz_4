@@ -1,5 +1,5 @@
 import { Button } from "../ui/button";
-import { ArrowRight } from "lucide-react";
+import { FaArrowRight } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 
 interface ContainerProps {
@@ -35,7 +35,7 @@ interface ContainerProps {
               <div className="flex flex-grow justify-end">
               <Button variant='secondary' onClick={() => navigate(link)} className='group flex gap-1 items-center shadow-none w-fit justify-start'>
               Read
-              <ArrowRight className='text-foreground w-4 h-4 group-hover:translate-x-[10px] group-hover:text-background transition-transform sm:w-6 sm:h-6'/>
+              <FaArrowRight className='text-foreground w-4 h-4 group-hover:translate-x-[10px] group-hover:text-background transition-transform sm:w-6 sm:h-6'/>
             </Button>
               </div>
 

@@ -9,7 +9,7 @@ import {
     SheetDescription,
   } from "../ui/sheet";
 
-import { ChevronRight } from "lucide-react"
+  import { FaChevronRight } from "react-icons/fa6";
 
 export function Components(){
 
@@ -22,7 +22,7 @@ export function Components(){
             <Button size={"sm"}>Small</Button>
 
             <Button size={"icon"}>
-                <ChevronRight className="h-4 w-4" />
+                <FaChevronRight className="h-4 w-4" />
             </Button>
 
             </div>
