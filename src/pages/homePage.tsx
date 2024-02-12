@@ -5,6 +5,11 @@ import { Container_NavToPage } from '../components/molicules/Container_NavToPage
 import { MainStatments } from '../components/molicules/MainStatments';
 import { HeroHeader } from '../components/molicules/HeroHeader';
 import { DoubleContainers } from '../components/molicules/DoubleContainers';
+import { FaMedium } from 'react-icons/fa6';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../components/ui/tooltip';
+import BookScroll from '../components/molicules/BookScroll';
+import books from '../assets/data/books.json'; 
+import certificates from '../assets/data/certificates.json'; 
 export function HomePage() {
 
 
@@ -29,6 +34,30 @@ export function HomePage() {
                 childrenTwo={
                     <Container_NavToPage header="Article" link="/works/bicycle-exercise" title="Clarity in collaboration: Describe a bicycle exercise" image='https://cdn-images-1.medium.com/max/1024/1*A77fKwsjzwNV-M6yVOaChA.jpeg' alt='group of professionals all thinking of different shapes with a prompt on the whiteboard saying "I need a shape."' />
             }/>
+            
+            <a href="https://medium.com/@benjamin.mizrany/">
+            <TooltipProvider>
+                    <Tooltip>
+                        <TooltipTrigger className='w-fit'>
+                            <Container variant='solid' className='grid w-fit text-sm group hover:bg-accent ease-in delay-150 transition-all'>
+                                <FaMedium className='w-8 h-8 text-muted-foreground group-hover:text-accent-foreground' />
+                            </Container>
+                        </TooltipTrigger>
+                        <TooltipContent side='bottom'>
+                        <p>Go to medium</p>
+                        </TooltipContent>
+                    </Tooltip>
+            </TooltipProvider>
+            </a>
+
+            <div className="App">
+             <h2 className="text-lg font-bold">Recommended Books</h2>
+                <BookScroll books={books} />
+            </div>
+            <div className="App">
+             <h2 className="text-lg font-bold">Interaction-Design.org</h2>
+                <BookScroll books={certificates} />
+            </div>
             {/* Second SECTION */}
 
             {/* <DoubleContainers 
