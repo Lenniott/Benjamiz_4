@@ -3,36 +3,36 @@
       {
         "title": "Lean UX",
         "link": "https://www.goodreads.com/book/show/13436116-lean-ux?ref=nav_sb_ss_1_7",
-        "img": "src/assets/images/books/lean_ux.jpeg"
+        "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1381355830i/13436116.jpg"
       },      {
         "title": "Lean Enterprise",
         "link": "https://www.goodreads.com/book/show/18167218-lean-enterprise?ref=nav_sb_ss_3_8",
-        "img": "src/assets/images/books/lean_enterprise.jpeg"
+        "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1419979426i/18167218.jpg"
       },
         {
         "title": "Inspired",
         "link": "https://www.goodreads.com/book/show/35249663-inspired?from_search=true&from_srp=true&qid=xiLrF9Kw7N&rank=1",
-        "img": "src/assets/images/books/inspired.jpeg"
+        "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1685881845i/35249663.jpg"
       },    
       {
         "title": "Atomic Design",
         "link": "https://www.goodreads.com/book/show/35496817-atomic-design?ref=nav_sb_ss_2_9",
-        "img": "src/assets/images/books/atomic_design.jpeg"
+        "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1498137521i/35496817.jpg"
       },
       {
         "title": "Information Architecture",
         "link": "https://www.goodreads.com/book/show/70132.Information_Architecture_for_the_World_Wide_Web?ref=nav_sb_ss_1_17",
-        "img": "src/assets/images/books/information_architecture.jpeg"
+        "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328834902i/70132.jpg"
       },
     {
       "title": "Continuous Discovery Habits",
       "link": "https://www.goodreads.com/book/show/58046715-continuous-discovery-habits?ref=nav_sb_ss_1_16",
-      "img": "src/assets/images/books/continuous_disocery_habits.jpeg"
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1621052733i/58046715.jpg"
     },
     {
       "title": "Practical UI",
       "link": "https://www.goodreads.com/book/show/75519891-practical-ui?ref=nav_sb_ss_1_11",
-      "img": "src/assets/images/books/practical_UI.jpeg"
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1672686052i/75519891.jpg"
     },
     {
       "title": "Object-Oriented UX",
@@ -47,12 +47,12 @@
     {
       "title": "Thus Spoke Zarathustra",
       "link": "https://www.goodreads.com/book/show/51893.Thus_Spoke_Zarathustra?ref=nav_sb_ss_1_8",
-      "img": "src/assets/images/books/thus_spoke_zara.jpeg"
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1650680683i/51893.jpg"
     },
     {
       "title": "Power and Progress",
       "link": "https://www.goodreads.com/book/show/62315566-power-and-progress?ref=nav_sb_ss_1_18",
-      "img": "src/assets/images/books/power_progress.webp"
+      "img": "https://www.hachettebookgroup.com/wp-content/uploads/2022/09/ProgressAndPower.jpeg"
     }
   ]
   
