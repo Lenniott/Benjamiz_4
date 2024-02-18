@@ -32,6 +32,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
       <img
         src={src}
         alt={alt}
+        loading="lazy"
         className={`cursor-pointer hover:cursor-zoom-in ${className}`}
         onClick={toggleViewer}
       />
@@ -43,6 +44,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
                 ref={imageRef}
                 src={src}
                 alt={alt}
+                loading="lazy"
                 className={` ${zoom ? 'translate-y-[100%] -translate-x-[-100%] top-0 left-0 scale-[3] hover:cursor-zoom-out' : 'scale-100 hover:cursor-zoom-in h-auto'}  transition-all duration-300 object-fit`}
                 onClick={handleZoomToggle}
               />
