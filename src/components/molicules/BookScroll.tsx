@@ -22,7 +22,7 @@ const Showcase: React.FC<ShowcaseProps> = ({ items, imageSize = { width: 'w-32',
       {items.map((item, index) => (
         <a key={index} href={item.link} target="_blank" rel="noopener noreferrer" className="m-4 flex-none">
           <div className={`${imageSize.width} ${imageSize.height} overflow-hidden rounded-lg shadow-lg`}>
-            <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
+            <img loading="lazy" src={item.img} alt={item.title} className="w-full h-full object-cover" />
           </div>
           <div className={`mt-2 text-center ${imageSize.width} `}>
             <p className="text-sm">{item.title}</p>
