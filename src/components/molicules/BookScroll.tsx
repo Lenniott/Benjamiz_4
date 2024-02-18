@@ -1,28 +1,36 @@
-// BookScroll.tsx
 import React from 'react';
-import { FaArrowRight } from 'react-icons/fa6';
-interface Book {
+
+// Interface definition
+interface ShowcaseItem {
   title: string;
   link: string;
   img: string;
 }
 
-interface BookScrollProps {
-  books: Book[];
+interface ShowcaseProps {
+  items: ShowcaseItem[];
+  imageSize?: {
+    width: string; // Tailwind width classes, e.g., w-32
+    height: string; // Tailwind height classes, e.g., h-48
+  };
 }
 
-const BookScroll: React.FC<BookScrollProps> = ({ books }) => {
+// Functional Component
+const Showcase: React.FC<ShowcaseProps> = ({ items, imageSize = { width: 'w-32', height: 'h-48' } }) => {
   return (
-    <div className="flex overflow-x-auto space-x-4 py-4 items-start">
-      {books.map((book, index) => (
-        <a key={index} href={book.link} target="_blank" rel="noopener noreferrer" className=" group shrink-0 grid items-center -h28 -w45">
-        <span className="invisible group-hover:visible"><FaArrowRight/></span>
-          <img src={book.img} alt={book.title} className="flex justify-start items-start h-48 w-32 hover:blur-sm bg-accent" />
-          <p className="w-32 text-wrap text-center text-xs mt-2">{book.title}</p>   
+    <div className="flex overflow-x-scroll py-4 scrollbar-custom">
+      {items.map((item, index) => (
+        <a key={index} target="_blank" rel="noopener noreferrer" className="m-4 flex-none">
+          <div className={`${imageSize.width} ${imageSize.height} overflow-hidden rounded-lg shadow-lg`}>
+            <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
+          </div>
+          <div className={`mt-2 text-center ${imageSize.width} `}>
+            <p className="text-sm">{item.title}</p>
+          </div>
         </a>
       ))}
     </div>
   );
 };
 
-export default BookScroll;
+export default Showcase;

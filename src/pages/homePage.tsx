@@ -7,9 +7,6 @@ import { HeroHeader } from '../components/molicules/HeroHeader';
 import { DoubleContainers } from '../components/molicules/DoubleContainers';
 import { FaMedium } from 'react-icons/fa6';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../components/ui/tooltip';
-import BookScroll from '../components/molicules/BookScroll';
-import books from '../assets/data/books.json'; 
-import certificates from '../assets/data/certificates.json'; 
 export function HomePage() {
 
 
@@ -49,24 +46,6 @@ export function HomePage() {
                     </Tooltip>
             </TooltipProvider>
             </a>
-
-            <div className="App">
-             <h2 className="text-lg font-bold">Recommended Books</h2>
-                <BookScroll books={books} />
-            </div>
-            <div className="App">
-             <h2 className="text-lg font-bold">Interaction-Design.org</h2>
-                <BookScroll books={certificates} />
-            </div>
-            {/* Second SECTION */}
-
-            {/* <DoubleContainers 
-                childrenOne={
-                    <Container_NavToPage header="Article" link="/works/article/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve" title="Your design is only as good as your organisation’s ability to problem solve" image='https://cdn-images-1.medium.com/max/512/1*sZMLstXvHytFnSFF9vWgbw@2x.jpeg' alt='man stand alone on steps as crowd walk up a hill' />
-                } 
-                childrenTwo={
-                    <Container_NavToPage header="Article" link="/works/article/bicycle-exercise" title="Clarity in collaboration: Describe a bicycle exercise" image='https://cdn-images-1.medium.com/max/1024/1*A77fKwsjzwNV-M6yVOaChA.jpeg' alt='group of professionals all thinking of different shapes with a prompt on the whiteboard saying "I need a shape."' />
-            }/> */}
         </div>
     );
 };

@@ -20,7 +20,7 @@
         "img": "src/assets/images/books/atomic_design.jpeg"
       },
       {
-        "title": "Information Architecture for the World Wide Web",
+        "title": "Information Architecture",
         "link": "https://www.goodreads.com/book/show/70132.Information_Architecture_for_the_World_Wide_Web?ref=nav_sb_ss_1_17",
         "img": "src/assets/images/books/information_architecture.jpeg"
       },
@@ -38,11 +38,21 @@
       "title": "Object-Oriented UX",
       "link": "https://alistapart.com/article/object-oriented-ux/#section3",
       "img": "src/assets/images/books/OOUX_copy.jpg"
-    },
+    },    
     {
       "title": "Agile is Dead (Long Live Agility)",
       "link": "https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html",
       "img": "src/assets/images/books/agile_is_dead.webp"
+    },
+    {
+      "title": "Thus Spoke Zarathustra",
+      "link": "https://www.goodreads.com/book/show/51893.Thus_Spoke_Zarathustra?ref=nav_sb_ss_1_8",
+      "img": "src/assets/images/books/thus_spoke_zara.jpeg"
+    },
+    {
+      "title": "Power and Progress",
+      "link": "https://www.goodreads.com/book/show/62315566-power-and-progress?ref=nav_sb_ss_1_18",
+      "img": "src/assets/images/books/power_progress.webp"
     }
   ]
   

@@ -3,7 +3,7 @@
     import React from 'react';
     import { Link as RouterLink } from 'react-router-dom';
     import { Container } from '../container';
-
+    import Image from '../molicules/Image';
 
     interface ContentProps {
         articleJson: any;
@@ -69,7 +69,7 @@
         case 'hr':
                 return <hr className='border-card-border'/>
         case 'img':
-            return <div className="flex flex-shrink-0 items-center justify-center my-2 sm-2 "><img className=" sm:w-72 h-auto rounded-sm m-2" src={item.attributes.src} alt={item.attributes.alt || ''} /></div>;
+            return <div className="flex flex-shrink-0 items-center justify-center my-2 sm-2 "><Image className="rounded-sm" src={item.attributes.src} alt={item.attributes.alt || ''} description={item.attributes.alt || ''} /></div>;
         case 'figcaption':
         return <figcaption className='text-sm text-foreground py-1 flex items-center justify-center'>{renderElement(item.content)}</figcaption>;
         // Add more cases as needed

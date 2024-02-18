@@ -146,3 +146,26 @@ html {
   @apply text-accent hover:text-foreground underline underline-offset-2 hover:underline-offset-8 transition-all ease-in-out;
 }
 
+/* Custom Scrollbar Styles */
+.scrollbar-custom {
+  /* For Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--accent)) rgb(var(--card)); /* Accent and card colors from your palette */
+}
+
+/* Chrome, Edge, and Safari */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 12px; /* Adjust as needed */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: rgb(var(--card)); /* Card color for the track background */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--accent)); /* Accent color for the thumb */
+  border-radius: 6px; /* Roundness of the thumb */
+  border: 3px solid rgb(var(--card)); /* Border using card color for contrast */
+}
+
+

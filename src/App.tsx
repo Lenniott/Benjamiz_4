@@ -8,6 +8,7 @@ import { ExperiencePage } from "./pages/experience";
 import { YourDesignArticle, BicycleExercise } from "./pages/articles";
 import { CaseStudyOne } from "./pages/caseStudies/caseStudyOne";
 import { WorksPage } from "./pages/WorksPage";
+import { AboutMePage } from "./pages/aboutMe";
 function App() {
 
 
@@ -24,7 +25,7 @@ function App() {
       <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/experience" element={<ExperiencePage/>} />
-          <Route path="/about" element={"About"} />
+          <Route path="/about" element={<AboutMePage/>} />
           <Route path="/works" element={<WorksPage/>} />
           <Route path="/designSystem" element={<DesignSystem/>} />
           <Route path="/works/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve" element={<YourDesignArticle />} />
