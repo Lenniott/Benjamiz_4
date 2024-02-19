@@ -18,19 +18,25 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
   const handleZoomToggle = () => setZoom(!zoom); // Renamed for clarity
 
   useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;  
     if (isViewerOpen) {
-      document.documentElement.classList.add("overflow-y-hidden");
-      document.body.classList.add("overflow-y-hidden");
+      document.body.style.overflow = 'hidden';
+      // For iOS devices
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
     }
     // Reset zoom level
     setZoom(false);
     // Cleanup function
     return () => {
-      document.documentElement.classList.remove("overflow-y-hidden");
-      document.body.classList.remove("overflow-y-hidden");
+      document.body.style.overflow = originalStyle;
+      // Reset styles for iOS devices
+      document.body.style.position = '';
+      document.body.style.width = '';
     };
   }, [isViewerOpen]);
   
+
   return (
     <div className="relative group">
       <img
@@ -41,22 +47,22 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
         onClick={toggleViewer}
       />
       {isViewerOpen && (
-        <div className="fixed inset-0 bg-background z-50 flex justify-center items-center">
-          <div className="flex flex-col items-center px-2">
-            <div ref={viewerRef} className={`relative h-[70vh] overflow-auto touch-auto  ${zoom ? 'w-[90vw]' : 'w-full flex items-center justify-center'} transition-all duration-300`}>
+        <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 flex justify-center items-center p-8 ">
+          <div className="flex flex-col items-center gap-4 px-2 py-8 rounded-md ">
+            <div ref={viewerRef} className={`relative overflow-auto touch-auto rounded-md ${zoom ? '' : 'w-full flex items-center justify-center'} transition-all duration-300`}>
               <img
                 ref={imageRef}
                 src={src}
                 alt={alt}
                 loading="lazy"
-                className={` ${zoom ? 'translate-y-[100%] -translate-x-[-100%] top-0 left-0 scale-[3] hover:cursor-zoom-out' : 'scale-100 max-h-[70vh] hover:cursor-zoom-in'}  transition-all duration-300 object-fit`}
+                className={` ${zoom ? 'translate-y-[100%] -translate-x-[-100%] top-0 left-0 scale-[3] hover:cursor-zoom-out' : 'scale-100 max-h-[70vh] hover:cursor-zoom-in'}  transition-all duration-300 object-fit overflow-x-scroll`}
                 onClick={handleZoomToggle}
               />
             </div>
             {description && (
-              <p className="flex text-foreground text-center max-w-3xl mt-4 px-2">{description}</p>
+              <p className="flex text-foreground text-left text-sm max-w-3xl max-h-24 px-2 overflow-scroll">{description}</p>
             )}
-            <div className="flex mt-4">
+            <div className="flex ">
               <Button
                 variant={'secondary'}
                 onClick={toggleViewer}
