@@ -1,5 +1,5 @@
 // ImageComponent.tsx
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Button } from '../ui/button';
 import { FaXmark} from 'react-icons/fa6';
 interface ImageComponentProps {
@@ -11,10 +11,7 @@ interface ImageComponentProps {
 
 const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,className }) => {
   const [isViewerOpen, setIsViewerOpen] = useState(false);
-  const [zoom, setZoom] = useState(false); // Consider renaming to isZoomed for clarity
-  const [imageSize, setImageSize] = useState({ width: '', height: '' });
   const imageRef = useRef<HTMLImageElement>(null);
-  const viewerRef = useRef<HTMLDivElement>(null);
 
   const toggleViewer = () => {
     const originalStyle = window.getComputedStyle(document.body).overflow;  
@@ -26,34 +23,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
 
   }
 
-  const handleZoomToggle = () => {
-    setZoom(!zoom);
-  } // Renamed for clarity
 
-  useEffect(() => {
-    const originalStyle = window.getComputedStyle(document.body).overflow;  
-    if (isViewerOpen) {
-
-      document.body.style.overflow = 'hidden';
-      // For iOS devices
-      document.body.style.position = 'fixed';
-      document.body.style.width = '100%';
-      const image = imageRef.current;
-      if (image) {
-          const { width, height } = image.getBoundingClientRect();
-          setImageSize({ width: `${width}px`, height: `${height}px` });
-      }
-    }
-    // Reset zoom level
-    setZoom(false);
-    // Cleanup function
-    return () => {
-      document.body.style.overflow = originalStyle;
-      // Reset styles for iOS devices
-      document.body.style.position = '';
-      document.body.style.width = '';
-    };
-  }, [isViewerOpen]);
   
 
 
@@ -69,7 +39,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
       {isViewerOpen && (
         <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 ">
             <div className="fixed flex flex-col items-center w-full h-full gap-4 px-4 py-8 overflow-scroll top-0">
-              <div className="z-10 flex w-full justify-end">
+              <div className="z-10 flex w-full justify-end max-w-3xl">
                 <Button
                   size={'icon'}
                   variant={'ghost'}
