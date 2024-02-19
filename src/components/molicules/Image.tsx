@@ -64,7 +64,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
         onClick={toggleViewer}
       />
       {isViewerOpen && (
-        <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 flex justify-center items-center p-8 ">
+        <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 flex justify-center items-center ">
           <div className="flex flex-col items-center gap-4 px-2 py-8 rounded-md ">
             <div ref={viewerRef} style={{ width: zoom ?  `${imageSize.width}` : '' }} className={`relative overflow-auto touch-auto rounded-md ${zoom ? `` : 'flex items-center justify-center'} transition-all duration-300 `}>
               <img
@@ -77,7 +77,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
               />
             </div>
             {description && (
-              <p className="flex text-foreground text-center text-sm max-w-3xl max-h-24 px-2 overflow-scroll">{description}</p>
+              <p className="flex text-foreground text-center text-sm max-w-3xl max-h-3xl px-2 overflow-scroll">{description}</p>
             )}
             <div className="flex ">
               <Button
