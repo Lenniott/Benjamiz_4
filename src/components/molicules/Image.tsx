@@ -1,5 +1,5 @@
 // ImageComponent.tsx
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '../ui/button';
 import { FaXmark} from 'react-icons/fa6';
 interface ImageComponentProps {
@@ -23,7 +23,23 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
 
   }
 
+  useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;  
+    if (isViewerOpen) {
 
+      document.body.style.overflow = 'hidden';
+      // For iOS devices
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+    }
+
+    return () => {
+      document.body.style.overflow = originalStyle;
+      // Reset styles for iOS devices
+      document.body.style.position = '';
+      document.body.style.width = '';
+    };
+  }, [isViewerOpen]);
   
 
 
