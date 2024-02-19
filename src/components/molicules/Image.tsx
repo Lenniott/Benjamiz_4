@@ -54,7 +54,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
       />
       {isViewerOpen && (
         <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 ">
-            <div className="fixed flex flex-col items-center w-full h-full gap-4 px-4 py-8 overflow-scroll top-0">
+            <div className="fixed flex flex-col items-center justify-center w-full h-full gap-4 p-4 top-0 overflow-auto">
               <div className="z-10 flex w-full justify-end max-w-3xl">
                 <Button
                   size={'icon'}
@@ -70,7 +70,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
                 src={src}
                 alt={alt}
                 loading="lazy"
-                className='rounded-md w-full max-w-2xl'
+                className='rounded-md  h-full max-h-[80vh]'
               />
             </div>
             {description && (
