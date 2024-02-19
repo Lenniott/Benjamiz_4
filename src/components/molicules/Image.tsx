@@ -23,6 +23,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
     document.body.style.position = '';
     document.body.style.width = '';
     setIsViewerOpen(!isViewerOpen);
+
   }
 
   const handleZoomToggle = () => {
@@ -32,14 +33,15 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
   useEffect(() => {
     const originalStyle = window.getComputedStyle(document.body).overflow;  
     if (isViewerOpen) {
-      const image = imageRef.current;
+
       document.body.style.overflow = 'hidden';
       // For iOS devices
       document.body.style.position = 'fixed';
       document.body.style.width = '100%';
+      const image = imageRef.current;
       if (image) {
-        const { width, height } = image.getBoundingClientRect();
-        setImageSize({ width: `${width}px`, height: `${height}px` });
+          const { width, height } = image.getBoundingClientRect();
+          setImageSize({ width: `${width}px`, height: `${height}px` });
       }
     }
     // Reset zoom level
@@ -66,19 +68,18 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
       />
       {isViewerOpen && (
         <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 flex justify-center items-center ">
-          <div className="flex flex-col items-center gap-4 px-2 py-8 rounded-md ">
-
+          <div className="flex flex-col items-center gap-4 px-4 py-8 rounded-md ">
+          <div className="z-10 absolute right-4 top-4">
+                <Button
+                  size={'icon'}
+                  variant={'ghost'}
+                  onClick={toggleViewer}
+                >
+                  <FaXmark className='w-4 h-4' />
+                </Button>
+              </div>
             <div ref={viewerRef} style={{ width: zoom ?  `${imageSize.width}` : '' }} className={`relative overflow-auto touch-auto rounded-md ${zoom ? `` : 'flex items-center justify-center'} transition-all duration-300 `}>
-            <div className="z-10 absolute right-2 top-2">
-              <Button
-                size={'icon'}
-                variant={'ghost'}
-                onClick={toggleViewer}
-                className='bg-black/80 rounded-full'
-              >
-                <FaXmark className='w-4 h-4' />
-              </Button>
-            </div>
+
               <img
                 ref={imageRef}
                 src={src}
