@@ -1,7 +1,7 @@
 // ImageComponent.tsx
 import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '../ui/button';
-import { FaXmark, FaMagnifyingGlassPlus, FaMagnifyingGlassMinus } from 'react-icons/fa6';
+import { FaXmark} from 'react-icons/fa6';
 interface ImageComponentProps {
   src: string;
   alt?: string;
