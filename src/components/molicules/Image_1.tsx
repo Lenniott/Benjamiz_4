@@ -67,9 +67,9 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
         onClick={toggleViewer}
       />
       {isViewerOpen && (
-        <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 ">
-            <div className="fixed flex flex-col items-center w-full h-full gap-4 px-4 py-8 overflow-scroll top-0">
-              <div className="z-10 flex w-full justify-end">
+        <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 flex justify-center items-center ">
+          <div className="flex flex-col items-center gap-4 px-4 py-8 rounded-md ">
+              <div className="z-10">
                 <Button
                   size={'icon'}
                   variant={'ghost'}
@@ -77,14 +77,17 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
                 >
                   <FaXmark className='w-4 h-4' />
                 </Button>
-            </div>
-            <div>
+              </div>
+            <div ref={viewerRef} style={{ width: zoom ?  `${imageSize.width}` : '' }} className={`relative overflow-auto touch-auto rounded-md ${zoom ? `` : 'flex items-center justify-center'} transition-all duration-300 `}>
+
               <img
                 ref={imageRef}
                 src={src}
                 alt={alt}
                 loading="lazy"
-                className='rounded-md w-full max-w-2xl'
+                // className={` ${zoom ? 'translate-y-[100%] -translate-x-[-100%] top-0 left-0 scale-[3] hover:cursor-zoom-out' : 'scale-100 max-h-[70vh] hover:cursor-zoom-in'}  transition-all duration-300 object-fit overflow-x-scroll`}
+                className={` ${zoom ? '' : ''}  transition-all duration-300 object-fit overflow-x-scroll`}
+                onClick={handleZoomToggle}
               />
             </div>
             {description && (
