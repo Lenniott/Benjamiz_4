@@ -169,3 +169,8 @@ html {
 }
 
 
+.overflow-y-hidden {
+  overflow-y: hidden !important; /* !important may help override other styles */
+  position: fixed; /* This can help on iOS */
+  width: 100%; /* Prevent width re-adjustment on iOS */
+}

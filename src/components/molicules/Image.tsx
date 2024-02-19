@@ -19,18 +19,18 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
 
   useEffect(() => {
     if (isViewerOpen) {
-      // Store the current scroll position and prevent scrolling
+      document.documentElement.classList.add("overflow-y-hidden");
       document.body.classList.add("overflow-y-hidden");
     }
     // Reset zoom level
     setZoom(false);
-    // Cleanup function to be called when the modal is closed or the component is unmounted
+    // Cleanup function
     return () => {
-      // Restore the scroll position and allow scrolling
+      document.documentElement.classList.remove("overflow-y-hidden");
       document.body.classList.remove("overflow-y-hidden");
     };
   }, [isViewerOpen]);
-
+  
   return (
     <div className="relative group">
       <img
