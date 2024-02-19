@@ -70,7 +70,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
                 src={src}
                 alt={alt}
                 loading="lazy"
-                className='rounded-md  h-full max-h-[80vh]'
+                className='rounded-md  sm:h-full max-h-[80vh]'
               />
             </div>
             {description && (
