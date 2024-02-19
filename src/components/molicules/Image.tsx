@@ -39,7 +39,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
       {isViewerOpen && (
         <div className="fixed inset-0 bg-background z-50 flex justify-center items-center">
           <div className="flex flex-col items-center px-2">
-            <div ref={viewerRef} className={`relative h-[70vh] overflow-auto touch-auto touch-pinch-zoom ${zoom ? 'w-[90vw]' : 'w-full flex items-center justify-center'} transition-all duration-300`}>
+            <div ref={viewerRef} className={`relative h-[70vh] overflow-auto touch-auto  ${zoom ? 'w-[90vw]' : 'w-full flex items-center justify-center'} transition-all duration-300`}>
               <img
                 ref={imageRef}
                 src={src}
