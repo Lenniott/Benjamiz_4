@@ -11,19 +11,35 @@ interface ImageComponentProps {
 const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,className }) => {
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const [zoom, setZoom] = useState(false); // Consider renaming to isZoomed for clarity
+  const [imageSize, setImageSize] = useState({ width: '', height: '' });
   const imageRef = useRef<HTMLImageElement>(null);
   const viewerRef = useRef<HTMLDivElement>(null);
 
-  const toggleViewer = () => setIsViewerOpen(!isViewerOpen);
-  const handleZoomToggle = () => setZoom(!zoom); // Renamed for clarity
+  const toggleViewer = () => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;  
+    document.body.style.overflow = originalStyle;
+    // Reset styles for iOS devices
+    document.body.style.position = '';
+    document.body.style.width = '';
+    setIsViewerOpen(!isViewerOpen);
+  }
+
+  const handleZoomToggle = () => {
+    setZoom(!zoom);
+  } // Renamed for clarity
 
   useEffect(() => {
     const originalStyle = window.getComputedStyle(document.body).overflow;  
     if (isViewerOpen) {
+      const image = imageRef.current;
       document.body.style.overflow = 'hidden';
       // For iOS devices
       document.body.style.position = 'fixed';
       document.body.style.width = '100%';
+      if (image) {
+        const { width, height } = image.getBoundingClientRect();
+        setImageSize({ width: `${width}px`, height: `${height}px` });
+      }
     }
     // Reset zoom level
     setZoom(false);
@@ -37,6 +53,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
   }, [isViewerOpen]);
   
 
+
   return (
     <div className="relative group">
       <img
@@ -49,7 +66,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
       {isViewerOpen && (
         <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 flex justify-center items-center p-8 ">
           <div className="flex flex-col items-center gap-4 px-2 py-8 rounded-md ">
-            <div ref={viewerRef} className={`relative overflow-auto touch-auto rounded-md ${zoom ? '' : 'w-full flex items-center justify-center'} transition-all duration-300`}>
+            <div ref={viewerRef} style={{ width: zoom ?  `${imageSize.width}` : '' }} className={`relative overflow-auto touch-auto rounded-md ${zoom ? `` : 'flex items-center justify-center'} transition-all duration-300 `}>
               <img
                 ref={imageRef}
                 src={src}
@@ -60,7 +77,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
               />
             </div>
             {description && (
-              <p className="flex text-foreground text-left text-sm max-w-3xl max-h-24 px-2 overflow-scroll">{description}</p>
+              <p className="flex text-foreground text-center text-sm max-w-3xl max-h-24 px-2 overflow-scroll">{description}</p>
             )}
             <div className="flex ">
               <Button
