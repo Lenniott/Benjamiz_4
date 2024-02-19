@@ -1,6 +1,7 @@
 // ImageComponent.tsx
 import React, { useEffect, useRef, useState } from 'react';
-import { Button } from '../ui/button';;
+import { Button } from '../ui/button';
+import { FaXmark, FaMagnifyingGlassPlus, FaMagnifyingGlassMinus } from 'react-icons/fa6';
 interface ImageComponentProps {
   src: string;
   alt?: string;
@@ -66,7 +67,18 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
       {isViewerOpen && (
         <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 flex justify-center items-center ">
           <div className="flex flex-col items-center gap-4 px-2 py-8 rounded-md ">
+
             <div ref={viewerRef} style={{ width: zoom ?  `${imageSize.width}` : '' }} className={`relative overflow-auto touch-auto rounded-md ${zoom ? `` : 'flex items-center justify-center'} transition-all duration-300 `}>
+            <div className="z-10 absolute right-2 top-2">
+              <Button
+                size={'icon'}
+                variant={'ghost'}
+                onClick={toggleViewer}
+                className='bg-black/80 rounded-full'
+              >
+                <FaXmark className='w-4 h-4' />
+              </Button>
+            </div>
               <img
                 ref={imageRef}
                 src={src}
@@ -77,16 +89,10 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
               />
             </div>
             {description && (
-              <p className="flex text-foreground text-center text-sm max-w-3xl max-h-3xl px-2 overflow-scroll">{description}</p>
+              <p className="flex text-foreground text-center text-sm max-w-3xl px-2">
+                {description}
+              </p>            
             )}
-            <div className="flex ">
-              <Button
-                variant={'secondary'}
-                onClick={toggleViewer}
-              >
-                Close
-              </Button>
-            </div>
           </div>
         </div>
       )}
