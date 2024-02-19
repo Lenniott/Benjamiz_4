@@ -19,12 +19,16 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
 
   useEffect(() => {
     if (isViewerOpen) {
-      // Prevent scrolling when the viewer is open
-      document.body.style.overflowY = 'hidden';
-    } else {
-      // Re-enable scrolling when the viewer is closed
-      document.body.style.overflowY = 'auto';
+      // Store the current scroll position and prevent scrolling
+      document.body.classList.add("overflow-y-hidden");
     }
+    // Reset zoom level
+    setZoom(false);
+    // Cleanup function to be called when the modal is closed or the component is unmounted
+    return () => {
+      // Restore the scroll position and allow scrolling
+      document.body.classList.remove("overflow-y-hidden");
+    };
   }, [isViewerOpen]);
 
   return (
@@ -45,7 +49,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
                 src={src}
                 alt={alt}
                 loading="lazy"
-                className={` ${zoom ? 'translate-y-[100%] -translate-x-[-100%] top-0 left-0 scale-[3] hover:cursor-zoom-out' : 'scale-100 hover:cursor-zoom-in h-auto'}  transition-all duration-300 object-fit`}
+                className={` ${zoom ? 'translate-y-[100%] -translate-x-[-100%] top-0 left-0 scale-[3] hover:cursor-zoom-out' : 'scale-100 max-h-[70vh] hover:cursor-zoom-in'}  transition-all duration-300 object-fit`}
                 onClick={handleZoomToggle}
               />
             </div>
