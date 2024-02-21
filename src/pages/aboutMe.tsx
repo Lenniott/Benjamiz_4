@@ -22,13 +22,13 @@ export const AboutMePage: React.FC<{}> = () => {
 
             <Container horizontal={false} className="App flex items-center gap-4">
                 <p className='h4 text-muted-foreground'>Product deisgn is more than aesthetics</p>
-                <div>
+                <div className='flex flex-col sm:flex-row gap-4 items-center sm:mt-4'>
                     <p>Thinking at different altitudes allows me to envision end states and their incremental slices, ensuring we deliver value continuously.</p>
                     <Image src="src/assets/images/versionHstory/Altitude.png" alt={altitudesAlt} description={altitudesAlt}/>
                 </div>
             </Container>
             <Container horizontal={false} className="App" >
-             <h2 className="text-lg font-bold">influenced by</h2>
+             <h2 className="text-lg font-bold">Influenced by</h2>
                 <BookScroll items={books} />
             </Container>
             <Container horizontal={false} className="App">
