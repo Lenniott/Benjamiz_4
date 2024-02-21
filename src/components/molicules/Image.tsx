@@ -49,7 +49,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
         src={src}
         alt={alt}
         loading="lazy"
-        className={`cursor-pointer hover:cursor-zoom-in ${className}`}
+        className={`cursor-pointer hover:cursor-zoom-in rounded-md ${className}`}
         onClick={toggleViewer}
       />
       {isViewerOpen && (

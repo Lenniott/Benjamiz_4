@@ -13,7 +13,7 @@ export function HomePage() {
     return (
         <div className='grid grid-cols-1 gap-4'>
 
-            <Container variant="clear">
+            <Container variant="clear" className='gap-6'>
                 <HeroHeader heroImage={heroImage} />
             </Container >
 
