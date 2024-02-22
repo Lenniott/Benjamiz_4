@@ -1,6 +1,6 @@
 
 import { Container} from '../components/container';
-import heroImage from '../assets/images/hero.webp';
+import heroImage from '../../static/images/hero.webp';
 import { Container_NavToPage } from '../components/molicules/Container_NavToPage';
 import { MainStatments } from '../components/molicules/MainStatments';
 import { HeroHeader } from '../components/molicules/HeroHeader';
