@@ -24,5 +24,5 @@ paths.forEach(path => {
 });
 
 const xml = root.end({ prettyPrint: true });
-fs.writeFileSync('public/sitemap.xml', xml);
+fs.writeFileSync('static/sitemap.xml', xml);
 console.log('Sitemap generated!');
