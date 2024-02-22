@@ -14,17 +14,15 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
   const imageRef = useRef<HTMLImageElement>(null);
 
   const toggleViewer = () => {
-    const originalStyle = window.getComputedStyle(document.body).overflow;  
-    document.body.style.overflow = originalStyle;
+    document.body.style.overflow = 'visible';
     // Reset styles for iOS devices
-    document.body.style.position = '';
-    document.body.style.width = '';
+    document.body.style.position = 'static';
+    document.body.style.width = 'auto';
     setIsViewerOpen(!isViewerOpen);
 
   }
 
   useEffect(() => {
-    const originalStyle = window.getComputedStyle(document.body).overflow;  
     if (isViewerOpen) {
 
       document.body.style.overflow = 'hidden';
@@ -34,10 +32,10 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
     }
 
     return () => {
-      document.body.style.overflow = originalStyle;
+      document.body.style.overflow = 'visible';
       // Reset styles for iOS devices
-      document.body.style.position = '';
-      document.body.style.width = '';
+      document.body.style.position = 'static';
+      document.body.style.width = 'auto';
     };
   }, [isViewerOpen]);
   
