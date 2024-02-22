@@ -9,7 +9,7 @@ import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
 import { ModeToggle } from "./mode-toggle";
 import { FaBars } from "react-icons/fa6";
-import {Logo} from "../../../static/images/logo"
+import {Logo} from "../../../public/images/logo"
 
 
 export function NavBar() {

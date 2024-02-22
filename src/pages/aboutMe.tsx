@@ -24,7 +24,7 @@ export const AboutMePage: React.FC<{}> = () => {
                 <p className='h4 text-muted-foreground'>Product deisgn is more than aesthetics</p>
                 <div className='flex flex-col sm:flex-row gap-8 items-center sm:mt-4'>
 
-                    <Image src="/static/images/versionHstory/altitude.png" alt={altitudesAlt} description={altitudesAlt}/>
+                    <Image src="public/images/versionHstory/altitude.png" alt={altitudesAlt} description={altitudesAlt}/>
 
                     <p>Thinking at different altitudes allows me to envision end states and their incremental slices, ensuring we deliver value continuously.</p>
                 </div>
