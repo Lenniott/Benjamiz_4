@@ -30,7 +30,7 @@ export const AboutMePage: React.FC<{}> = () => {
                 </div>
             </Container>
             <Container horizontal={false} className="App" >
-             <h2 className="h4 text-muted-foreground">Influenced by</h2>
+             <h2 className="h4 text-muted-foreground">External Influences</h2>
                 <BookScroll items={books} />
             </Container>
             <Container horizontal={false} className="App">
