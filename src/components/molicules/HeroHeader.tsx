@@ -11,7 +11,7 @@ export function HeroHeader({heroImage}:any) {
     </div>
 
     <div className='flex p-y-3 flex-col col-span-3 justify-center items-start flex-grow gap-2'>
-        <span className='h3 font-serif text-accent'>Learn constantly<br/>Think visually<br/>Validate regularly</span>
+        <span className='h1 font-medium mb-2'>Learn constantly<br/>Think visually<br/>Validate regularly</span>
         <span className="font-light text-muted-foreground text-base sm:text-lg" >Product Designer, Benjamin Mizrany</span>
     </div>
     </>
