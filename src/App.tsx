@@ -14,11 +14,11 @@ function App() {
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme" >
-    <div className="max-w-3xl mx-auto" >
+    <div className="sm:max-w-3xl mx-auto" >
         <Bar position="top"/>
     </div>
 
-    <div className="min-h-screen p-4 max-w-3xl mx-auto" >
+    <div className="min-h-screen p-4 max-w-sm sm:max-w-3xl mx-auto" >
     <ScrollToTop/>
 
     <div className="flex flex-col items-center justify-center my-12">

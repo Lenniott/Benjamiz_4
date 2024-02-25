@@ -12,16 +12,16 @@ export const AboutMePage: React.FC<{}> = () => {
         <div className="grid grid-cols-1 gap-4">
             <h1 className="h3 text-accent font-serif py-8"><p className='text-foreground'>/</p>About</h1>
             <Container horizontal={false} className="App flex  gap-4">
-                <p className='h4 text-muted-foreground'>Most ideas create zero or negative value for users</p>
+                <p className='h5 font-light text-muted-foreground'>Most ideas create zero or negative value for users</p>
                 <p>I focus on rapidly learning, generating and validating ideas. This means not being precious with solutions and confronting my bias.</p>
                 <div className='flex flex-col gap-2 px-4 py-0 border-l-4 border-l-muted-foreground'>
-                    <i className=''>“I really appreciate that are not precious about you ideas” </i>
+                    <i className=''>“I really appreciate that you are not precious about your ideas” </i>
                     <p className='flex flex-grow gap-1 text-sm'>– Product Owner<Link className="link" to="experience">@Mayden</Link></p>
                 </div>
             </Container>
 
             <Container horizontal={false} className="App flex items-center gap-4">
-                <p className='h4 text-muted-foreground'>Product deisgn is more than aesthetics</p>
+                <p className='h5 font-light text-muted-foreground'>Product deisgn is more than aesthetics</p>
                 <div className='flex flex-col sm:flex-row gap-8 items-center sm:mt-4'>
 
                     <Image src="https://live.staticflickr.com/65535/53546176673_a94558c15e_b.jpg" alt={altitudesAlt} description={altitudesAlt}/>
@@ -30,11 +30,11 @@ export const AboutMePage: React.FC<{}> = () => {
                 </div>
             </Container>
             <Container horizontal={false} className="App" >
-             <h2 className="h4 text-muted-foreground">External Influences</h2>
+             <h2 className="h5 font-light text-muted-foreground">External Influences</h2>
                 <BookScroll items={books} />
             </Container>
             <Container horizontal={false} className="App">
-             <h2 className="h4 text-muted-foreground">Certificates</h2>
+             <h2 className="h5 font-light text-muted-foreground">Certificates</h2>
                 <BookScroll items={certificates}/>
             </Container>
         </div>

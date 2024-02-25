@@ -111,35 +111,35 @@ html {
 
 
 .h1 {
-  @apply flex text-4xl sm:text-5xl self-stretch;
+  @apply text-4xl sm:text-5xl self-stretch;
 }
 
 .h2 {
-  @apply flex text-3xl sm:text-4xl self-stretch;
+  @apply  text-3xl sm:text-4xl self-stretch;
 }
 
 .h3 {
-  @apply flex text-2xl sm:text-3xl self-stretch;
+  @apply  text-2xl sm:text-3xl self-stretch;
 }
 
 .h4 {
-  @apply flex text-xl sm:text-2xl self-stretch;
+  @apply  text-xl sm:text-2xl self-stretch;
 }
 
 .h5 {
-  @apply flex text-lg sm:text-xl self-stretch;
+  @apply  text-lg sm:text-xl self-stretch;
 }
 
 .h6 {
-  @apply flex text-base sm:text-lg self-stretch;
+  @apply  text-base sm:text-lg self-stretch;
 }
 
 .p {
-  @apply flex text-sm sm:text-base font-light self-stretch;
+  @apply  text-sm sm:text-base font-light self-stretch;
 }
 
 .smallText {
-  @apply flex text-xs sm:text-sm font-light self-stretch align-middle;
+  @apply  text-xs sm:text-sm font-light self-stretch align-middle;
 }
 
 .link{

@@ -2,7 +2,6 @@
 import { Container} from '../components/container';
 import heroImage from '../../public/images/hero.webp';
 import { Card } from '../components/molicules/Card';
-import { MainStatments } from '../components/molicules/MainStatments';
 import { HeroHeader } from '../components/molicules/HeroHeader';
 import { FaMedium } from 'react-icons/fa6';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../components/ui/tooltip';
@@ -16,13 +15,18 @@ export function HomePage() {
                 <HeroHeader heroImage={heroImage} />
             </Container >
 
+            {/* <Container  className="p font-light text-foreground text-pretty" variant='clear' horizontal={false} delay={0.2}>
+            Hi 👋🏾 I am product designer with a preference for the operational and discovery aspects of design. Thanks for visiting!
+            </Container > */}
+
             {/* FIRST SECTION */}
-            <Container variant='linear' horizontal={false} delay={0.2} className='gap-8'>
-            <MainStatments>
-                    <p className="font-light text-lg sm:text-xl">When we improve <b className='font-bold text-base sm:text-lg'>how</b> we solve problems</p>
-                    <p className='font-light text-muted-foreground text-lg sm:text-xl'>We improve <b className='font-bold text-base sm:text-lg'>what</b> problems we solve</p>
-            </MainStatments>   
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+            <Container variant='linear' horizontal={false} delay={0.2} className='gap-6'>
+            <p className="h5 font-light text-muted-foreground whitespace-normal">
+                Learning the right problems to solve<br className='sm:hidden'/><span className='hidden sm:inline'> / </span>Learning to solve problems right 
+            </p>
+
+
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 pb-2'>
                 <Card 
                     type="Article" 
                     link="/works/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve" 
@@ -44,7 +48,7 @@ export function HomePage() {
                     <Tooltip>
                         <TooltipTrigger className='w-fit'>
                             <Container variant='solid' className='grid w-fit text-sm group hover:bg-accent ease-in delay-150 transition-all'>
-                                <FaMedium className='w-8 h-8 text-muted-foreground group-hover:text-accent-foreground' />
+                                <FaMedium className='w-8 h-8 text-accent group-hover:text-accent-foreground' />
                             </Container>
                         </TooltipTrigger>
                         <TooltipContent side='bottom'>
