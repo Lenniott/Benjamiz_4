@@ -17,7 +17,7 @@ export function HomePage() {
             </Container >
 
             {/* FIRST SECTION */}
-            <Container variant='linear' horizontal={false} delay={0.2} className='gap'>
+            <Container variant='linear' horizontal={false} delay={0.2} className='gap-8'>
             <MainStatments>
                     <p className="font-light text-lg sm:text-xl">When we improve <b className='font-bold text-base sm:text-lg'>how</b> we solve problems</p>
                     <p className='font-light text-muted-foreground text-lg sm:text-xl'>We improve <b className='font-bold text-base sm:text-lg'>what</b> problems we solve</p>
