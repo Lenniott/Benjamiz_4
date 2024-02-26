@@ -1,6 +1,6 @@
 
 import { Container} from '../components/container';
-import heroImage from '../../public/images/hero.webp';
+import heroImage from '../images/hero.webp'
 import { Card } from '../components/molicules/Card';
 import { HeroHeader } from '../components/molicules/HeroHeader';
 import { FaMedium } from 'react-icons/fa6';
@@ -20,7 +20,7 @@ export function HomePage() {
             </Container > */}
 
             {/* FIRST SECTION */}
-            <Container variant='linear' horizontal={false} delay={0.2} className='gap-6'>
+            <Container variant='linear' horizontal={false} delay={0.2} className='gap-6 p-8'>
             <p className="h5 font-light text-muted-foreground whitespace-normal">
                 Learning the right problems to solve<br className='sm:hidden'/><span className='hidden sm:inline'> / </span>Learning to solve problems right 
             </p>

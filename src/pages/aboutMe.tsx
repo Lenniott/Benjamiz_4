@@ -5,12 +5,39 @@ import books from '../assets/data/books.json';
 import certificates from '../assets/data/certificates.json';
 import { Container } from '../components/container';
 import Image  from '../components/molicules/Image';
+import LoadedQuote from '../components/features/LoadedQuote';
+
 export const AboutMePage: React.FC<{}> = () => {
     const altitudesAlt = "Abstract illustration showing the concept of 'Altitude Thinking' in product development with three levels: At the 'Product' level, an opportunity tree is depicted; at the 'Program' level, a user journey map is represented; and at the 'Feature' level, a Kanban board is visualized, all connected by dashed lines indicating progression."
+
+    
+
+
+    const meBen = {
+        name: "Benjamin Mizrany",
+        age: "18/08/1989",
+        image: 'https://avatars.githubusercontent.com/u/1218301?v=4',
+        location: "Bath, Uk",
+        family: "Married + 2 Children",
+        work: "Mayden Ltd",
+        hobbies: "🎤 Singing, 📝 Writing, 🧗🏽‍♂️Climbing, 🏃🏽‍♂️Running"
+    }
+
 
     return (
         <div className="grid grid-cols-1 gap-4">
             <h1 className="h3 text-accent font-serif py-8"><p className='text-foreground'>/</p>About</h1>
+            <div className='flex flex-col sm:flex-row gap-4'>
+                <Container horizontal={false} className="App flex  gap-1">
+                    <p className='p font-light text-muted-foreground'>{meBen.name}</p>
+                    <p className='p text-foreground'>{meBen.age}</p>
+                    <p className='p text-foreground'>{meBen.location}</p>
+                    <p className='p text-foreground'>{meBen.family}</p>
+                    <p className='p text-foreground'>{meBen.work}</p>
+                    <p className='p text-foreground'>{meBen.hobbies}</p>
+                </Container>
+            <LoadedQuote/>
+            </div>
             <Container horizontal={false} className="App flex  gap-4">
                 <p className='h5 font-light text-muted-foreground'>Most ideas create zero or negative value for users</p>
                 <p>I focus on rapidly learning, generating and validating ideas. This means not being precious with solutions and confronting my bias.</p>
