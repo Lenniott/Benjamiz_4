@@ -12,8 +12,8 @@ interface props{
 }
 export const Navigation = ({position="top"}:props)=>{
     return(
-    <NavigationMenu aria-label="navigation menu" className={position==="top"?"hidden sm:flex":"flex w-full sm:hidden"}>
-    <NavigationMenuList className="gap-2">
+    <NavigationMenu aria-label="navigation menu" className={`${position==="top"?"hidden sm:flex":"flex w-full sm:hidden"}`}>
+    <NavigationMenuList className="gap-2 grid grid-cols-4 sm:flex">
 
         <NavigationMenuItem >
             <Link to="/">

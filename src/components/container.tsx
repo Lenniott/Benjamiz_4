@@ -23,7 +23,7 @@ export function Container({
   // Define variants inside the function to access `col`
   const variants = {
     global: `flex ${isHorizontal} p-4 sm:p-8  items-right justify-start `, // Use template literal for dynamic col value
-    solid: "rounded-lg bg-card p-4 sm:p-8",
+    solid: "rounded-lg bg-card p-6 sm:p-8",
     linear: "rounded-lg bg-gradient-to-r from-card from-40% to-transparent to-80% p-4 sm:p-8",
     clear: "",
   };
