@@ -51,7 +51,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, description,c
         onClick={toggleViewer}
       />
       {isViewerOpen && (
-        <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 ">
+        <div className="fixed inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 " onClick={toggleViewer}>
             <div className="fixed flex flex-col items-center justify-center w-full h-full gap-4 p-4 top-0 overflow-auto">
               <div className="z-10 flex w-full justify-end max-w-3xl">
                 <Button

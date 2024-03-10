@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 import {motion} from "framer-motion"
+import { FaEnvelope } from "react-icons/fa6";
 export function HeroHeader({heroImage}:any) {
 const header = 'h3 text-pretty font-bold';
     const order = [0.4,0.6,0.8,1,1.2]
@@ -55,6 +56,8 @@ const header = 'h3 text-pretty font-bold';
         className='p italic'>
            With a preference for the design ops and discovery, I work with organisations to create a human centered approach when developing products.
         </motion.p>
+
+
     </div>
     </>
     )

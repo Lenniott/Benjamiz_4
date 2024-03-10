@@ -3,8 +3,6 @@ import { Container} from '../components/container';
 import heroImage from '../images/hero.webp'
 import { Card } from '../components/molicules/Card';
 import { HeroHeader } from '../components/molicules/HeroHeader';
-import { FaMedium } from 'react-icons/fa6';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../components/ui/tooltip';
 export function HomePage() {
 
 
@@ -14,17 +12,10 @@ export function HomePage() {
             <Container variant="clear" className='gap-6'>
                 <HeroHeader heroImage={heroImage} />
             </Container >
-
-            {/* <Container  className="p font-light text-foreground text-pretty" variant='clear' horizontal={false} delay={0.2}>
-            Hi 👋🏾 I am product designer with a preference for the operational and discovery aspects of design. Thanks for visiting!
-            </Container > */}
-
-            {/* FIRST SECTION */}
             <Container variant='linear' horizontal={false} delay={0.2} className='gap-6 p-8'>
             <p className="h5 font-light text-muted-foreground whitespace-normal">
                 Learning the right problems to solve<br className='sm:hidden'/><span className='hidden sm:inline'> / </span>Learning to solve problems right 
             </p>
-
 
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 pb-2'>
                 <Card 
@@ -42,21 +33,6 @@ export function HomePage() {
             </div>
               
             </Container>
-            
-            <a href="https://medium.com/@benjamin.mizrany/">
-            <TooltipProvider>
-                    <Tooltip>
-                        <TooltipTrigger className='w-fit'>
-                            <Container variant='solid' className='grid w-fit text-sm group hover:bg-accent ease-in delay-150 transition-all'>
-                                <FaMedium className='w-8 h-8 text-accent group-hover:text-accent-foreground' />
-                            </Container>
-                        </TooltipTrigger>
-                        <TooltipContent side='bottom'>
-                        <p>Go to medium</p>
-                        </TooltipContent>
-                    </Tooltip>
-            </TooltipProvider>
-            </a>
         </div>
     );
 };

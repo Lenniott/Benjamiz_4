@@ -22,19 +22,19 @@ interface Card {
   
     return (
       <div
-      className="max-w-xs rounded-md overflow-hidden shadow-md shadow-accent cursor-pointer hover:bg-accent hover:shadow-none hover:text-accent-foreground group"
+      className="max-w-xs rounded-md overflow-hidden border border-accent hover:border-transparent cursor-pointer group"
+      aria-label={alt}
       onClick={() => navigate(link)}
       >
-          <div className="flex flex-col text-pretty justify-between flex-1 min-w-32">
-              {image && (
-                <div className="flex flex-col items-center justify-center rounded-sm">
-                  <img className="hidden xxs:block rounded-t-sm  h-auto bg-light-gray bg-no-repeat bg-cover" src={image} alt={alt} />
-                </div>
-              )}
-              <div className="flex flex-col gap-4 p-4">
-              <h3 className="font-medium font-base sm:font-lg">{title}</h3>
-              <div className='text-sm text-muted-foreground group-hover:text-muted'>{type}</div>
+          <div   
+          className="flex flex-col min-w-32 text-pretty h-96 justify-end bg-cover bg-no-repeat relative" 
+          style={{ backgroundImage: `url(${image})` }}>
+              <div className="flex flex-col items-left bg-gradient-to-t group-hover:from-[#080357] group-hover:dark:from-[#ffe66d] from-white dark:from-black from-30% to-transparent items-start h-64 justify-end p-4 space-y-2 group-hover:text-accent-foreground text-accent">              
+              <div className='absolute top-4 left-4 text-sm dark:text-accent dark:bg-accent-foreground text-accent-foreground bg-accent rounded-full px-3'>{type}</div>
+              <h3 className="font-medium text-md sm:text-lg">{title}</h3>
+
               </div>
+              
           </div>
 
       </div>

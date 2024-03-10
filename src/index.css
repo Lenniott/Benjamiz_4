@@ -14,8 +14,10 @@
     --black: 210,20%,3.9%;  /* 	#080a0c Compatible with: white, grey-lightest, grey-light, grey, error-light, accent-light */
     --error-light: 348, 100%, 60%; /* Compatible with: black */
     --error-dark: 354, 71%, 36%; /* Compatible with: white, grey-lightest, grey-light */
-    --accent-light: 149, 56%, 52%; /* Compatible with: black */
-    --accent-dark: 150, 55%, 25%; /* Compatible with: white, grey-lightest, grey-light */
+
+    /*so hardcoding down src/components/molicules/Card.tsx*/
+    --accent-light: 49.73, 100%, 71.37%;/*149, 56%, 52% Compatible with: black #40c982 #53A2BE*/
+    --accent-dark: 243.57, 93.33%, 17.65%; /* Compatible with: white, grey-lightest, grey-light 	#1d6340 or #080357 */
 
 
     --quote: var(--black);
@@ -145,6 +147,7 @@ html {
 .link{
   @apply text-accent hover:text-foreground underline underline-offset-2 hover:underline-offset-8 transition-all ease-in-out;
 }
+
 
 
 
