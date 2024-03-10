@@ -7,9 +7,10 @@
 
     interface ContentProps {
         articleJson: any;
+        medium?: boolean;
     }
 
-    const MediumRenderer: React.FC<ContentProps> = ({ articleJson }) => {
+    const MediumRenderer: React.FC<ContentProps> = ({ articleJson, medium }) => {
     if (!articleJson) return null;
     const content = articleJson.content.content;
     const renderElement = (item: any) => {
@@ -91,16 +92,18 @@
 
     return (
         <article className='grid grid-cols-1 grow gap-4'>
+            {medium && 
             <Container variant='solid'>
                 <p className='small'>
                     Originally published in <RouterLink className='link' to={lastValue.content[2].attributes.href}>{renderElement(lastValue.content[2].content[0]).replace(/"/g, '')}</RouterLink>
                 </p>
 
             </Container>
+            }
             <Container variant='solid'>
             <div className='grid grid-cols-1 grow gap-2'>
 
-            <h1 className='h1 font-medium mb-2'>{articleJson.title}</h1>
+            <h1 className='h3 text-pretty font-bold'>{articleJson.title}</h1>
 
             {content.map((item: any, index: number) => (
                 <div>

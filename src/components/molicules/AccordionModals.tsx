@@ -11,7 +11,7 @@ export function AccordionModals({header,delay=0,content,animateFromEnd=false}:Ac
     return (
     <>
       <Container variant="solid" delay={delay} animateFromEnd={animateFromEnd}>
-        <Accordion type="single" collapsible className="w-full ">
+        <Accordion type="single" collapsible className="flex grow">
           <AccordionItem value="item-1" >
 
             <AccordionTrigger className="p-0 pb-1">

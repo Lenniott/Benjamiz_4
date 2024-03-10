@@ -6,7 +6,7 @@ export function BicycleExercise() {
 
     return (
         <div className='grid grid-cols-1 gap-4'>
-            <MediumRenderer articleJson={article}/>
+            <MediumRenderer medium={true} articleJson={article}/>
         </div>
     );
 };

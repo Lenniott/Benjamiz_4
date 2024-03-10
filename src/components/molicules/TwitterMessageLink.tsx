@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
 import { useState } from "react";
-import { FaEnvelope, FaPaperPlane } from "react-icons/fa6";
+import { FaPaperPlane } from "react-icons/fa6";
 import { Container } from "../container";
 import { Block } from "./blocks";
 const TwitterMessageForm = () => {
@@ -11,6 +11,8 @@ const TwitterMessageForm = () => {
         const twitterUrl = `https://twitter.com/messages/compose?recipient_id=1584832601503711232&text=${formattedMessage}`;
         window.open(twitterUrl, '_blank');
     };
+
+    
 
     return (
       <div className="flex flex-col gap-4">
