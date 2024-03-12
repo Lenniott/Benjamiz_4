@@ -22,7 +22,7 @@ interface Card {
   
     return (
       <div
-      className="max-w-xs rounded-md overflow-hidden border border-accent hover:border-transparent cursor-pointer group"
+      className="max-w-xs rounded-md overflow-hidden shadow-md shadow-accent hover:shadow-none cursor-pointer group"
       aria-label={alt}
       onClick={() => navigate(link)}
       >

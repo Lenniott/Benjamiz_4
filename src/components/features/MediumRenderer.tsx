@@ -43,7 +43,7 @@
             return <em className='font-light indent-8'><p>{renderElement(item.content)}</p></em>;
         case 'blockquote':
             const quoteText = Array.isArray(item.content) ? item.content.join(' ') : item.content;
-            return <i className='flex flex-grow border-l-4 border-accent  rounded-r-md p-4 text-lg sm:text-xl italic font-sans font-light '>{quoteText}</i>;
+            return <i className='flex flex-grow border-l-4 border-accent  rounded-r-md p-4 text-lg sm:text-xl italic font-sans font-light mt-4 mb-8'>{quoteText}</i>;
         case 'ul':
             return <ul className=' ml-8 list-disc gap-4 mb-4 flex flex-col text-base sm:text-lg font-light '>{item.content.map((listItemContent: any, listItemIndex: number) => 
                 <li key={listItemIndex}>
@@ -70,7 +70,7 @@
         case 'hr':
                 return <hr className='border-card-border my-16'/>
         case 'img':
-            return <div className="flex flex-shrink-0 items-center justify-center my-2 sm-2 "><Image className="rounded-sm w-72" src={item.attributes.src} alt={item.attributes.alt || ''} description={item.attributes.alt || ''} /></div>;
+            return <div className="flex flex-shrink-0 items-center justify-center my-2 sm-2 "><Image className={`rounded-sm w-72 ${item.attributes.class}`} src={item.attributes.src} alt={item.attributes.alt || ''} description={item.attributes.alt || ''} /></div>;
         case 'figcaption':
         return <figcaption className='flex flex-grow  py-1 items-center justify-center'><span className=' text-sm text-muted-foreground'>{renderElement(item.content)}</span></figcaption>;
         // Add more cases as needed

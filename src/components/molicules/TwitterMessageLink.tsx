@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaPaperPlane } from "react-icons/fa6";
 import { Container } from "../container";
 import { Block } from "./blocks";
+import { motion } from "framer-motion";
 const TwitterMessageForm = () => {
     const [message, setMessage] = useState('');
 
@@ -39,20 +40,20 @@ const TwitterMessageForm = () => {
                 Send via Twitter
             </Button>
         </Container>
-            <div className="flex gap-4">
+        <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{delay: 0.4, duration: 0.2 }}
+            className="flex justify-between">
             <Block 
-                    delay={0.3} 
                     icon='medium'/>
                 <Block 
-                    delay={0.4}
                     icon='linkedin'/>
                 <Block 
-                    delay={0.5} 
                     icon='twitter'/>
                 <Block 
-                    delay={0.6} 
                     icon='github'/>
-            </div>
+            </motion.div>
 
 
 

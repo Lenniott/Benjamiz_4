@@ -14,7 +14,9 @@
                 {
                    "type": "img",
                    "attributes": {
-                      "src": "https://cdn-images-1.medium.com/max/512/1*sZMLstXvHytFnSFF9vWgbw@2x.jpeg"
+                        "alt": "",
+                      "src": "https://i.ibb.co/Sc3NRdV/gif-history.gif",
+                      "class": "w-full"
                    }
                 }
              ]
@@ -44,9 +46,28 @@
              ]
           },
           {
+            "type": "blockquote",
+            "content": [
+                "“Once you press save there is no going back, without calling support”"
+            ]
+         },
+          {
             "type": "h4",
             "content": [
                "Development and User Experience Design"
+            ]
+         },
+         {
+            "type": "figure",
+            "content": [
+               {
+                  "type": "img",
+                  "attributes": {
+                       "alt": "Analysis of competitors' history features, google docs, microsoft word, and figma.",
+                     "src": "https://i.ibb.co/kHZLCMx/Competitor-analysis.png",
+                     "class": "w-full"
+                  }
+               }
             ]
          },
           {
@@ -56,23 +77,46 @@
              ]
           },
           {
-            "type": "h3",
+            "type": "div",
+            "attributes": {
+              "class": "flex flex-col sm:flex-row items-center gap-4 mt-4"
+           },
             "content": [
-               "Usability Concerns and Solutions"
-            ]
-         },
-         {
-           "type": "h4",
-           "content": [
-              "Discovery and Restoration Process"
+              {
+                 "type": "div",
+                 "attributes": {
+                    "class": "flex flex-col gap-4"
+                    },
+                 "content": [
+                  {
+                     "type": "h3",
+                     "content": [
+                        "Usability Concerns and Solutions"
+                     ]
+                  },
+                  {
+                    "type": "h4",
+                    "content": [
+                       "Discovery and Restoration Process"
+                    ]
+                 },
+                  {
+                     "type": "p",
+                     "content": [
+                         "After analyzing these programs, I distilled the main themes and common usability patterns and shared these insights with the developers. Together, we brainstormed some layout ideas and developed rough sketches of the layout and where the feature would live. For ease of implementation, we settled for a full-screen modal."
+                     ]
+                  }
+                 ]
+              },
+              {
+                 "type": "img",
+                 "attributes": {
+                    "alt": "Sketches of different states and options for selecting and restoring previous versions of a document",
+                    "src": "https://i.ibb.co/C1ZKVC9/case-Study-Sketches-page-4.png"
+                 }
+              }
            ]
         },
-         {
-            "type": "p",
-            "content": [
-                "After analyzing these programs, I distilled the main themes and common usability patterns and shared these insights with the developers. Together, we brainstormed some layout ideas and developed rough sketches of the layout and where the feature would live. For ease of implementation, we settled for a full-screen modal."
-            ]
-         },
          {
             "type": "p",
             "content": [
@@ -85,24 +129,56 @@
                "The first was about how users would discover the feature, and the second was around user expectation of functionality behaviour. Though these seem straightforward, our platform's technical limitations meant we couldn't simplify the process in a way users might expect for this initial launch."
             ]
          },
-          {
-             "type": "h3",
-             "content": [
-                "Finding the feature"
-             ]
-          },
-          {
-             "type": "p",
-             "content": [
-                "The development team planned to change the content page as little as possible, so I went through various designs until we found one they were willing to implement. Then, I sought to validate this solution with users. We had access to in-house experts (our learning designers) for quick feedback. However, their deep familiarity with the system meant I had to remember that non-experts might interact with the platform differently."
-             ]
-          },
+         {
+            "type": "div",
+            "attributes": {
+              "class": "flex flex-col sm:flex-row items-center gap-4 mt-4"
+           },
+            "content": [
+              {
+                 "type": "div",
+                 "attributes": {
+                    "class": "flex flex-col gap-4"
+                    },
+                 "content": [
+                  {
+                     "type": "h3",
+                     "content": [
+                        "Finding the feature"
+                     ]
+                  },
+                  {
+                     "type": "p",
+                     "content": [
+                        "The development team planned to change the content page as little as possible, so I went through various designs until we found one they were willing to implement. Then, I sought to validate this solution with users. We had access to in-house experts (our learning designers) for quick feedback. However, their deep familiarity with the system meant I had to remember that non-experts might interact with the platform differently."
+                     ]
+                  }
+                 ]
+              },
+              {
+                 "type": "img",
+                 "attributes": {
+                    "alt": "Three screenshots, the top image shows the content pages in view mode, and the other two show the options revealed in edit mode. The final image has the addition of a ghost button stating the last time the page was edited.",
+                    "src": "https://i.ibb.co/6vJDsHH/How-To-Find.png"
+                 }
+              }
+           ]
+        },
+
           {
             "type": "p",
             "content": [
                "I conducted interviews with both external and internal users focusing on whether they could easily find this feature. The responses varied, with some finding the feature without guidance and others struggling. I noticed variations in the time it took users to find the feature and their approaches, but overall, I found it acceptable for release. Once users located it, they agreed it was placed logically and found it clear. Since our platform lacks a feature to highlight and educate users on new updates, provided we made our release notes and support documents clear, accessible, and well-distributed, we would be able to minimise the risk of the feature being overlooked by users. I shared these insights and recommendations with the product manager and customer support lead."
             ]
-         },
+         },{
+         "type": "div",
+         "attributes": {
+           "class": "h4 bg-accent text-accent-foreground p-4 rounded rounded-md mb-4"
+        },
+        "content": [
+            {"type":"p",
+        "content":["🧪 I would like you restore an old version of this screen from yesterday at 06:30PM."]}
+        ]},
          {
             "type": "p",
             "content": [
@@ -118,8 +194,16 @@
          {
             "type": "h3",
             "content": [
-               "Finding the feature"
+               "Understanding how the feature works"
             ]
+         },
+         {
+            "type": "img",
+            "attributes": {
+               "alt": "Workflow diagram of how the feature would work",
+               "src": "https://i.ibb.co/CBGGPNj/Workflow.png",
+               "class": "w-full"
+            }
          },
          {
             "type": "p",
@@ -170,17 +254,40 @@
            ]
         },
         {
-            "type": "h4",
-            "content": [
-               "Challenges and Lessons Learned"
-            ]
-         },
-         {
-            "type": "p",
-            "content": [
-               "The main challenge was designing around the system’s technical debt with a focus on user needs rather than just what was technically easy, I first needed to understand the constraints of the system before I was able to test the user’s understanding of the feature and the actions it performed. My initial design may have been too ambitious, but regular feedback from developers and users helped refine it into a practical solution that balanced ease of implementation with user benefit."
-            ]
-         },
+         "type": "div",
+         "attributes": {
+           "class": "flex flex-col sm:flex-row items-center gap-4 mt-4"
+        },
+         "content": [
+           {
+              "type": "div",
+              "attributes": {
+                 "class": "flex flex-col gap-4"
+                 },
+              "content": [
+               {
+                  "type": "h4",
+                  "content": [
+                     "Challenges and Lessons Learned"
+                  ]
+               },
+               {
+                  "type": "p",
+                  "content": [
+                     "The main challenge was designing around the system’s technical debt with a focus on user needs rather than just what was technically easy, I first needed to understand the constraints of the system before I was able to test the user’s understanding of the feature and the actions it performed. My initial design may have been too ambitious, but regular feedback from developers and users helped refine it into a practical solution that balanced ease of implementation with user benefit."
+                  ]
+               }
+              ]
+           },
+           {
+              "type": "img",
+              "attributes": {
+                 "alt": "Earlier design that was not implemented",
+                 "src": "https://i.ibb.co/vLTDcmw/Too-Ambition-Design.png"
+              }
+           }
+        ]
+     },
          {
             "type": "h4",
             "content": [
