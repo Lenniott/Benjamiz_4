@@ -35,7 +35,7 @@ export const AboutMePage: React.FC<{}> = () => {
             <h1 className="h3 text-accent font-serif py-8 flex"><p className='text-foreground'>/</p>About</h1>
             <Container variant='solid' horizontal={false} className="App flex items-center flex-col sm:flex-row gap-4 sm:gap-8">
                 <div className='flex flex-col items-center sm:mt-4 gap-4'>
-                    <p>I am {meBen.name}, {meBen.age} years old, Lives in {meBen.location} with his {meBen.family}. Currently working at <Link className="link" to="experience">{meBen.work}</Link></p>
+                    <p>I am {meBen.name}, {meBen.age} years old, I live in {meBen.location} with my {meBen.family}. Currently working at <Link className="link" to="experience">{meBen.work}</Link></p>
                     <p>When I find a moment, you may find me  {meBen.hobbies.join(", ")}</p>    
                 </div>
 
@@ -68,7 +68,7 @@ export const AboutMePage: React.FC<{}> = () => {
             
             <Container horizontal={false} className="App" >
              <h2 className="h5 font-light text-muted-foreground">External Influences</h2>
-                <BookScroll items={books} />
+                <BookScroll imageSize={{width: 'w-32', height: 'h-fit'}} items={books} />
             </Container>
             <Container horizontal={false} className="App">
              <h2 className="h5 font-light text-muted-foreground">Certificates</h2>

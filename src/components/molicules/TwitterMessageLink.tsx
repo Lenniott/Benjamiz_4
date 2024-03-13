@@ -44,7 +44,7 @@ const TwitterMessageForm = () => {
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{delay: 0.4, duration: 0.2 }}
-            className="flex gap-4 mx-auto">
+            className="flex gap-4 mr-auto">
             <Block 
                     icon='medium'/>
                 <Block 

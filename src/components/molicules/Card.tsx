@@ -22,7 +22,7 @@ interface Card {
   
     return (
       <div
-      className="max-w-xs rounded-md overflow-hidden shadow-md shadow-accent hover:shadow-none cursor-pointer group"
+      className=" rounded-md overflow-hidden shadow-md shadow-accent hover:shadow-none cursor-pointer group"
       aria-label={alt}
       onClick={() => navigate(link)}
       >
@@ -30,8 +30,8 @@ interface Card {
           className="flex flex-col min-w-32 text-pretty h-96 justify-end bg-cover bg-no-repeat relative" 
           style={{ backgroundImage: `url(${image})` }}>
               <div className="flex flex-col items-left bg-gradient-to-t group-hover:from-[#080357] group-hover:dark:from-[#ffe66d] from-white dark:from-black from-30% to-transparent items-start h-64 justify-end p-4 space-y-2 group-hover:text-accent-foreground text-accent">              
-              <div className='absolute top-4 left-4 text-sm dark:text-accent dark:bg-accent-foreground text-accent-foreground bg-accent rounded-full px-3'>{type}</div>
-              <h3 className="font-medium text-md sm:text-lg">{title}</h3>
+              <div className='absolute top-4 left-4 text-sm dark:text-accent dark:bg-accent-foreground text-accent-foreground bg-accent rounded-full px-3 text-think'>{type}</div>
+              <h3 className="h6">{title}</h3>
 
               </div>
               

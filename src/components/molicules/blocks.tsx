@@ -12,7 +12,7 @@ interface BlockProps {
   
 
 export const Block=(({icon, delay = 0}:BlockProps) => {
-    const imageStyle ='size-8';
+    const imageStyle ='size-4 sm:size-6';
     const icons = {
         medium: {
             icon:<FaMedium className={imageStyle}/>,
@@ -49,7 +49,7 @@ export const Block=(({icon, delay = 0}:BlockProps) => {
                             {icons[icon].icon}
                         </Container>
                     </TooltipTrigger>
-                    <TooltipContent side='bottom'>
+                    <TooltipContent side='bottom' className="text-sm">
                         <p aria-label={icons[icon].label}>{icons[icon].label}</p>
                     </TooltipContent>
                 </Tooltip>

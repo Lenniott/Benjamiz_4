@@ -18,7 +18,7 @@ interface ShowcaseProps {
 // Functional Component
 const Showcase: React.FC<ShowcaseProps> = ({ items, imageSize = { width: 'w-32', height: 'h-48' } }) => {
   return (
-    <div className="flex overflow-x-scroll py-4 scrollbar-custom h-fit">
+    <div className="flex overflow-x-scroll py-4 scrollbar-custom h-fit items-baseline">
       {items.map((item, index) => (
         <div id={item.title} key={index} className="m-4 flex-none">
           <div className={`${imageSize.width} ${imageSize.height} overflow-hidden rounded-lg shadow-lg`}>
