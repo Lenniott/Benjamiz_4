@@ -5,7 +5,7 @@ export function HeroHeader({heroImage}:any) {
 const header = 'h3 text-pretty font-bold';
     const order = [0.4,0.6,0.8,1,1.2]
     return (
-    <div className="flex flex-col sm:flex-row gap-4">
+    <div className="flex flex-col sm:flex-row gap-4 py-8">
     <motion.div
     initial={{ x: -300, opacity: 0 }}
     animate={{ x: 0, opacity: 1 }}
@@ -58,7 +58,7 @@ const header = 'h3 text-pretty font-bold';
         animate={{ x: 0, opacity: 1 }}
         transition={{delay: order[4], duration: 0.5 }}
         className='p italic'>
-           With a preference for the design ops and discovery, I work with organisations to create a human centered approach when developing products.
+        I work with organisations to create a human centered approach to developing products.
         </motion.p>
 
 

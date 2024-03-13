@@ -26,15 +26,23 @@ export const AboutMePage: React.FC<{}> = () => {
         location: "Bath, Uk",
         family: "wife and two children",
         work: "Mayden Ltd",
-        hobbies: ["🎤 Singing", "📝 Writing"," 🧗🏽‍♂️Climbing"," 🏃🏽‍♂️Running"]
+        hobbies: ["🎤 Singing", "📝 Writing"," 🧗🏽‍♂️Climbing","or  🏃🏽‍♂️Running"]
     }
 
 
     return (
         <div className="grid grid-cols-1 gap-4">
             <h1 className="h3 text-accent font-serif py-8 flex"><p className='text-foreground'>/</p>About</h1>
-            <Container variant='solid' horizontal={false} className="flex gap-4">
-                <p>{meBen.name}, {meBen.age} years old, Lives in {meBen.location} with his {meBen.family}. Currently working at <Link className="link" to="experience">{meBen.work}</Link></p>
+            <Container variant='solid' horizontal={false} className="App flex items-center flex-col sm:flex-row gap-4 sm:gap-8">
+                <div className='flex flex-col items-center sm:mt-4 gap-4'>
+                    <p>I am {meBen.name}, {meBen.age} years old, Lives in {meBen.location} with his {meBen.family}. Currently working at <Link className="link" to="experience">{meBen.work}</Link></p>
+                    <p>When I find a moment, you may find me  {meBen.hobbies.join(", ")}</p>    
+                </div>
+
+                <div className='items-center sm:mt-4'>
+                <Image src="https://i.ibb.co/Gtx51jJ/MyFamily.png" className='w-72' alt={"Man and wife hold their two children"} description={"Man and wife hold their two children"}/>    
+                </div>
+                
             </Container>
 
             <LoadedQuote/>
@@ -53,16 +61,18 @@ export const AboutMePage: React.FC<{}> = () => {
 
                     <Image src="https://live.staticflickr.com/65535/53546176673_a94558c15e_b.jpg" alt={altitudesAlt} description={altitudesAlt}/>
 
-                    <p>Thinking at different altitudes allows me to envision end states and their incremental slices, ensuring we deliver value continuously.</p>
+                    <p>I try to think about the project at different levels, I build a broard vision for us to iterate towards, then break that down so we can deliever value with every development cycle.</p>
                 </div>
             </Container>
+
+            
             <Container horizontal={false} className="App" >
              <h2 className="h5 font-light text-muted-foreground">External Influences</h2>
                 <BookScroll items={books} />
             </Container>
             <Container horizontal={false} className="App">
              <h2 className="h5 font-light text-muted-foreground">Certificates</h2>
-                <BookScroll items={certificates}/>
+                <BookScroll imageSize={{width: 'w-32', height: 'h-fit'}} items={certificates}/>
             </Container>
         </div>
     );

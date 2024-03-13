@@ -13,9 +13,9 @@ export function HomePage() {
             <HeroHeader heroImage={heroImage} />
 
             <Container variant='linear' horizontal={false} delay={0.2} className='gap-6 p-8'>
-            <p className="h5 font-light text-muted-foreground whitespace-normal">
+            {/* <p className="h5 font-light text-muted-foreground whitespace-normal">
                 Learning the right problems to solve<br className='sm:hidden'/><span className='hidden sm:inline'> / </span>Learning to solve problems right 
-            </p>
+            </p> */}
 
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 pb-2'>
                 <Card 
@@ -24,13 +24,19 @@ export function HomePage() {
                     title="Improving Customer Relationships Through Product Enhancements" 
                     image='https://i.ibb.co/C1ZKVC9/case-Study-Sketches-page-4.png' 
                     alt='Sketches of different states and options for selecting and restoring previous versions of a document'/>  
+                <Card 
+                    type="User profile" 
+                    link="/about" 
+                    title="Learn more about me" 
+                    image='https://i.ibb.co/mXDcY7B/MyFamily.png' 
+                    alt='Man and wife hold their two children'/>  
             </div>
               
             </Container>
             <Container variant='linear' horizontal={false} delay={0.4} className='gap-6 p-8'>
-            <p className="h5 font-light text-muted-foreground whitespace-normal">
+            {/* <p className="h5 font-light text-muted-foreground whitespace-normal">
                 Learning the right problems to solve<br className='sm:hidden'/><span className='hidden sm:inline'> / </span>Learning to solve problems right 
-            </p>
+            </p> */}
 
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 pb-2'>
                 <Card 

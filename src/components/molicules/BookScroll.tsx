@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ImageComponent from '../molicules/Image';
 // Interface definition
 interface ShowcaseItem {
   title: string;
@@ -18,16 +18,16 @@ interface ShowcaseProps {
 // Functional Component
 const Showcase: React.FC<ShowcaseProps> = ({ items, imageSize = { width: 'w-32', height: 'h-48' } }) => {
   return (
-    <div className="flex overflow-x-scroll py-4 scrollbar-custom">
+    <div className="flex overflow-x-scroll py-4 scrollbar-custom h-fit">
       {items.map((item, index) => (
-        <a key={index} href={item.link} target="_blank" rel="noopener noreferrer" className="m-4 flex-none">
+        <div id={item.title} key={index} className="m-4 flex-none">
           <div className={`${imageSize.width} ${imageSize.height} overflow-hidden rounded-lg shadow-lg`}>
-            <img loading="lazy" src={item.img} alt={item.title} className="w-full h-full object-cover" />
+            <ImageComponent src={item.img} alt={item.title} className="w-full h-full object-cover" />
           </div>
           <div className={`mt-2 text-center ${imageSize.width} `}>
             <p className="text-sm">{item.title}</p>
           </div>
-        </a>
+        </div>
       ))}
     </div>
   );

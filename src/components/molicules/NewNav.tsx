@@ -25,12 +25,12 @@ export const NewNav = () => {
                         <span className="hidden sm:block">Home</span>
                     </Button>
             </Link>
-            <Link to="/works">
+            {/* <Link to="/works">
                 <Button variant="ghost" size="lg" className='flex items-center gap-2' aria-label='Works'>
                         <FaBriefcase/>
                         <span className="hidden sm:block">Works</span>
                     </Button>
-            </Link>
+            </Link> */}
             <Link to="/about">
                 <Button variant="ghost"  size="lg" className='flex items-center gap-2' aria-label='About'>
                     <FaUser/>

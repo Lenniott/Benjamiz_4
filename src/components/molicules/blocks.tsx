@@ -3,10 +3,10 @@
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix-ui/react-tooltip"
 import { Container } from "../container"
 import { Link } from "react-router-dom"
-import { FaMedium, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa6"
+import { FaMedium, FaTwitter, FaGithub, FaLinkedin, FaBriefcase} from "react-icons/fa6"
 
 interface BlockProps {
-    icon: "medium" | "twitter" | "github" | "linkedin";
+    icon: "medium" | "twitter" | "github" | "linkedin"|"briefcase";
     delay?: number
   }
   
@@ -31,9 +31,14 @@ export const Block=(({icon, delay = 0}:BlockProps) => {
         },
         linkedin:{
             icon: <FaLinkedin className={imageStyle}/>,
-            link: "https://www.linkedin.com/in/mizranyb/"
-            ,label: "linkedin",
+            link: "https://www.linkedin.com/in/mizranyb/",
+            label: "linkedin",
         },
+        briefcase:{
+            icon: <FaBriefcase className={imageStyle}/>,
+            link: "https://drive.google.com/file/d/1dHWbjaFwjcClaS7i-VMkOUrvfLuXKy1q/view?usp=sharing", 
+            label: "CV",
+        }
     }
     return (
         <Link to={icons[icon].link}>
