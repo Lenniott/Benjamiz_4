@@ -1,5 +1,6 @@
 
-import { FaHouse,FaUser,FaBriefcase,FaPaperPlane } from "react-icons/fa6";
+import { FaHouse,FaUser,FaPaperPlane } from "react-icons/fa6"; 
+// FaBriefcase
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { ModeToggle } from "./mode-toggle";
