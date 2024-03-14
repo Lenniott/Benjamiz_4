@@ -1,5 +1,5 @@
 
-import { FaHouse,FaUser,FaPaperPlane } from "react-icons/fa6"; 
+import { FaHouse,FaUser,FaPaperPlane, FaBriefcase } from "react-icons/fa6"; 
 // FaBriefcase
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
@@ -26,12 +26,12 @@ export const NewNav = () => {
                         <span className="hidden sm:block">Home</span>
                     </Button>
             </Link>
-            {/* <Link to="/works">
-                <Button variant="ghost" size="lg" className='flex items-center gap-2' aria-label='Works'>
+            <Link to="/experience">
+                <Button variant="ghost" size="lg" className='flex items-center gap-2' aria-label='experience'>
                         <FaBriefcase/>
-                        <span className="hidden sm:block">Works</span>
+                        <span className="hidden sm:block">Experience</span>
                     </Button>
-            </Link> */}
+            </Link>
             <Link to="/about">
                 <Button variant="ghost"  size="lg" className='flex items-center gap-2' aria-label='About'>
                     <FaUser/>

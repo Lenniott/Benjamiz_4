@@ -17,15 +17,15 @@ const TwitterMessageForm = () => {
 
     return (
       <div className="flex flex-col gap-4">
-      <hr className="my-8 stroke-card-border"/>
-      <Container horizontal={false} variant="linear" className="flex flex-col space-y-6">
-            <h2 className="h5 font-light text-muted-foreground whitespace-normal">
+      <hr className="mt-8 mb-12 stroke-card-border"/>
+      <Container horizontal={false} variant="solid" className="flex flex-col space-y-6">
+            <h2 className="h4 whitespace-normal">
                Get in touch
             </h2>
             <div className="flex flex-col space-y-2">
             <label className="text-sm text-muted-foreground">Message</label>
             <textarea
-                className="border-2 border-card-border rounded-md p-2 text-foreground dark:placeholder:text-muted dark:text-black bg-white dark:bg-muted-foreground"
+                className="border-2 border-card-border rounded-md p-2 text-foreground dark:placeholder:text-muted-foreground dark:text-foreground bg-white dark:bg-background"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Type your message here..."

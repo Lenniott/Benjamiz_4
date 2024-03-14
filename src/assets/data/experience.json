@@ -1,0 +1,80 @@
+{
+    "experiences": [
+      {
+        "company": "Mayden",
+        "industry": "Clinical software",
+        "description": "Clinical software used by over 5,000 therapists, for psychological therapy with data informed care.",
+        "position": "Product Designer",
+        "duration": "May 2023 - Present",
+        "responsibilities": [
+          "Led strategies for increased user interaction.",
+          "Collaborated to shape work culture.",
+          "Ensured data-backed product decisions.",
+          "Advocated for design in product development."
+        ]
+      },
+      {
+        "company": "Insendi",
+        "industry": "Learning experience platform",
+        "description": "A learning experience platform used globally to deliver Executive Education & online MBAs.",
+        "positions": [
+          {
+            "title": "UX Designer",
+            "duration": "Jan 2022 - May 2023",
+            "responsibilities": [
+              "Timely and valuable insights and design through agile research.",
+              "Enabled rapid usability testing through a component library.",
+              "Partnered in redefining product development practices."
+            ]
+          },
+          {
+            "title": "Lead media specialist",
+            "duration": "Aug 2018 - Jan 2022",
+            "responsibilities": [
+              "Refined production processes for scalable & high-quality output.",
+              "Developed tools & workflows to improve async collaboration.",
+              "Ensured accurate, high quality and timely delivery from the team."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Jungle Creations",
+        "industry": "Digital media",
+        "description": "A digital media company with millions of followers, creating impactful marketing strategies.",
+        "position": "Original Production Executive",
+        "duration": "Feb 2017 - May 2018",
+        "responsibilities": [
+          "Grew a fitness channel by 600,000 followers in 6 months.",
+          "Boosted e-commerce sales through strategic content creation."
+        ]
+      }
+    ],
+    "skills": {
+      "coreCompetencies": [
+        "Stakeholder alignment",
+        "Customer-centric development",
+        "Vision & goal setting",
+        "Cross-functional collaboration",
+        "Agile evangelism"
+      ],
+      "technicalSkills": [
+        "User & stakeholder interviews",
+        "Wireframing",
+        "Excel",
+        "Prototyping (Figma, React, Tailwind)",
+        "Workshops",
+        "Strategic prioritisation",
+        "Market and user research",
+        "Departmental collaboration"
+      ]
+    },
+    "education": [
+      {
+        "degree": "BA (Hon) Television Post Production",
+        "institution": "Southampton Solent University",
+        "year": "2008 - 2011"
+      }
+    ]
+  }
+  

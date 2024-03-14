@@ -130,17 +130,12 @@
                }
             ]
          },
-          {
-             "type": "p",
-             "content": [
-                {
-                   "type": "h4",
-                   "content": [
-                      "Materials Needed:"
-                   ]
-                }
-             ]
-          },
+            {
+               "type": "h4",
+               "content": [
+                  "Materials Needed:"
+               ]
+            },
           {
              "type": "ul",
              "content": [
@@ -158,17 +153,12 @@
                 }
              ]
           },
-          {
-             "type": "p",
-             "content": [
-                {
-                   "type": "h4",
-                   "content": [
-                      "Duration:"
-                   ]
-                }
-             ]
-          },
+            {
+               "type": "h4",
+               "content": [
+                  "Duration:"
+               ]
+            },
           {
             "type": "ul",
              "content": [

@@ -37,7 +37,7 @@ export const Block=(({icon, delay = 0}:BlockProps) => {
         briefcase:{
             icon: <FaBriefcase className={imageStyle}/>,
             link: "https://drive.google.com/file/d/1dHWbjaFwjcClaS7i-VMkOUrvfLuXKy1q/view?usp=sharing", 
-            label: "CV",
+            label: "pdf CV",
         }
     }
     return (

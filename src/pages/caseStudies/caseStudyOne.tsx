@@ -1,6 +1,7 @@
 // import { UserProfileContainer } from "../../components/molicules/UserProfileContainer"
 import MediumRenderer from '../../components/features/MediumRenderer';
 import article from '../../../src/assets/data/versionHistoy.json'
+import { Content } from '../../components/molicules/Content';
 export function CaseStudyOne() {
     return (
         <>
@@ -12,6 +13,7 @@ export function CaseStudyOne() {
         interaction="Utilise the platform for designing and delivering online courses."
         /> */}
         <MediumRenderer articleJson={article}/>
+        <Content/>
         </>
     )
 }

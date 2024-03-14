@@ -21,7 +21,7 @@ function App() {
     <div className="min-h-screen p-4 max-w-sm sm:max-w-3xl mx-auto  mb-16 sm:mt-16" >
     <ScrollToTop/>
 
-    <div className="flex flex-col items-center justify-center gap-4 sonpsors:">
+    <div className="flex flex-col items-center justify-center gap-4">
       <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/experience" element={<ExperiencePage/>} />

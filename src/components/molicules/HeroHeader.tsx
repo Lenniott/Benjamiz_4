@@ -57,8 +57,8 @@ const header = 'h3 text-pretty font-bold';
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{delay: order[4], duration: 0.5 }}
-        className='p italic'>
-        I work with organisations to create a human centered approach to developing products.
+        className='p italic max-w-[480px]'>
+        I work with product teams to create a human centered approach to developing products.
         </motion.p>
 
 
