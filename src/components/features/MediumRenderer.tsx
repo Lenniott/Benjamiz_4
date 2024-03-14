@@ -32,9 +32,9 @@
         case 'subtitle':
             return <h2 className='h5 text-muted-foreground'>{renderElement(item.content)}</h2>;
         case 'h3':
-            return <h2 className='h4 mt-2 mb-1 '>{renderElement(item.content)}</h2>;
+            return <h2 className='h4 mt-12 mb-1 '>{renderElement(item.content)}</h2>;
         case 'h4':
-            return <h3 className='h5 text-muted-foreground'>{renderElement(item.content)}</h3>;
+            return <h3 className='h5 mt-8 text-muted-foreground'>{renderElement(item.content)}</h3>;
         case 'p':
             return <p className='text-base sm:text-lg py-2 font-light'>{renderElement(item.content)}</p>;
         case 'strong':
@@ -70,7 +70,7 @@
         case 'hr':
                 return <hr className='border-card-border my-16'/>
         case 'img':
-            return <div className="flex flex-shrink-0 items-center justify-center my-2 sm-2 "><Image className={`rounded-sm w-72 ${item.attributes.class}`} src={item.attributes.src} alt={item.attributes.alt || ''} description={item.attributes.alt || ''} /></div>;
+            return <div className="flex flex-shrink-0 items-center justify-center my-2 sm-2"><Image className={`rounded-sm w-72 ${item.attributes.class}`} src={item.attributes.src} alt={item.attributes.alt || ''} description={item.attributes.alt || ''} /></div>;
         case 'figcaption':
         return <figcaption className='flex flex-grow  py-1 items-center justify-center'><span className=' text-sm text-muted-foreground'>{renderElement(item.content)}</span></figcaption>;
         // Add more cases as needed
@@ -101,9 +101,9 @@
             </Container>
             }
             <Container variant='solid'>
-            <div className='grid grid-cols-1 grow gap-2'>
+            <div className='grid grid-cols-1 grow pt-2 pb-8'>
 
-            <h1 className='h3 text-pretty font-bold'>{articleJson.title}</h1>
+            <h1 className='h3 text-pretty font-bold mb-8'>{articleJson.title}</h1>
 
             {content.map((item: any, index: number) => (
                 <div>

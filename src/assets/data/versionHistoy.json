@@ -1,6 +1,6 @@
 {
 
-    "title": "Improving customer relationships through product enhancements",
+    "title": "Restoring historic satisfaction with version history",
 
     "author": "Benjamiz",
 
@@ -24,31 +24,30 @@
           {
              "type": "p",
              "content": [
-                "In a year marked by layoffs, restructuring, and customer unhappiness, our main goal was to improve our relationship with customers. Who had grown despondent with the lack of change in functionality of the platform, as we focused on the transition to enterprise software development. Our objective this year as a product team was to deliver a road map of highly requested and valuable features to regain customer support and trust in the product."
+                "After focusing too heavily on dev ops customers had become disappointed with the rate of change in the platform. Our objective for the year, as a product team, was to deliver a road map of highly requested and valuable features to regain customer support and trust."
              ]
           },
           {
              "type": "h3",
              "content": [
-                "Identifying and implementing a key feature: Version history"
+                "Low hanging fruit: version history"
              ]
           },
           {
-            "type": "h4",
-            "content": [
-               "The demand for version history"
-            ]
-         },
-          {
              "type": "p",
              "content": [
-                "Restoring past versions of content pages was a straightforward feature to add, and 'version history' was often requested. Initially, I was unsure of its value against other possible features. With only a few support logs [around 7 per quarter], the frequent feature requests highlighted a demand. I suspected users made changes they later wished to undo, finding it easier to redo the work than navigate support. User interviews confirmed this; when asked about reversing major changes, most had a story to share. Considering our goals and the feature's simplicity, we moved forward. As the development team worked on backend storage for versions, I looked into how users would find and revert to older versions."
+                "'Version history' was often requested and when asked about reversing major changes, most had a story to share."
              ]
           },
           {
             "type": "blockquote",
             "content": [
                 "“Once you press save there is no going back, without calling support”"
+            ]
+         },          {
+            "type": "p",
+            "content": [
+               "Technically restoring past versions of content was seen as a straightforward feature to add. Considering our goals and the feature's simplicity, it seemed like a quick win for the team. So as the development team worked on the backend logic for the feature, I explored common patterns for version history."
             ]
          },
           {
@@ -73,37 +72,43 @@
           {
              "type": "p",
              "content": [
-                "To align with Jacob's Law and ensure familiarity and ease of use, I explored the common usability and layout patterns for version history in Google Docs, Office 365 (Word), and Figma. This was because our content page editors—either in-house learning designers or university staff—commonly used Google Docs and Microsoft Word. I included Figma in the analysis, anticipating that its status as a design tool meant it had a refined history function. This approach aimed to ensure the feature would meet user expectations, which would be shaped by their familiarity with similar features from other platforms. Finally, with the help of users, I looked at other online learning platforms’ attempts at version history."
+                "I first looked at the giants Google Docs, Office 365 (Word), and Figma. This was because the users who edited course content were either in-house learning designers or university staff, both commonly used Google Docs and Microsoft Word. Finally, with the help of users, I looked at other online learning platform’s attempts at version history."
              ]
           },
           {
+            "type": "p",
+            "content": [
+               "This approach aimed to ensure the feature would meet user expectations, which would be shaped by their familiarity with similar features from other platforms."
+            ]
+         },
+         {
+            "type": "h3",
+            "content": [
+               "Usability concerns and solutions"
+            ]
+         },
+         {
+           "type": "h4",
+           "content": [
+              "Discovery and restoration process"
+           ]
+        },
+          {
             "type": "div",
             "attributes": {
-              "class": "flex flex-col sm:flex-row items-center gap-4 mt-4"
+              "class": "flex flex-col sm:flex-row items-start gap-8"
            },
             "content": [
               {
                  "type": "div",
                  "attributes": {
-                    "class": "flex flex-col gap-4"
+                    "class": "flex flex-col"
                     },
                  "content": [
                   {
-                     "type": "h3",
-                     "content": [
-                        "Usability concerns and solutions"
-                     ]
-                  },
-                  {
-                    "type": "h4",
-                    "content": [
-                       "Discovery and restoration process"
-                    ]
-                 },
-                  {
                      "type": "p",
                      "content": [
-                         "After analyzing these programs, I distilled the main themes and common usability patterns and shared these insights with the developers. Together, we brainstormed some layout ideas and developed rough sketches of the layout and where the feature would live. For ease of implementation, we settled for a full-screen modal."
+                         "After analysing version history features, I distilled the main themes and common usability patterns and shared these insights with the developers. Together, we brainstormed some layout ideas and developed rough sketches of the layout and where the feature would live. The development team wanted to change the content page as little as possible. After initial sketches and a back and forth of technically how it would work. We ended up with two main usability concerns."
                      ]
                   }
                  ]
@@ -117,40 +122,52 @@
               }
            ]
         },
-         {
-            "type": "p",
-            "content": [
-               "I wasn't too concerned about this feature's usability, especially regarding finding and restoring versions given that this type of feature exists in so many other platforms and the design inspiration came from tools that our users use every day. After discussions with the lead developer, I ended up with two main usability worries."
-            ]
-         },
-         {
-            "type": "p",
-            "content": [
-               "The first was about how users would discover the feature, and the second was around user expectation of functionality behaviour. Though these seem straightforward, our platform's technical limitations meant we couldn't simplify the process in a way users might expect for this initial launch."
-            ]
-         },
+        {
+         "type": "ol",
+         "content": [
+            {
+               "type": "li",
+               "content": [
+                  "How users would discover the feature."
+               ]
+            },
+            {
+               "type": "li",
+               "content": [
+                  "Did the functionality align with user expectations?"
+               ]
+            }
+         ]
+      },
+      {
+         "type": "h3",
+         "content": [
+            "Mitigating usability concerns"
+         ]
+      },
+      {
+         "type": "h4",
+         "content": [
+            "Finding how they find it"
+         ]
+      },
          {
             "type": "div",
             "attributes": {
-              "class": "flex flex-col sm:flex-row items-center gap-4 mt-4"
+              "class": "flex flex-col sm:flex-row items-start gap-8"
            },
             "content": [
               {
                  "type": "div",
                  "attributes": {
-                    "class": "flex flex-col gap-4"
+                    "class": "flex flex-col"
                     },
                  "content": [
-                  {
-                     "type": "h3",
-                     "content": [
-                        "Finding the feature"
-                     ]
-                  },
+
                   {
                      "type": "p",
                      "content": [
-                        "The development team planned to change the content page as little as possible, so I went through various designs until we found one they were willing to implement. Then, I sought to validate this solution with users. We had access to in-house experts (our learning designers) for quick feedback. However, their deep familiarity with the system meant I had to remember that non-experts might interact with the platform differently."
+                        "I conducted interviews with both our internal users and external ones and focused first on whether they could easily find this feature. The responses varied, with some finding the feature without guidance and others struggling. I noticed variations in the time it took users to find the feature and their approaches, but overall, users if aware of the feature’s existence were able to find how to access the feature."
                      ]
                   }
                  ]
@@ -164,37 +181,46 @@
               }
            ]
         },
-
+        {
+         "type": "p",
+         "content": [
+            "Since our platform lacked a feature to highlight and educate users on new updates, provided we made our release notes and support documents clear, accessible, and well-distributed, we would be able to minimise the risk of the feature being overlooked by users."
+         ]
+      },
+        {
+         "type": "h4",
+         "content": [
+            "Activities not included"
+         ]
+      },
           {
             "type": "p",
             "content": [
-               "I conducted interviews with both external and internal users focusing on whether they could easily find this feature. The responses varied, with some finding the feature without guidance and others struggling. I noticed variations in the time it took users to find the feature and their approaches, but overall, I found it acceptable for release. Once users located it, they agreed it was placed logically and found it clear. Since our platform lacks a feature to highlight and educate users on new updates, provided we made our release notes and support documents clear, accessible, and well-distributed, we would be able to minimise the risk of the feature being overlooked by users. I shared these insights and recommendations with the product manager and customer support lead."
-            ]
-         },{
-         "type": "div",
-         "attributes": {
-           "class": "h4 bg-accent text-accent-foreground p-4 rounded rounded-md mb-4"
-        },
-        "content": [
-            {"type":"p",
-        "content":["🧪 I would like you restore an old version of this screen from yesterday at 06:30PM."]}
-        ]},
-         {
-            "type": "p",
-            "content": [
-               "In every test, once users found the history button, they easily navigated the workflow to revert to older versions. Our decision to limit history to the last 50 saves was generally well-received. I had concerns about users potentially spam-saving and losing earlier versions, but after a review, we found that pages were saved on average 20-25 times. So, setting the limit at 50 appeared to be a reasonable choice."
+               "Our bank of activities was a key feature and while the version restore feature could track the presence and placement of an activity, it couldn't track the content within it because it is part of the text editor."
             ]
          },
          {
             "type": "p",
             "content": [
-               "The concern was ensuring users' expectations matched the system's behaviour."
+               "From my interviews, users valued access to activities as much as they did the rich text editor content. However, our support logs showed no requests to revert changes to activity content."
             ]
          },
          {
-            "type": "h3",
+            "type": "p",
             "content": [
-               "Understanding how the feature works"
+               "My findings suggested that not including both the text editor and activity content in the version restore would likely disappoint users. To them, it seemed like an incomplete solution. I recommended clear communication at launch to manage expectations and prevent confusion."
+            ]
+         },
+         {
+            "type": "h4",
+            "content": [
+               "Your history is limited"
+            ]
+         },
+         {
+            "type": "p",
+            "content": [
+               "Our decision to limit history to the last 50 saves was generally well-received. I had concerns about users potentially spam-saving and losing earlier versions, but after a review, we found that pages were saved on average 20-25 times. So, setting the limit at 50 appeared to be a reasonable choice."
             ]
          },
          {
@@ -206,106 +232,93 @@
             }
          },
          {
+            "type": "h4",
+            "content": [
+               "Load version/restore version"
+            ]
+         },
+         {
             "type": "p",
             "content": [
-               "Our pages contain three main types of content: basic text from the editor, videos, and iframed content. Our platform's unique selling point is our activity bank, crucial for student engagement. Effective learning experiences often involve a variety of learning modalities, including text, video, and interactive elements. Online, this typically means blending these formats. However, activities on our platform are implemented as iframes. While the history feature could track the presence and placement of activity, it couldn't capture the content within those iframes because it was external to the data saved by our text editor."
+               "Although it wasn’t how I would have liked it to happen, the user first had to look through the catalogue of versions before loading that content into the text editor, once that had been done they were then able to restore that loaded version. The version selector had a basic preview but even on load, not all content showed as it would after restoration."
             ]
          },
          {
            "type": "p",
            "content": [
-              "For the scope of this project, we would only be focusing on the text editor content. However, from my interviews, users valued access to activities as much as they did the rich text editor content. However, our support logs showed no requests to revert changes to activity content."
-           ]
-        },
-        {
-           "type": "p",
-           "content": [
-              "This seemed like a red herring to me. For users, activities and rich text content were perceived as part of the same thing, the content of the page. So it was reasonable to assume that they would ask for a page restore regardless of what it was they wanted to restore. However, it was unclear from the support logs if version restore requests were specifically about activities or the text content."
-           ]
-        },
-        {
-           "type": "p",
-           "content": [
-              "My conversations with users suggested that not including both in the version restore would likely disappoint users, as it would seem like an incomplete solution. I relayed these insights and concerns to the product manager, recommending clear communication at launch to manage expectations and prevent confusion."
+              "If you look at most version history features, most do not make the user perform and complete the entire workflow on two different screens. However, I lamented that that was what I designed and that my hands were tied because of technical constraints. Feedback around this workflow was positive so things being what they were, I had concluded the designs and approach were acceptable."
            ]
         },
         {
             "type": "h3",
             "content": [
-               "Reflections on project management and design process"
-            ]
-         },
-         {
-            "type": "h4",
-            "content": [
-               "Collaboration and feedback loops"
+               "Outcomes"
             ]
          },
          {
             "type": "p",
             "content": [
-               "What I enjoyed about this project was my frequent interactions with the development team. They were working in sprints, but I got their feedback every couple of days. This allowed us to figure out what frontend features they could build, what might change based on user feedback, and what needed to stay fixed. This approach meant that by the time I was happy with the design, most of it was already coded, requiring only minor adjustments and styling."
+               "I neglected to follow up on my recommendations for setting realistic expectations of the feature, leading to dissatisfaction among our internal learning design team due to the absence of activities. However, I did play a key role in resolving the resulting conflict between them and the product team, by talking to both heads of departments getting their perspectives and relaying the other’s perspective."
+            ]
+         },         {
+            "type": "p",
+            "content": [
+               "Following a positive beta test, we proceeded with the release, which was received favourably overall. The feature's objective was to enhance customer satisfaction which became evident in conversations involving our managing director, head of product, and our customers. Additionally, my direct engagement with users and incorporating their feedback into the final product contributed to their overall satisfaction."
             ]
          },
          {
-           "type": "p",
-           "content": [
-              "The feature, by its nature, wasn't set to be revolutionary, given it offered functionality expected of any document editor. My recommendations for setting realistic expectations were overlooked, leading to dissatisfaction among our internal learning design team due to the absence of activities. I played a key role in mitigating the resulting conflict between them and the product team, by talking to both heads of departments getting their perspectives and relaying the other’s perspective. "
-           ]
-        },
-        {
-         "type": "div",
-         "attributes": {
-           "class": "flex flex-col sm:flex-row items-center gap-4 mt-4"
-        },
-         "content": [
-           {
-              "type": "div",
-              "attributes": {
-                 "class": "flex flex-col gap-4"
-                 },
-              "content": [
-               {
-                  "type": "h4",
-                  "content": [
-                     "Challenges and lessons learned"
-                  ]
-               },
-               {
-                  "type": "p",
-                  "content": [
-                     "The main challenge was designing around the system’s technical debt with a focus on user needs rather than just what was technically easy, I first needed to understand the constraints of the system before I was able to test the user’s understanding of the feature and the actions it performed. My initial design may have been too ambitious, but regular feedback from developers and users helped refine it into a practical solution that balanced ease of implementation with user benefit."
-                  ]
-               }
-              ]
-           },
-           {
-              "type": "img",
-              "attributes": {
-                 "alt": "Earlier design that was not implemented",
-                 "src": "https://i.ibb.co/vLTDcmw/Too-Ambition-Design.png"
-              }
-           }
-        ]
-     },
-         {
-            "type": "h4",
+            "type": "h3",
             "content": [
                "Conclusion"
             ]
          },
-         {
-            "type": "p",
+           {
+              "type": "p",
+              "content": [
+                 "What I enjoyed about this project was my frequent interactions with the development team, the design and delivery cadence almost naturally was about two weeks in advance of stories being worked on. I got their feedback every other of day (we were working remotely) which allowed us to figure out what features they would build next, what might change based on user feedback, and what needed to stay fixed."
+              ]
+           },        {
+            "type": "div",
+            "attributes": {
+              "class": "flex flex-col sm:flex-row items-start gap-8"
+           },
             "content": [
-               "Following a positive beta test, we proceeded with the launch, which was received favourably overall. The feature's success in enhancing customer satisfaction became evident in conversations involving our managing director, head of product, and our customers, indicating our efforts to strengthen customer relationships were effective. Additionally, my direct engagement with users and incorporating their feedback into the final product contributed significantly to this improvement."
-            ]
-         },
-         {
-           "type": "p",
-           "content": [
-              "I think given the low complexity and usability risk factors I did an adequate amount of testing what I should have done better at was ensuring I had input on the release strategy so that we built the right expectations up with our users and not create an environment for disappointment to grow."
+              {
+                 "type": "div",
+                 "attributes": {
+                    "class": "flex flex-col"
+                    },
+                 "content": [
+                  {
+                     "type": "p",
+                     "content": [
+                        "The main challenge was designing around the system’s technical limitations while trying to focus on user needs rather than what was easy to implement. My initial designs were too ambitious, but regular feedback from developers and users helped refine what was delivered into a practical solution that balanced ease of implementation with usability."
+                     ]
+                  },         
+                  {
+                     "type": "p",
+                     "content": [
+                        "The feature, by its nature, wasn't revolutionary, given it offered functionality expected of most document editors. So I think given the timeframe, scope and value I spent an acceptable amount of time testing it with users before it was built."
+                     ]
+                  }
+                 ]
+              },
+              {
+                 "type": "img",
+                 "attributes": {
+                    "alt": "Earlier design that was not implemented",
+                    "src": "https://i.ibb.co/vLTDcmw/Too-Ambition-Design.png"
+                 }
+              }
            ]
-        }
+        },
+
+        {
+         "type": "p",
+         "content": [
+            "Gaining insights into user’s expectations of the feature I had input on the release strategy so that we built the right expectations up with our users and did not create an environment for disappointment to grow."
+         ]
+      }
        ]
     }
  }
