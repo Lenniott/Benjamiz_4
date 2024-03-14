@@ -37,7 +37,7 @@ export const AboutMePage: React.FC<{}> = () => {
             <Container variant='solid' horizontal={false} animateFromEnd={true} className="App flex items-center flex-col sm:flex-row gap-4 sm:gap-8">
                 <div className='flex flex-col items-center gap-4'>
                     <p>I am {meBen.name}, {meBen.age} years old, I live in {meBen.location} with my {meBen.family}.
-                    I am Currently working at <Link className="link" to="experience">{meBen.work}</Link>. When I find a moment, you may find me {meBen.hobbies.join(", ")}</p>    
+                    I am Currently working at <Link className="link" to="/experience">{meBen.work}</Link>. When I find a moment, you may find me {meBen.hobbies.join(", ")}</p>    
                 </div>
 
                 {/* <div className='items-center sm:mt-4'>
