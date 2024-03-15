@@ -33,16 +33,16 @@ export const AboutMePage: React.FC<{}> = () => {
 
 
     return (
-        <div className='grid grid-cols-1 w-full gap-4 pt-4'>
-            <h1 className="h3 text-accent font-serif pb-4 flex"><p className='text-foreground'>/</p>About</h1>
-            <Container variant='solid' horizontal={false} animateFromEnd={true} className="App flex items-center flex-col sm:flex-row gap-4 sm:gap-8">
-                <div className='p flex flex-col items-center justify-center gap-4'>
+        <div className='grid grid-cols-1 w-full gap-4 pt-4 pb-8'>
+            <h1 className="h3 text-accent font-serif pb-4 flex "><p className='text-foreground'>/</p>About</h1>
+            <Container variant='solid' horizontal={false} animateFromEnd={true} className="App flex items-center flex-col sm:flex-row gap-4 sm:gap-8 sm:flex-row-reverse">
+                <div className='p flex flex-col items-center justify-center gap-4 mt-2 sm:mt-0'>
                     <p>I am {meBen.name}, {meBen.age} years old, I live in {meBen.location} with my {meBen.family}.
                     I am Currently working at <Link className="link" to="/experience">{meBen.work}</Link>. When I find a moment, you may find me {meBen.hobbies.join(", ")}</p>    
                 </div>
                 <Avatar className="relative not-italic flex h-60 w-60 sm:h-40 sm:w-40 shrink-0 overflow-hidden rounded-full my-4 mx-4" >
-                <AvatarImage className='dark:contrast-[1.1] dark:brightness-[1.0] saturate-[0.88]  aspect-square h-full w-full' src={"https://i.ibb.co/Gtx51jJ/MyFamily.png"} alt="Man and wife hold their two children"/>
-                <AvatarFallback className="flex text-2xl h-full w-full items-center justify-center rounded-full bg-accent text-accent-foreground">BM</AvatarFallback>
+                    <AvatarImage className='dark:contrast-[1.1] dark:brightness-[1.0] saturate-[0.88]  aspect-square h-full w-full' src={"https://i.ibb.co/Gtx51jJ/MyFamily.png"} alt="Man and wife hold their two children"/>
+                    <AvatarFallback className="flex text-2xl h-full w-full items-center justify-center rounded-full bg-accent text-accent-foreground">BM</AvatarFallback>
                 </Avatar>
 
                 

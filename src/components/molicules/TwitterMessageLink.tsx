@@ -18,7 +18,7 @@ const TwitterMessageForm = () => {
     return (
       <div className="flex flex-col gap-4">
       <hr className="mt-8 mb-12 stroke-card-border"/>
-      <Container horizontal={false} variant="solid" className="flex flex-col space-y-6">
+      <Container horizontal={false} variant="solid" animateFromEnd={true} className="flex flex-col space-y-6">
             <h2 className="h4 whitespace-normal">
                Get in touch
             </h2>
