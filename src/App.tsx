@@ -8,6 +8,8 @@ import { YourDesignArticle, BicycleExercise } from "./pages/articles";
 import { CaseStudyOne } from "./pages/caseStudies/caseStudyOne";
 import { WorksPage } from "./pages/WorksPage";
 import { AboutMePage } from "./pages/aboutMe";
+import { SnippetsPage } from "./pages/SnippetsPage";
+import TimeLine from "./pages/snippets/TimeLine";
 import TwitterMessageLink from "../src/components/molicules/TwitterMessageLink";
 function App() {
 
@@ -27,9 +29,15 @@ function App() {
           <Route path="/experience" element={<ExperiencePage/>} />
           <Route path="/about" element={<AboutMePage/>} />
           <Route path="/works" element={<WorksPage/>} />
+          <Route path="/snippets" element={<SnippetsPage/>} />
+          <Route path="/snippets/timeline" element={<TimeLine/>} />
+          <Route path="/cs1" element={<CaseStudyOne/>} />
+
+          <Route path="/works" element={<WorksPage/>} />
           <Route path="/works/your-designs-are-only-as-good-as-your-organisation-s-ability-to-problem-solve" element={<YourDesignArticle />} />
           <Route path="/works/bicycle-exercise" element={<BicycleExercise />} />
           <Route path="/cs1" element={<CaseStudyOne/>} />
+
       </Routes>
     </div>
 
