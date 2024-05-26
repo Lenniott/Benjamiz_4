@@ -35,7 +35,7 @@ const TimeLine: React.FC = () => {
     <div className="w-full">
       <ul className="flex w-24 items-center justify-center flex-col-reverse transform">
         <li className="relative flex flex-row gap-2 py-1">
-          <p className="text-xl font-regular text-accent">Present</p>
+          <p className="text-xl font-regular text-accent">Past</p>
         </li>
         {years.map((year, index) => (
           <li
@@ -59,7 +59,7 @@ const TimeLine: React.FC = () => {
           </li>
         ))}
         <li className="relative flex flex-row gap-2 py-1">
-          <p className="text-xl font-regular text-accent">Past</p>
+          <p className="text-xl font-regular text-accent">Present</p>
         </li>
       </ul>
     </div>
