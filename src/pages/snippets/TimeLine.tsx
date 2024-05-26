@@ -48,13 +48,16 @@ const TimeLine: React.FC = () => {
               <span className="w-8 border-b-2 border-muted-foreground group-hover:w-12 group-hover:border-accent duration-300" />
               <span className="w-8 border-b-2 border-muted-foreground group-hover:w-10 group-hover:border-accent duration-300" />
             </div>
-            <div className={`absolute opacity-0 group-hover:opacity-100 ml-2 ${isNearBottom ? 'bottom-0' : 'top-0'} top-0 left-14 flex ${isNearBottom ? 'flex-col-reverse' : 'flex-col'} gap-2 rounded-md duration-300 ease-in-out px-2 py-2 items-start`}>
+            <div className={`
+            absolute opacity-0 group-hover:opacity-100 ml-2 -top-2 left-14 flex 
+            gap-2 rounded-md duration-300 ease-in-out px-2 py-2 items-start
+            `}>
               <span className="bg-secondary text-secondary-foreground rounded-sm px-2 py-1">
                 {year}
               </span>
-              <p className="w-[200px] md:w-[600px] text-accent-foreground bg-accent p-2 rounded-md">
+              {/* <p className="w-[200px] md:w-[600px] text-accent-foreground bg-accent p-2 rounded-md">
                 {descriptions[index]}
-              </p>
+              </p> */}
             </div>
           </li>
         ))}
