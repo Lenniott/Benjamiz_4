@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 const TimeLine: React.FC = () => {
   const years = Array.from({ length: 15 }, (_, i) => 2010 + i);
 
