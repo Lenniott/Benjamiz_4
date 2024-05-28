@@ -1,0 +1,74 @@
+
+
+.timeLineContainer{
+    --speed-out: 300ms;
+    --speed-in: 225ms;
+    --speed-in-fast: 125ms;
+    --ease: linear(
+        0 0%, 
+        0.15 10%, 
+        0.27 20%, 
+        0.38 30%, 
+        0.50 40%, 
+        0.62 50%, 
+        0.73 60%, 
+        0.85 70%, 
+        0.95 80%, 
+        1 100%
+    );
+    padding: 2rem 2.75rem;
+    width: 100%;
+}
+
+ol{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width:6px;
+
+}
+
+li{
+    width: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    padding-block: 0.25rem;
+}
+
+
+.line{
+    border-bottom: 2px solid grey;
+   
+    border-radius: 100px;
+  transition: all var(--speed-out) var(--ease);
+}
+
+li:after {  
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -6px;
+    right: -80%;
+    transform: translateX(1.5rem);
+    font-size: 0.875rem;
+    color: var(--accent);
+    transition: all var(--speed-in) var(--ease);
+    opacity: 0;
+}
+
+li:hover:after {
+    opacity: 1;
+    transform: translateX(1.85rem);
+  }
+
+  li:hover .line {
+    transform: scaleX(2) scaleY(1.2);
+    transition: all var(--speed-in-fast) var(--ease);
+  }
+
+  li:is(:hover) + li div,
+li:has(+ li:is(:hover)) div{
+  transform: scaleX(1.3) scaleY(1.2);
+  transition: all var(--speed-in) var(--ease);
+  background: rgba(255,255,255,0.75);
+}
