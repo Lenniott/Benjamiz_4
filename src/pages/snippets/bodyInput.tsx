@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HumanBody from "../../components/ui/humanBody";
+import HumanBody from "../../components/ui/humanBody"; // Ensure the correct path
 
 interface ClickPosition {
   x: number;
@@ -8,30 +8,30 @@ interface ClickPosition {
 
 const BodyInput: React.FC = () => {
   const [clickPosition, setClickPosition] = useState<ClickPosition | null>(null);
+  const [isZoom, setIsZoom] = useState(false);
+  const [scale, setScale] = useState(1); // Set the scale factor
 
-  const handleImageClick = (event: React.MouseEvent<SVGPathElement>) => {
+  const handlePathClick = (event: React.MouseEvent<SVGPathElement>) => {
     const rect = event.currentTarget.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
+    const x = (event.clientX - rect.left) / scale;
+    const y = (event.clientY - rect.top) / scale;
     console.log([x, y]);
     setClickPosition({ x, y });
   };
 
   return (
-    <div className="relative">
-      <div className="body-container">
+    <div className="relative h-full w-full">
+      <button onClick={() => { setIsZoom(!isZoom); setScale(isZoom ? 1 : 0.42); }}>
+        Toggle Zoom
+      </button>
+      <div className="body-container h-96 w-full overflow-auto flex items-center justify-center">
         <HumanBody
           fill="currentColor"
           className="text-accent bg-yellow-400"
-          height={400}
-          onClick={handleImageClick}
+          onPathClick={handlePathClick}
+          scale={scale} // Pass the scale prop
+          clickPositions={clickPosition ? [clickPosition] : []}  // Pass the click positions
         />
-        {clickPosition && (
-          <div
-            className="absolute w-2.5 h-2.5 bg-red-500 rounded-full"
-            style={{ left: clickPosition.x, top: clickPosition.y }}
-          />
-        )}
       </div>
     </div>
   );
