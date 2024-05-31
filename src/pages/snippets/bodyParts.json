@@ -1,0 +1,53 @@
+{
+    "head": [
+      { "label": "Head", "value": "head", "left": "45.5%", "top": "-2%" },
+      { "label": "Eyes", "value": "eyes", "left": "45.5%", "top": "2%" },
+      { "label": "Ears", "value": "ears", "left": "42%", "top": "5%" },
+      { "label": "Nose", "value": "nose", "left": "45.5%", "top": "6%" },
+      { "label": "Mouth", "value": "mouth", "left": "50%", "top": "30%" },
+      { "label": "Chin", "value": "chin", "left": "50%", "top": "35%" },
+      { "label": "Neck", "value": "neck", "left": "50%", "top": "40%" }
+    ],
+    "torso": [
+      { "label": "Chest", "value": "chest", "left": "50%", "top": "45%" },
+      { "label": "Upper back", "value": "upper-back", "left": "50%", "top": "50%" },
+      { "label": "Lower back", "value": "lower-back", "left": "50%", "top": "55%" },
+      { "label": "Abdomen", "value": "abdomen", "left": "50%", "top": "60%" },
+      { "label": "Shoulders", "value": "shoulders", "left": "50%", "top": "40%" },
+      { "label": "Ribcage", "value": "ribcage", "left": "50%", "top": "45%" },
+      { "label": "Pelvis", "value": "pelvis", "left": "50%", "top": "70%" }
+    ],
+    "arms": [
+      { "label": "Upper arm (Left)", "value": "upper-arm-left", "left": "30%", "top": "45%" },
+      { "label": "Upper arm (Right)", "value": "upper-arm-right", "left": "70%", "top": "45%" },
+      { "label": "Elbow (Left)", "value": "elbow-left", "left": "30%", "top": "50%" },
+      { "label": "Elbow (Right)", "value": "elbow-right", "left": "70%", "top": "50%" },
+      { "label": "Forearm (Left)", "value": "forearm-left", "left": "30%", "top": "55%" },
+      { "label": "Forearm (Right)", "value": "forearm-right", "left": "70%", "top": "55%" },
+      { "label": "Wrist (Left)", "value": "wrist-left", "left": "30%", "top": "60%" },
+      { "label": "Wrist (Right)", "value": "wrist-right", "left": "70%", "top": "60%" },
+      { "label": "Hand (Left)", "value": "hand-left", "left": "30%", "top": "65%" },
+      { "label": "Hand (Right)", "value": "hand-right", "left": "70%", "top": "65%" },
+      { "label": "Fingers (Left)", "value": "fingers-left", "left": "30%", "top": "70%" },
+      { "label": "Fingers (Right)", "value": "fingers-right", "left": "70%", "top": "70%" }
+    ],
+    "legs": [
+      { "label": "Thigh (Left)", "value": "thigh-left", "left": "40%", "top": "75%" },
+      { "label": "Thigh (Right)", "value": "thigh-right", "left": "60%", "top": "75%" },
+      { "label": "Knee (Left)", "value": "knee-left", "left": "40%", "top": "80%" },
+      { "label": "Knee (Right)", "value": "knee-right", "left": "60%", "top": "80%" },
+      { "label": "Calf (Left)", "value": "calf-left", "left": "40%", "top": "85%" },
+      { "label": "Calf (Right)", "value": "calf-right", "left": "60%", "top": "85%" },
+      { "label": "Ankle (Left)", "value": "ankle-left", "left": "40%", "top": "90%" },
+      { "label": "Ankle (Right)", "value": "ankle-right", "left": "60%", "top": "90%" },
+      { "label": "Foot (Left)", "value": "foot-left", "left": "40%", "top": "95%" },
+      { "label": "Foot (Right)", "value": "foot-right", "left": "60%", "top": "95%" },
+      { "label": "Toes (Left)", "value": "toes-left", "left": "40%", "top": "100%" },
+      { "label": "Toes (Right)", "value": "toes-right", "left": "60%", "top": "100%" }
+    ],
+    "otherRegions": [
+      { "label": "Groin", "value": "groin", "left": "50%", "top": "65%" },
+      { "label": "Buttocks", "value": "buttocks", "left": "50%", "top": "75%" }
+    ]
+  }
+  
