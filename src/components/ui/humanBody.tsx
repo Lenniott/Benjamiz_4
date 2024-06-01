@@ -18,7 +18,7 @@ const HumanBody: React.FC<SVGProps> = ({
   <svg
     width="100%"
     height="100%"
-    viewBox="0 0 338 800"
+    viewBox="0 0 338 825"
     fill={fill}
     xmlns="http://www.w3.org/2000/svg"
     className={`object-contain ${className}`}
@@ -43,7 +43,7 @@ const HumanBody: React.FC<SVGProps> = ({
           <circle
             cx={pos.x}
             cy={pos.y}
-            r={isZoom ? 14 : 8}
+            r={isZoom ? 8 : 16}
             fill="red"
           />
           <text
