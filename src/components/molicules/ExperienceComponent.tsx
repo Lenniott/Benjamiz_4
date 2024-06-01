@@ -40,7 +40,7 @@ interface ExperienceProps {
                 <h4 className="h6 mb-2">{exp.position} ({exp.duration})</h4>
                 <ul className="flex flex-col list-disc pl-8 gap-1 mb-2 font-light">
                   {exp.responsibilities?.map((responsibility, rIndex) => (
-                    <li key={rIndex}>{responsibility}</li>
+                    <li className="w-full" key={rIndex}>{responsibility}</li>
                   ))}
                 </ul>
               </div>
@@ -51,7 +51,7 @@ interface ExperienceProps {
                 <h4 className="h6 mb-2">{position.title} ({position.duration})</h4>
                 <ul className="flex flex-col list-disc pl-8 gap-1 font-light">
                   {position.responsibilities.map((responsibility, rIndex) => (
-                    <li key={rIndex}>{responsibility}</li>
+                    <li className="w-full" key={rIndex}>{responsibility}</li>
                   ))}
                 </ul>
               </div>
