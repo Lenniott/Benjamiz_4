@@ -1,29 +1,27 @@
 import React from "react";
 
 interface SVGProps {
-  width?: number;
-  height?: number;
-  fill?: string;
   className?: string;
   onPathClick?: (event: React.MouseEvent<SVGPathElement>) => void;
   scale?: number; // Add scale as a prop
   clickPositions?: { x: number; y: number }[]; // Add click positions as a prop
   translate?: { x: number; y: number }; // Add translate as a prop
+  selectedBodyPart?: string | null;
 }
 
 const HumanBody: React.FC<SVGProps> = ({
-  fill = "currentColor",
   className = "",
   onPathClick,
   scale = 1, // Default scale to 1
   clickPositions = [], // Default click positions to an empty array
   translate = { x: 0, y: 0 },
+  selectedBodyPart = null,
 }) => (
   <svg
     width={400 * scale}
     height={800 * scale}
     viewBox="0 0 400 800"
-    fill={fill}
+    fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
     className={`overflow-auto w-full ${className}`}
     style={{ pointerEvents: 'none' }}
@@ -54,7 +52,7 @@ const HumanBody: React.FC<SVGProps> = ({
             fontSize={24*(scale!=1? 1.5 : 1)}
             textAnchor="middle"
           >
-            Test
+            {selectedBodyPart || "Test"}
           </text>
         </g>
 

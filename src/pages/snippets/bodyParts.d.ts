@@ -1,16 +1,14 @@
-// bodyParts.d.ts
 export interface BodyPart {
     label: string;
+    x: number;
+    y: number;
     value: string;
-    left: string;
-    top: string;
   }
   
-  export interface BodyParts {
-    head: BodyPart[];
-    torso: BodyPart[];
-    arms: BodyPart[];
-    legs: BodyPart[];
-    otherRegions: BodyPart[];
+  export interface BodyPartsData {
+    front: BodyPart[];
+    back: BodyPart[];
   }
   
+  declare const bodyPartsData: BodyPartsData;
+  export default bodyPartsData;

@@ -1,20 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { BodyPart } from "../../pages/snippets/bodyParts.d"; // Ensure correct path
 
 interface SVGProps {
-  fill?: string;
-  className?: string;
   onPathClick?: (event: React.MouseEvent<SVGPathElement>) => void;
   clickPositions?: { x: number; y: number }[]; // Add click positions as a prop
   isZoom?: boolean; // Add zoom state
   isBack: boolean;
+  selectedBodyPart?: BodyPart | null;
 }
 
-const HumanBody: React.FC<SVGProps> = ({
-  isBack = false,
+const getTextDimensions = (text: string, fontSize: number, isZoom: boolean): { width: number, height: number } => {
+  const canvas = document.createElement("canvas");
+  const context = canvas.getContext("2d");
+  if (context) {
+    context.font = `${fontSize}px sans-serif`;
+    const metrics = context.measureText(text);
+    const width = metrics.width+16;
+    const height = fontSize + (isZoom ? 16 : 24); // A rough estimate, as height is not provided by measureText
+    return { width, height };
+  }
+  return { width: 0, height: 0 };
+};
+
+export const HumanBody: React.FC<SVGProps> = ({
   onPathClick,
   clickPositions = [], // Default click positions to an empty array
   isZoom = false,
-}) => (
+  isBack = false,
+  selectedBodyPart = null,
+}) => {
+  const [textDimensions, setTextDimensions] = useState<{ width: number, height: number }>({ width: 100, height: 24 });
+
+  useEffect(() => {
+    if (selectedBodyPart) {
+      const dimensions = getTextDimensions(selectedBodyPart.label, isZoom ? 16 : 42, isZoom);
+      setTextDimensions(dimensions);
+    }
+  }, [selectedBodyPart, isZoom]);
+
+  return(
   <svg
     width="100%"
     height="100%"
@@ -36,18 +60,6 @@ const HumanBody: React.FC<SVGProps> = ({
           onClick={onPathClick}
           style={{ cursor: "pointer" }}
         />
-        <path
-          d="M161 56.5C161 57.8807 157.418 59 153 59C148.582 59 145 57.8807 145 56.5C145 55.1193 148.582 54 153 54C157.418 54 161 55.1193 161 56.5Z"
-          fill="#D9D9D9"
-        />
-        <path
-          d="M196 56.5C196 57.8807 192.418 59 188 59C183.582 59 180 57.8807 180 56.5C180 55.1193 183.582 54 188 54C192.418 54 196 55.1193 196 56.5Z"
-          fill="#D9D9D9"
-        />
-        <path
-          d="M181 90.5C181 91.3284 176.299 92 170.5 92C164.701 92 160 91.3284 160 90.5C160 89.6716 164.701 90.5 170.5 90.5C176.299 90.5 181 89.6716 181 90.5Z"
-          fill="#D9D9D9"
-        />
       </g>
     )}
     {isBack && (
@@ -59,10 +71,6 @@ const HumanBody: React.FC<SVGProps> = ({
           onClick={onPathClick}
           style={{ cursor: "pointer" }}
         />
-        {/* <path
-            d="M220.106 453.178C196.321 461.64 170.006 456.388 170.006 456.388C170.006 456.388 139.664 460.175 119.4 453.178C99.1356 446.181 90.6435 434.629 87 427.499C87 427.499 95.8 442.499 119.4 450.499C143 458.499 170.006 454.499 170.006 454.499C170.006 454.499 194.606 459.499 220.106 450.499C243.873 442.111 251.911 428.076 252.894 426.207C252.965 426.071 253 425.999 253 425.999C253 425.999 252.966 426.071 252.894 426.207C251.817 428.275 242.42 445.239 220.106 453.178Z"
-            className="text-secondary"
-          /> */}
         <path
           className="text-secondary"
           d="M170.006 142C170.955 207.788 171.11 243.623 170.006 309.5C168.294 244.061 168.108 207.562 170.006 142Z"
@@ -73,30 +81,30 @@ const HumanBody: React.FC<SVGProps> = ({
       <g key={index}>
         <circle
           cx={pos.x}
-          cy={pos.y - 12}
+          cy={pos.y}
           r={isZoom ? 8 : 16}
           className="text-destructive"
         />
         <rect
-          x={pos.x - (isZoom ? 30 : 50)}
-          y={pos.y + (isZoom ? -1 : 16)}
-          width={isZoom ? 60 : 100}
-          height={isZoom ? 24 : 50}
-          className="text-destructive"
-          rx={5} // Rounded corners
+            x={pos.x - textDimensions.width / 2}
+            y={pos.y + (isZoom ? 12 : 26)}
+            width={textDimensions.width}
+            height={textDimensions.height}
+            className="text-destructive"
+            rx={5} // Rounded corners
         />
         <text
           x={pos.x}
-          y={pos.y + (isZoom ? 16 : 56)} // Position the text slightly below the dot
+          y={pos.y + (isZoom ? 32 : 72)} // Position the text slightly below the dot
           className="text-accent-foreground"
           fontSize={isZoom ? 16 : 42}
           textAnchor="middle"
         >
-          Test
+          {selectedBodyPart ? selectedBodyPart.label : "Test"}
         </text>
       </g>
     ))}
   </svg>
-);
+)};
 
 export default HumanBody;
