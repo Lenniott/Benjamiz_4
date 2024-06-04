@@ -9,12 +9,14 @@ interface ScaleSliderProps {
   options: Option[];
   initialValue: number;
   startNumber: number;
+  label: string;
 }
 
 const ScaleSlider: React.FC<ScaleSliderProps> = ({
   startNumber,
   options,
   initialValue,
+  label,
 }) => {
   // Find the initial index based on the initialValue
   const initialIndex = options.findIndex((option) => option.value === initialValue);
@@ -30,11 +32,12 @@ const ScaleSlider: React.FC<ScaleSliderProps> = ({
 
   return (
     <div className="flex flex-col items-center w-full px-4 py-6">
+      <label className="text-left font-bold w-full mb-2">{label}</label>
       <div className="flex justify-between w-full text-sm mb-2">
         <div className="flex flex-col gap-1 max-w-24 justify-end">
           <span>{options[0].label}</span>
         </div>
-        <div className="flex flex-col gap-1 items-end max-w-24 justify-end">
+        <div className="flex flex-col gap-1 items-end max-w-24 text-right justify-end">
           <span>{options[options.length - 1].label}</span>
         </div>
       </div>
@@ -52,7 +55,7 @@ const ScaleSlider: React.FC<ScaleSliderProps> = ({
       </div>
       <div className="mt-2 text-md text-gray-800 w-full flex flex-col items-center justify-center">
       <span>{index}</span>
-        <span>{getLabelByIndex(index)}</span>
+        <span className="bg-gray-200 p-2 rounded-lg ">{getLabelByIndex(index)}</span>
       </div>
     </div>
   );

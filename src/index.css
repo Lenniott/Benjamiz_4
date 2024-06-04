@@ -5,6 +5,10 @@
 
 @layer base {
   :root {
+    --radio-inner: #ffffff; /* Default background */
+    --radio-outer-stroke: #64748B;
+    --radio-outer: #E2E8F0;
+    --radio-select: #287e3c;
     --white: 210, 100%, 100%; /* 	#ffffff Compatible with: grey-dark, grey-darkest, black, error-dark, accent-dark */
     --grey-lightest: 210,20%,96.1%; /* Compatible with: grey-dark, grey-darkest, black, accent-dark */
     --grey-light: 210,19.5%,83.9%; /* Compatible with: grey-darkest, black, accent-dark */
@@ -151,3 +155,22 @@ html {
 
 
 
+
+.radio-label {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.radio-label:hover .inner{
+  r: 12;
+}
+
+.select {
+  transition: r 0.3s ease;
+}
+
+.radio-label .inner {
+  r: 28;
+  transition: r 0.3s ease;
+}

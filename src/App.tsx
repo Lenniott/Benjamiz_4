@@ -11,6 +11,7 @@ import { AboutMePage } from "./pages/aboutMe";
 import { SnippetsPage } from "./pages/SnippetsPage";
 import TimeLine from "./pages/snippets/TimeLine";
 import BodySelector from "./pages/snippets/bodySelector";
+import RadioToMatrix from "./pages/snippets/RadioToMatrix";
 import Slider from "./pages/snippets/slider";
 import TwitterMessageLink from "../src/components/molicules/TwitterMessageLink";
 function App() {
@@ -36,7 +37,7 @@ function App() {
           <Route path="/snippets/slider" element={<Slider/>} />
           <Route path="/snippets/timeline" element={<TimeLine/>} />
           <Route path="/snippets/body-selector" element={<BodySelector/>} />
-
+          <Route path="/snippets/matrix" element={<RadioToMatrix/>} />
           <Route path="/cs1" element={<CaseStudyOne/>} />
 
           <Route path="/works" element={<WorksPage/>} />

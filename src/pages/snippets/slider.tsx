@@ -16,7 +16,7 @@ const options = [
   { value: 7, label: "Much" },
   { value: 8, label: "Very much" },
   { value: 9, label: "Extremely" },
-  { value: 10, label: "Very much so" },
+  { value: 10, label: "Very much that " },
 ];
 
 const Slider: React.FC = () => {
@@ -34,8 +34,9 @@ const Slider: React.FC = () => {
           alt="phone"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="relative z-10 h-full flex items-center justify-center p-4">
-          <ScaleSlider options={options} initialValue={5} startNumber={0} />
+        <div className="relative z-10 h-full flex flex-col items-center justify-center p-4">
+
+          <ScaleSlider label="How well do you agree with the following statements?" options={options} initialValue={5} startNumber={0} />
         </div>
       </div>
     </div>
