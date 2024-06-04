@@ -128,6 +128,7 @@ const BodyInput: React.FC = () => {
         <Button onClick={handleIsBack} variant="secondary">
           {isBack ? "Front" : "Back"}
         </Button>
+        {/* //add front here */}
       </div>
 
       <div

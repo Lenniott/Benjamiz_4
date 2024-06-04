@@ -48,9 +48,6 @@ export const HumanBody: React.FC<SVGProps> = ({
     className={`object-contain `}
     style={{ pointerEvents: "none" }}
   >
-    <g style={{ transform: "translate(-85px, 42px)", pointerEvents: "none" }}>
-      <text fontSize={32}>{isBack ? "Back" : "Front"}</text>
-    </g>
     {!isBack && (
       <g style={{ transform: "translate(0px, 12px)", pointerEvents: "none" }}>
         <path

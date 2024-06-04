@@ -11,6 +11,7 @@ import { AboutMePage } from "./pages/aboutMe";
 import { SnippetsPage } from "./pages/SnippetsPage";
 import TimeLine from "./pages/snippets/TimeLine";
 import BodySelector from "./pages/snippets/bodySelector";
+import Slider from "./pages/snippets/slider";
 import TwitterMessageLink from "../src/components/molicules/TwitterMessageLink";
 function App() {
 
@@ -30,9 +31,12 @@ function App() {
           <Route path="/experience" element={<ExperiencePage/>} />
           <Route path="/about" element={<AboutMePage/>} />
           <Route path="/works" element={<WorksPage/>} />
+
           <Route path="/snippets" element={<SnippetsPage/>} />
+          <Route path="/snippets/slider" element={<Slider/>} />
           <Route path="/snippets/timeline" element={<TimeLine/>} />
           <Route path="/snippets/body-selector" element={<BodySelector/>} />
+
           <Route path="/cs1" element={<CaseStudyOne/>} />
 
           <Route path="/works" element={<WorksPage/>} />

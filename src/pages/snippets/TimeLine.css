@@ -72,3 +72,4 @@ li:has(+ li:is(:hover)) div{
   transition: all var(--speed-in) var(--ease);
   background: rgba(255,255,255,0.75);
 }
+

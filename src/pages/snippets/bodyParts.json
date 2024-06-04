@@ -1,7 +1,7 @@
 {
   "front": [
     { "label": "Head", "x": 170, "y": 50, "value": "1" },
-    { "label": "Left Arm", "x": 80, "y": 250, "value": "2" },
+    { "label": "Left Arm", "x": 110, "y": 250, "value": "2" },
     { "label": "Right Arm", "x": 260, "y": 250, "value": "3" },
     { "label": "Chest", "x": 170, "y": 200, "value": "4" },
     { "label": "Stomach", "x": 170, "y": 300, "value": "5" },
