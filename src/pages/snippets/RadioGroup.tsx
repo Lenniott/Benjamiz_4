@@ -31,7 +31,7 @@ const MatrixComponent: React.FC<MatrixComponentProps> = ({ questions, answers })
   };
 
   const tableRowBackground = (questionIndex: number) => {
-    return questionIndex % 2 === 0 ? "bg-white" : "bg-slate-100";
+    return questionIndex % 2 === 0 ? "bg-background" : "bg-muted";
   };
 
   return (
@@ -44,7 +44,7 @@ const MatrixComponent: React.FC<MatrixComponentProps> = ({ questions, answers })
         {oneLabel ? "Show Individual Labels" : "Show Label Header"}
       </Button>
       {oneLabel && (
-        <div className={`hidden md:sticky top-0 z-10 w-full md:grid md:grid-cols-3 md:gap-28 pr-4 mx-auto bg-white py-4`}>
+        <div className={`hidden md:sticky top-0 z-10 w-full md:grid md:grid-cols-3 md:gap-28 pr-4 mx-auto  py-4`}>
           <span className="flex items-center" />
           <div className={`md:col-span-2 w-full gap-2 flex flex-col place-content-start md:flex-row `}>
             {answers.map((answer) => (

@@ -27,11 +27,11 @@ interface InputProps {
                   >
                     {value}
           </span>
-          <div className="size-6 rounded-full border-[1px] border-slate-400 flex-shrink-0">
+          <div className="size-6 rounded-full border-[1px] border-primary flex-shrink-0">
             <svg className="svg" viewBox="0 0 64 64" aria-hidden="true">
-              <circle className="outer" fill="var(--radio-outer)" cx="32" cy="32" r="32" />
-              <circle className="inner" fill="var(--radio-inner)"  cx="32" cy="32" r="32" />
-              <circle className="select " fill="var(--radio-select)" cx="32" cy="32" r={checked ? "20" : "0"} />
+              <circle className="outer fill-card-border" cx="32" cy="32" r="32" />
+              <circle className="inner fill-background" cx="32" cy="32" r="32" />
+              <circle className="select fill-accent" cx="32" cy="32" r={checked ? "20" : "0"} />
             </svg>
           </div>
   

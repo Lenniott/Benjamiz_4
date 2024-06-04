@@ -5,10 +5,7 @@
 
 @layer base {
   :root {
-    --radio-inner: #ffffff; /* Default background */
-    --radio-outer-stroke: #64748B;
-    --radio-outer: #E2E8F0;
-    --radio-select: #287e3c;
+
     --white: 210, 100%, 100%; /* 	#ffffff Compatible with: grey-dark, grey-darkest, black, error-dark, accent-dark */
     --grey-lightest: 210,20%,96.1%; /* Compatible with: grey-dark, grey-darkest, black, accent-dark */
     --grey-light: 210,19.5%,83.9%; /* Compatible with: grey-darkest, black, accent-dark */
@@ -33,6 +30,8 @@
     --card: var(--grey-lightest);
     --card-border: var(--grey-light);
     --card-foreground: var(--black);
+
+
 
     --popover: var(--white);
     --popover-foreground: var(--black);
@@ -60,6 +59,9 @@
   }
  
   .dark {
+
+
+
     --background: var(--black);
     --foreground: var(--white);
 
@@ -69,6 +71,11 @@
     --card: var(--grey-darkest);
     --card-border: var(--grey-dark);
     --card-foreground: var(--white);
+
+    --radio-inner: var(--black); /* Default background */
+    --radio-outer-stroke: var(--grey-light);
+    --radio-outer: var(--grey-dark);
+    --radio-select: var(--accent-light);
 
     --popover: var(--black);
     --popover-foreground: var(--white);
@@ -163,7 +170,7 @@ html {
 }
 
 .radio-label:hover .inner{
-  r: 12;
+  r: 10;
 }
 
 .select {
@@ -171,6 +178,6 @@ html {
 }
 
 .radio-label .inner {
-  r: 28;
+  r: 30;
   transition: r 0.3s ease;
 }

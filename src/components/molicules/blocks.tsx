@@ -45,7 +45,7 @@ export const Block=(({icon, delay = 0}:BlockProps) => {
         <TooltipProvider>
                 <Tooltip>
                     <TooltipTrigger className='w-fit'>
-                        <Container  delay={delay} variant='solid' className='p-0 grid w-fit text-sm group text-accent hover:bg-accent hover:text-accent-foreground ease-in delay-150 transition-all'>
+                        <Container  delay={delay} variant='clear' className='p-0 grid w-fit text-sm group text-accent hover:bg-accent hover:text-accent-foreground ease-in delay-150 transition-all'>
                             {icons[icon].icon}
                         </Container>
                     </TooltipTrigger>
